@@ -1,0 +1,61 @@
+version: "3.9"
+
+# Local development only. Production secrets belong in HF / Neon / Vercel dashboards.
+
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-ppca}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-ppca}
+      POSTGRES_DB: ${POSTGRES_DB:-ppca}
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./database/schema.sql:/docker-entrypoint-initdb.d/01-schema.sql:ro
+      - ./database/roles.sql:/docker-entrypoint-initdb.d/02-roles.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-ppca} -d ${POSTGRES_DB:-ppca}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  meilisearch:
+    image: getmeili/meilisearch:v1.11
+    environment:
+      MEILI_MASTER_KEY: ${MEILI_MASTER_KEY:-masterKey}
+      MEILI_ENV: development
+    ports:
+      - "7700:7700"
+    volumes:
+      - meili:/meili_data
+
+  api:
+    build:
+      context: .
+      dockerfile: api/Dockerfile
+    environment:
+      ENVIRONMENT: development
+      USE_SQLITE: "false"
+      DATABASE_URL: postgresql+asyncpg://${POSTGRES_USER:-ppca}:${POSTGRES_PASSWORD:-ppca}@db:5432/${POSTGRES_DB:-ppca}
+      SEED_ON_STARTUP: "true"
+      SAMPLE_DATA_PATH: /data/sample/scandals.json
+      MEILISEARCH_URL: http://meilisearch:7700
+      MEILISEARCH_KEY: ${MEILI_MASTER_KEY:-masterKey}
+      USE_MEILISEARCH: "false"
+      CORS_ORIGINS: '["http://localhost:3000","http://127.0.0.1:3000"]'
+      RATE_LIMIT_ENABLED: "true"
+      DISABLE_DOCS: "false"
+    ports:
+      - "7860:7860"
+    volumes:
+      - ./data:/data:ro
+      - ./scrapers:/scrapers:ro
+    depends_on:
+      db:
+        condition: service_healthy
+
+volumes:
+  pgdata:
+  meili:

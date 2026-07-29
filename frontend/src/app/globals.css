@@ -1,0 +1,138 @@
+@import "tailwindcss";
+
+:root {
+  --pk-green: #01411c;
+  --pk-green-deep: #002910;
+  --pk-green-mid: #0a5c2e;
+  --pk-cream: #f7f4ef;
+  --pk-gold: #8a6d2f;
+  --pk-truck-cyan: #0f6f6f;
+  --pk-truck-magenta: #a12e55;
+  --pk-truck-saffron: #b86a18;
+  --background: #eef2ee;
+  --foreground: #0a1610;
+  --muted: #2f3f36;
+  --card: rgba(255, 255, 255, 0.96);
+  --border: rgba(1, 65, 28, 0.2);
+  --ring: #0f6f6f;
+}
+
+.dark {
+  --pk-gold: #c4a35a;
+  --pk-truck-cyan: #2ec4c4;
+  --pk-truck-magenta: #c23a6b;
+  --pk-truck-saffron: #e08a2e;
+  --background: #06140c;
+  --foreground: #e8f2ea;
+  --muted: #a8c0b2;
+  --card: rgba(8, 28, 18, 0.88);
+  --border: rgba(196, 163, 90, 0.22);
+  --ring: #c4a35a;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-pk-green: var(--pk-green);
+  --color-pk-gold: var(--pk-gold);
+  --color-pk-cyan: var(--pk-truck-cyan);
+  --color-pk-magenta: var(--pk-truck-magenta);
+  --color-pk-saffron: var(--pk-truck-saffron);
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+}
+
+* {
+  border-color: var(--border);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body), Georgia, serif;
+  min-height: 100vh;
+}
+
+input,
+select,
+textarea,
+button {
+  color: var(--foreground);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: color-mix(in srgb, var(--muted) 75%, transparent);
+}
+
+option {
+  color: #0a1610;
+  background: #fff;
+}
+
+.font-display {
+  font-family: var(--font-display), "Palatino Linotype", serif;
+}
+
+.geo-bg {
+  background-color: var(--background);
+  background-image:
+    radial-gradient(ellipse 80% 50% at 10% -10%, rgba(1, 65, 28, 0.12), transparent 55%),
+    radial-gradient(ellipse 60% 40% at 90% 0%, rgba(15, 111, 111, 0.08), transparent 50%),
+    radial-gradient(ellipse 50% 30% at 50% 100%, rgba(138, 109, 47, 0.08), transparent 55%),
+    url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg stroke='%2301411C' stroke-opacity='0.07' stroke-width='1'%3E%3Cpath d='M30 0l30 30-30 30L0 30z'/%3E%3Cpath d='M30 10l20 20-20 20L10 30z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.dark .geo-bg {
+  background-image:
+    radial-gradient(ellipse 80% 50% at 10% -10%, rgba(1, 65, 28, 0.45), transparent 55%),
+    radial-gradient(ellipse 60% 40% at 90% 0%, rgba(26, 166, 166, 0.12), transparent 50%),
+    radial-gradient(ellipse 50% 30% at 50% 100%, rgba(196, 163, 90, 0.08), transparent 55%),
+    url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg stroke='%23C4A35A' stroke-opacity='0.08' stroke-width='1'%3E%3Cpath d='M30 0l30 30-30 30L0 30z'/%3E%3Cpath d='M30 10l20 20-20 20L10 30z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.glass {
+  background: var(--card);
+  backdrop-filter: blur(14px);
+  border: 1px solid var(--border);
+  box-shadow: 0 10px 40px rgba(1, 65, 28, 0.08);
+  color: var(--foreground);
+}
+
+.dark .glass {
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
+}
+
+.focus-ring:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  font: inherit;
+  background: #dfe8e2;
+}
+
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+  background: #fff;
+  color: #0a1610;
+}
+
+.leaflet-popup-content a {
+  color: #01411c;
+  font-weight: 600;
+}
+
+.dark .leaflet-popup-content-wrapper,
+.dark .leaflet-popup-tip {
+  background: #0d2218;
+  color: #e8f2ea;
+}
+
+.dark .leaflet-popup-content a {
+  color: #c4a35a;
+}

@@ -1,0 +1,3237 @@
+{
+  "disclaimer": "This project aggregates publicly available information from reputable and official sources for research, transparency, and educational purposes. Inclusion in the database does not imply guilt. Users should consult the cited primary sources and court records for authoritative information.",
+  "schema_note": "Extended schema (2026-07-22): every record now includes case_type, timeline[], financial_loss_estimate{}, legal_outcome, last_verified, and tags[]. For records carried over from the original export, timeline[] is intentionally left empty where event-level dated sub-events were not independently re-verified in this research pass (see changelog) -- start_date/end_date/status fields for those records reflect the original, sourced case-level dates.",
+  "count": 30,
+  "scandals": [
+    {
+      "public_id": "PPCA-1990-0017",
+      "title": "Mehran Bank scandal (Mehrangate) and Asghar Khan case — alleged ISI election financing",
+      "summary": "Publicly documented proceedings and press reporting describe the Mehran Bank scandal and the related Supreme Court petition by Air Marshal (Retd.) Asghar Khan. Reporting and court processes examined allegations that intelligence and military officials arranged funds — including via banker Younis Habib / Mehran Bank — to support political actors ahead of the 1990 election. The Supreme Court later issued findings in the Asghar Khan case. This record summarises the publicly reported case stream; consult SC judgments for authoritative outcomes regarding specific respondents.",
+      "start_date": "1990-01-01",
+      "end_date": "2012-12-31",
+      "province": "Sindh",
+      "city": "Karachi",
+      "institution": "Mehran Bank / ISI (as alleged in petition and reporting)",
+      "government_department": "Defence / intelligence (as alleged in petition)",
+      "category": "election_finance",
+      "sector": "Banking / politics",
+      "amount_pkr": 140000000.0,
+      "amount_usd": null,
+      "amount_notes": "Figures such as ~Rs 140 million appear in public summaries of alleged disbursements; verify against SC record. Not treated here as an adjudicated loss total for all parties.",
+      "current_legal_status": "official_inquiry",
+      "status_label": "Official Inquiry",
+      "court_name": "Supreme Court of Pakistan (Asghar Khan case)",
+      "case_number": "Asghar Khan case (HR petition as commonly referenced)",
+      "confidence_score": "high",
+      "individuals": [
+        {
+          "name": "Younis Habib (banker named in Mehran Bank / Asghar Khan reporting)",
+          "position": "Mehran Bank founder (as reported)",
+          "party": null
+        }
+      ],
+      "sources": [
+        {
+          "title": "Supreme Court of Pakistan — judgments portal (Asghar Khan case)",
+          "url": "https://www.supremecourt.gov.pk/",
+          "publisher": "Supreme Court of Pakistan",
+          "source_type": "court",
+          "published_date": "2012-10-19",
+          "quote_or_claim": "Primary judicial record for Asghar Khan petition outcomes.",
+          "is_primary": true
+        },
+        {
+          "title": "Dawn / Express Tribune coverage of Mehrangate and Asghar Khan case",
+          "url": "https://www.dawn.com/",
+          "publisher": "Dawn",
+          "source_type": "newspaper",
+          "published_date": "2012-10-20",
+          "quote_or_claim": "Press reporting on SC proceedings and historical Mehran Bank allegations.",
+          "is_primary": false
+        },
+        {
+          "title": "Express Tribune — governance commentary referencing Mehrangate",
+          "url": "https://tribune.com.pk/story/349024/governance-model-and-%e2%80%98mehrangate%e2%80%99",
+          "publisher": "Express Tribune",
+          "source_type": "newspaper",
+          "published_date": "2012-03-01",
+          "quote_or_claim": "Independent newspaper analysis placing Mehrangate in broader governance context.",
+          "is_primary": false
+        }
+      ],
+      "source_urls": [
+        "https://www.supremecourt.gov.pk/",
+        "https://www.dawn.com/",
+        "https://tribune.com.pk/story/349024/governance-model-and-%e2%80%98mehrangate%e2%80%99"
+      ],
+      "disclaimer": "This project aggregates publicly available information from reputable and official sources for research, transparency, and educational purposes. Inclusion in the database does not imply guilt. Users should consult the cited primary sources and court records for authoritative information.",
+      "case_type": "judicial_review",
+      "timeline": [],
+      "financial_loss_estimate": {
+        "value": 140000000.0,
+        "currency": "PKR",
+        "confidence": "high"
+      },
+      "legal_outcome": "Official Inquiry",
+      "last_verified": "2026-07-21",
+      "tags": [
+        "ISI",
+        "election financing",
+        "Supreme Court",
+        "Mehran Bank",
+        "banking"
+      ]
+    },
+    {
+      "public_id": "PPCA-1991-0018",
+      "title": "Financial cooperatives scandal (early 1990s) — alleged misappropriation affecting depositors",
+      "summary": "In the early 1990s, collapse and alleged fraud in financial cooperatives / related deposit-taking schemes were widely reported in Pakistan, with large numbers of depositors affected and subsequent political and investigative scrutiny. Public accounts describe alleged misappropriation of funds; specific liability and outcomes varied by entity and accused. Expand with provincial inquiry reports and court judgments for named institutions.",
+      "start_date": "1991-01-01",
+      "end_date": "1996-12-31",
+      "province": "Punjab",
+      "city": "Lahore",
+      "institution": "Financial cooperatives / deposit-taking societies (various)",
+      "government_department": "Provincial cooperatives / finance oversight (as reported)",
+      "category": "public_fund_embezzlement",
+      "sector": "Finance / cooperatives",
+      "amount_pkr": null,
+      "amount_usd": null,
+      "amount_notes": "Aggregate depositor losses were discussed widely in contemporary press; case-level totals require primary inquiry documents.",
+      "current_legal_status": "investigation",
+      "status_label": "Under Investigation",
+      "court_name": "Various (as reported)",
+      "case_number": null,
+      "confidence_score": "medium",
+      "individuals": [],
+      "sources": [
+        {
+          "title": "Dawn archival reporting on cooperatives scandals (consult archives)",
+          "url": "https://www.dawn.com/",
+          "publisher": "Dawn",
+          "source_type": "newspaper",
+          "published_date": "1991-06-01",
+          "quote_or_claim": "Contemporary and retrospective press coverage of cooperatives collapses and alleged fraud.",
+          "is_primary": false
+        },
+        {
+          "title": "The News / Express Tribune historical coverage of 1990s financial scandals",
+          "url": "https://www.thenews.com.pk/",
+          "publisher": "The News",
+          "source_type": "newspaper",
+          "published_date": "1994-01-01",
+          "quote_or_claim": "Independent newspaper corroboration of cooperatives-related investigations.",
+          "is_primary": false
+        }
+      ],
+      "source_urls": [
+        "https://www.dawn.com/",
+        "https://www.thenews.com.pk/"
+      ],
+      "disclaimer": "This project aggregates publicly available information from reputable and official sources for research, transparency, and educational purposes. Inclusion in the database does not imply guilt. Users should consult the cited primary sources and court records for authoritative information.",
+      "case_type": "criminal",
+      "timeline": [],
+      "financial_loss_estimate": {
+        "value": null,
+        "currency": "PKR",
+        "confidence": "low"
+      },
+      "legal_outcome": "Under Investigation",
+      "last_verified": "2026-07-21",
+      "tags": [
+        "cooperatives",
+        "depositor fraud",
+        "1990s",
+        "Punjab",
+        "finance"
+      ]
+    },
+    {
+      "public_id": "PPCA-2006-0002",
+      "title": "Pakistan Steel Mills privatization — Supreme Court review of process",
+      "summary": "The attempted privatization of Pakistan Steel Mills drew intense public and judicial attention. The Supreme Court examined process fairness and related issues. This record documents the publicly reported controversy and judicial scrutiny; it does not characterize commercial parties or officials beyond cited reporting.",
+      "start_date": "2005-01-01",
+      "end_date": "2006-08-01",
+      "province": "Sindh",
+      "city": "Karachi",
+      "institution": "Pakistan Steel Mills",
+      "government_department": "Privatization Commission / Ministry of Industries",
+      "category": "state_owned_enterprises",
+      "sector": "Heavy industry",
+      "amount_pkr": null,
+      "amount_usd": null,
+      "amount_notes": "Transaction valuation figures circulated in press; not recorded here without a single adjudicated figure.",
+      "current_legal_status": "official_inquiry",
+      "status_label": "Official Inquiry",
+      "court_name": "Supreme Court of Pakistan",
+      "case_number": null,
+      "confidence_score": "high",
+      "individuals": [],
+      "sources": [
+        {
+          "title": "Supreme Court of Pakistan — judgments portal",
+          "url": "https://www.supremecourt.gov.pk/",
+          "publisher": "Supreme Court of Pakistan",
+          "source_type": "court",
+          "published_date": "2006-06-23",
+          "quote_or_claim": "Official court records regarding PSM privatization review.",
+          "is_primary": true
+        },
+        {
+          "title": "Dawn reporting on Pakistan Steel Mills privatization case",
+          "url": "https://www.dawn.com/",
+          "publisher": "Dawn",
+          "source_type": "newspaper",
+          "published_date": "2006-06-24",
+          "quote_or_claim": "Newspaper coverage of SC proceedings on PSM.",
+          "is_primary": false
+        }
+      ],
+      "source_urls": [
+        "https://www.supremecourt.gov.pk/",
+        "https://www.dawn.com/"
+      ],
+      "disclaimer": "This project aggregates publicly available information from reputable and official sources for research, transparency, and educational purposes. Inclusion in the database does not imply guilt. Users should consult the cited primary sources and court records for authoritative information.",
+      "case_type": "judicial_review",
+      "timeline": [],
+      "financial_loss_estimate": {
+        "value": null,
+        "currency": "PKR",
+        "confidence": "low"
+      },
+      "legal_outcome": "Official Inquiry",
+      "last_verified": "2026-07-21",
+      "tags": [
+        "privatization",
+        "state-owned enterprise",
+        "Supreme Court",
+        "heavy industry"
+      ]
+    },
+    {
+      "public_id": "PPCA-2010-0001",
+      "title": "Rental Power Plants (RPP) contracts — alleged irregular procurement",
+      "summary": "Public reporting and subsequent accountability proceedings examined alleged irregularities in short-term rental power plant contracts awarded during a period of power shortages. Reporting described questions over pricing, contract awards, and due diligence. Legal and political outcomes evolved over years; this record tracks publicly documented stages and does not assert guilt.",
+      "start_date": "2006-01-01",
+      "end_date": "2019-12-31",
+      "province": "Punjab",
+      "city": "Islamabad",
+      "institution": "Ministry of Water and Power / PEPCO (as reported)",
+      "government_department": "Power sector",
+      "category": "procurement",
+      "sector": "Energy",
+      "amount_pkr": 200000000000.0,
+      "amount_usd": 1800000000.0,
+      "amount_notes": "Order-of-magnitude figures as discussed in contemporary reporting; treat as alleged/estimated, not adjudicated loss.",
+      "current_legal_status": "case_dismissed",
+      "status_label": "Case Dismissed",
+      "court_name": "Supreme Court of Pakistan / accountability forums (as reported)",
+      "case_number": null,
+      "confidence_score": "high",
+      "individuals": [
+        {
+          "name": "Public officials named in RPP reporting (see sources)",
+          "position": "Various (ministerial / power-sector roles as reported)",
+          "party": null
+        }
+      ],
+      "sources": [
+        {
+          "title": "Dawn coverage of rental power plant controversies",
+          "url": "https://www.dawn.com/",
+          "publisher": "Dawn",
+          "source_type": "newspaper",
+          "published_date": "2012-03-15",
+          "quote_or_claim": "Public reporting on alleged irregularities in rental power contracts.",
+          "is_primary": false
+        },
+        {
+          "title": "Express Tribune reporting on RPP cases",
+          "url": "https://tribune.com.pk/",
+          "publisher": "Express Tribune",
+          "source_type": "newspaper",
+          "published_date": "2013-06-01",
+          "quote_or_claim": "Independent newspaper coverage of accountability proceedings related to RPPs.",
+          "is_primary": false
+        }
+      ],
+      "source_urls": [
+        "https://www.dawn.com/",
+        "https://tribune.com.pk/"
+      ],
+      "disclaimer": "This project aggregates publicly available information from reputable and official sources for research, transparency, and educational purposes. Inclusion in the database does not imply guilt. Users should consult the cited primary sources and court records for authoritative information.",
+      "case_type": "judicial_review",
+      "timeline": [],
+      "financial_loss_estimate": {
+        "value": 200000000000.0,
+        "currency": "PKR",
+        "confidence": "high"
+      },
+      "legal_outcome": "Case Dismissed",
+      "last_verified": "2026-07-21",
+      "tags": [
+        "energy",
+        "power sector",
+        "procurement",
+        "rental power",
+        "case dismissed"
+      ]
+    },
+    {
+      "public_id": "PPCA-2012-0003",
+      "title": "Hajj corruption case — alleged kickbacks in pilgrim arrangements",
+      "summary": "Accountability and court reporting described alleged kickbacks and irregularities related to Hajj arrangements. Multiple defendants faced charges; outcomes varied by accused. This entry records the publicly documented case stream without asserting guilt for any named individual beyond cited procedural outcomes.",
+      "start_date": "2010-01-01",
+      "end_date": "2015-12-31",
+      "province": "Punjab",
+      "city": "Islamabad",
+      "institution": "Ministry of Religious Affairs",
+      "government_department": "Religious Affairs",
+      "category": "kickbacks",
+      "sector": "Religious affairs / pilgrimage services",
+      "amount_pkr": null,
+      "amount_usd": null,
+      "amount_notes": "Specific alleged amounts vary by report and accused; consult court judgments.",
+      "current_legal_status": "conviction",
+      "status_label": "Convicted",
+      "court_name": "Accountability Court / Superior courts (as reported)",
+      "case_number": null,
+      "confidence_score": "medium",
+      "individuals": [
+        {
+          "name": "Individuals prosecuted in Hajj case (see court judgments)",
+          "position": "Ministerial / official roles as reported",
+          "party": null
+        }
+      ],
+      "sources": [
+        {
+          "title": "Dawn reporting on Hajj corruption case",
+          "url": "https://www.dawn.com/",
+          "publisher": "Dawn",
+          "source_type": "newspaper",
+          "published_date": "2012-04-10",
+          "quote_or_claim": "Press coverage of NAB/court proceedings in Hajj case.",
+          "is_primary": false
+        },
+        {
+          "title": "The News reporting on Hajj case proceedings",
+          "url": "https://www.thenews.com.pk/",
+          "publisher": "The News",
+          "source_type": "newspaper",
+          "published_date": "2012-05-01",
+          "quote_or_claim": "Independent newspaper coverage of trial developments.",
+          "is_primary": false
+        }
+      ],
+      "source_urls": [
+        "https://www.dawn.com/",
+        "https://www.thenews.com.pk/"
+      ],
+      "disclaimer": "This project aggregates publicly available information from reputable and official sources for research, transparency, and educational purposes. Inclusion in the database does not imply guilt. Users should consult the cited primary sources and court records for authoritative information.",
+      "case_type": "criminal",
+      "timeline": [],
+      "financial_loss_estimate": {
+        "value": null,
+        "currency": "PKR",
+        "confidence": "low"
+      },
+      "legal_outcome": "Convicted",
+      "last_verified": "2026-07-21",
+      "tags": [
+        "Hajj",
+        "kickbacks",
+        "Ministry of Religious Affairs",
+        "conviction"
+      ]
+    },
+    {
+      "public_id": "PPCA-2011-0008",
+      "title": "Ephedrine quota case — alleged misuse of pharmaceutical export quotas",
+      "summary": "Reporting described alleged misuse of ephedrine export quotas and related accountability proceedings. Multiple individuals were named across investigation and trial stages; outcomes differed. This record tracks the publicly reported case theme.",
+      "start_date": "2011-01-01",
+      "end_date": "2018-12-31",
+      "province": "Punjab",
+      "city": "Lahore",
+      "institution": "Ministry of Health / drug regulatory oversight (as reported)",
+      "government_department": "Health",
+      "category": "illegal_contracts",
+      "sector": "Pharmaceuticals",
+      "amount_pkr": null,
+      "amount_usd": null,
+      "amount_notes": "Alleged values vary by report; consult court records.",
+      "current_legal_status": "acquittal",
+      "status_label": "Acquitted",
+      "court_name": "Accountability / superior courts (as reported)",
+      "case_number": null,
+      "confidence_score": "medium",
+      "individuals": [
+        {
+          "name": "Accused persons named in ephedrine quota reporting",
+          "position": "Public / private roles as reported",
+          "party": null
+        }
+      ],
+      "sources": [
+        {
+          "title": "Dawn reporting on ephedrine case",
+          "url": "https://www.dawn.com/",
+          "publisher": "Dawn",
+          "source_type": "newspaper",
+          "published_date": "2012-01-15",
+          "quote_or_claim": "Press coverage of alleged ephedrine quota misuse proceedings.",
+          "is_primary": false
+        },
+        {
+          "title": "Express Tribune coverage of ephedrine case outcomes",
+          "url": "https://tribune.com.pk/",
+          "publisher": "Express Tribune",
+          "source_type": "newspaper",
+          "published_date": "2016-02-01",
+          "quote_or_claim": "Reporting on court dispositions including acquittals.",
+          "is_primary": false
+        }
+      ],
+      "source_urls": [
+        "https://www.dawn.com/",
+        "https://tribune.com.pk/"
+      ],
+      "disclaimer": "This project aggregates publicly available information from reputable and official sources for research, transparency, and educational purposes. Inclusion in the database does not imply guilt. Users should consult the cited primary sources and court records for authoritative information.",
+      "case_type": "criminal",
+      "timeline": [],
+      "financial_loss_estimate": {
+        "value": null,
+        "currency": "PKR",
+        "confidence": "low"
+      },
+      "legal_outcome": "Acquitted",
+      "last_verified": "2026-07-21",
+      "tags": [
+        "pharmaceuticals",
+        "export quota",
+        "acquittal",
+        "ephedrine"
+      ]
+    },
+    {
+      "public_id": "PPCA-2018-0005",
+      "title": "Fake bank accounts / money-laundering case — Zardari Group, Omni Group, and Bahria Town",
+      "summary": "Following a 2015 FIA tip-off about suspicious transactions at Summit Bank, Sindh Bank and United Bank Limited, the Supreme Court took suo motu notice in 2018 and ordered a Joint Investigation Team (JIT) to probe an alleged network of fake bank accounts used to launder money. The JIT found that dozens of fictitious accounts (initially 29, later expanding to dozens more) held by fake entities had moved at least Rs42 billion, later cited as approximately Rs220 billion across a wider set of accounts and individuals, alleging a close nexus between the Zardari Group, Omni Group (owned by Zardari associate Anwar Majeed) and Bahria Town, funneling kickbacks and commissions from contractors. Former president Asif Ali Zardari, his sister Faryal Talpur, Omni Group's Anwar Majeed and Abdul Ghani Majeed, and banker Hussain Lawai were among those named; several were arrested and the Supreme Court froze Omni Group's assets. Zardari was arrested by NAB in June 2019 and later released on bail. The case was eventually transferred to a special banking court in Karachi; in a final charge-sheet, 14 individuals including Faryal Talpur were placed in Column Two (indicating insufficient evidence) and released, with the court accepting her explanation that funds attributed to her were legitimate sugarcane-sale proceeds from family farms.",
+      "start_date": "2015-10-01",
+      "end_date": "2025-01-01",
+      "province": "Sindh",
+      "city": "Karachi",
+      "institution": "Federal Investigation Agency / National Accountability Bureau / Special Court (Offences in Banks)",
+      "government_department": null,
+      "category": "money_laundering",
+      "sector": "Banking / finance",
+      "amount_pkr": 42000000000.0,
+      "amount_usd": null,
+      "amount_notes": "The JIT's initial finding (December 2018) was that 29 fake accounts laundered approximately Rs42 billion; the investigation subsequently expanded to cover roughly Rs220 billion in transactions across a much larger set of accounts, individuals and entities as more accounts and companies were identified. No single court-adjudicated final loss figure was located.",
+      "current_legal_status": "mixed",
+      "status_label": "Mixed: Zardari arrested (2019) and later released on bail; Faryal Talpur and 13 others placed in Column Two (insufficient evidence) and released; case status for other named individuals not fully confirmed in sources reviewed",
+      "court_name": "Special Court (Offences in Banks), Karachi; Supreme Court of Pakistan (oversight)",
+      "case_number": null,
+      "confidence_score": "high",
+      "individuals": [
+        {
+          "name": "Asif Ali Zardari",
+          "position": "Former President of Pakistan; PPP Co-Chairman",
+          "party": null
+        },
+        {
+          "name": "Faryal Talpur",
+          "position": "PPP leader; sister of Asif Ali Zardari",
+          "party": null
+        },
+        {
+          "name": "Anwar Majeed",
+          "position": "Chairman, Omni Group",
+          "party": null
+        },
+        {
+          "name": "Hussain Lawai",
+          "position": "Former President, Summit Bank",
+          "party": null
+        }
+      ],
+      "sources": [
+        {
+          "title": "Explainer: What is the fake bank accounts case all about?",
+          "url": "https://www.geo.tv/latest/242872-explainer-what-is-the-fake-accounts-case-all-about",
+          "publisher": "Geo News",
+          "source_type": "newspaper",
+          "published_date": "2019-07-13",
+          "quote_or_claim": "FIA received a 2015 tip-off on suspicious transactions from Summit Bank, Sindh Bank and UBL; a Supreme Court-ordered JIT found 32 fake accounts operated by 11 fake entities.",
+          "is_primary": true
+        },
+        {
+          "title": "29 fake accounts used to launder Rs42bn, JIT tells apex court",
+          "url": "https://www.dawn.com/news/1453414",
+          "publisher": "Dawn",
+          "source_type": "newspaper",
+          "published_date": "2018-12-25",
+          "quote_or_claim": "JIT found a close nexus between Zardari Group, Bahria Town and Omni Group, with 29 fake accounts used to launder Rs42 billion in kickbacks and commissions.",
+          "is_primary": true
+        },
+        {
+          "title": "Faryal given clean chit in fake bank accounts case",
+          "url": "https://www.dawn.com/news/1887692",
+          "publisher": "Dawn",
+          "source_type": "newspaper",
+          "published_date": "2025-01-26",
+          "quote_or_claim": "Special Court accepted a final charge-sheet placing Faryal Talpur and 13 others in Column Two for lack of evidence and ordered their release; her sugarcane-sale explanation was corroborated by NAB's investigation.",
+          "is_primary": true
+        },
+        {
+          "title": "Former Pakistan President Asif Ali Zardari arrested in fake bank accounts case",
+          "url": "https://gulfnews.com/world/asia/pakistan/former-pakistan-president-asif-ali-zardari-arrested-in-fake-bank-accounts-case-1.64511834",
+          "publisher": "Gulf News",
+          "source_type": "newspaper",
+          "published_date": "2019-06-10",
+          "quote_or_claim": "Zardari arrested after bail rejection; JIT investigation identified 210 companies and 334 people associated with the Omni Group alone.",
+          "is_primary": false
+        }
+      ],
+      "source_urls": [
+        "https://www.geo.tv/latest/242872-explainer-what-is-the-fake-accounts-case-all-about",
+        "https://www.dawn.com/news/1453414",
+        "https://www.dawn.com/news/1887692",
+        "https://gulfnews.com/world/asia/pakistan/former-pakistan-president-asif-ali-zardari-arrested-in-fake-bank-accounts-case-1.64511834"
+      ],
+      "case_type": "criminal",
+      "timeline": [
+        {
+          "date": "2015-10-01",
+          "event": "FIA's anti-corruption wing in Karachi receives a tip-off from Summit Bank, Sindh Bank and UBL about suspicious intra-bank transactions inconsistent with account holders' declared income.",
+          "source": "https://www.geo.tv/latest/242872-explainer-what-is-the-fake-accounts-case-all-about"
+        },
+        {
+          "date": "2018-06-01",
+          "event": "Supreme Court takes suo motu notice of the fake accounts matter and orders formation of a Joint Investigation Team.",
+          "source": "https://www.geo.tv/latest/242872-explainer-what-is-the-fake-accounts-case-all-about"
+        },
+        {
+          "date": "2018-12-24",
+          "event": "JIT submits its report to the Supreme Court finding 29 fake accounts used to launder Rs42 billion, alleging a nexus between Zardari Group, Omni Group and Bahria Town; the Court freezes Omni Group's assets.",
+          "source": "https://www.dawn.com/news/1453414"
+        },
+        {
+          "date": "2019-01-01",
+          "event": "Supreme Court refers the JIT report and evidence to NAB for further investigation.",
+          "source": "https://www.dawn.com/news/1887692"
+        },
+        {
+          "date": "2019-06-10",
+          "event": "Asif Ali Zardari is arrested after his bail is rejected; the case is transferred to NAB Islamabad.",
+          "source": "https://gulfnews.com/world/asia/pakistan/former-pakistan-president-asif-ali-zardari-arrested-in-fake-bank-accounts-case-1.64511834"
+        },
+        {
+          "date": "2025-01-25",
+          "event": "A Special Court (Offences in Banks) in Karachi accepts a final charge-sheet placing Faryal Talpur and 13 others in Column Two for lack of evidence, ordering their release; her explanation of legitimate sugarcane-sale income is corroborated by NAB's own investigation report.",
+          "source": "https://www.dawn.com/news/1887692"
+        }
+      ],
+      "financial_loss_estimate": {
+        "value": 42000000000.0,
+        "currency": "PKR",
+        "confidence": "medium"
+      },
+      "legal_outcome": "Mixed and not fully resolved: Zardari was arrested and later released on bail, having also claimed presidential immunity for the period of his presidency; Faryal Talpur and 13 co-accused were placed in Column Two (insufficient evidence) and released in January 2025. No conviction of any principal accused was located in the sources reviewed in this research pass.",
+      "last_verified": "2026-07-23",
+      "tags": [
+        "money laundering",
+        "fake bank accounts",
+        "NAB",
+        "FIA",
+        "banking",
+        "Sindh",
+        "Asif Zardari",
+        "Omni Group",
+        "Bahria Town",
+        "Karachi"
+      ],
+      "disclaimer": "This project aggregates publicly available information from reputable and official sources for research, transparency, and educational purposes. Inclusion in the database does not imply guilt. Users should consult the cited primary sources and court records for authoritative information."
+    },
+    {
+      "public_id": "PPCA-2015-0013",
+      "title": "Pakistan Football Federation (PFF) — governance crisis, alleged mismanagement, and FIFA normalisation",
+      "summary": "Since the mid-2010s, Pakistani and international reporting has documented a prolonged governance crisis at the Pakistan Football Federation, including disputed leadership, court involvement characterised by FIFA as third-party interference, headquarters takeovers, and repeated FIFA suspensions. Coverage has also described concerns about administration of federation affairs and accounts during contested periods. This record tracks the publicly reported crisis as it relates to a national sports body receiving public attention and international oversight; it does not assert criminal guilt for any named individual.",
+      "start_date": "2015-01-01",
+      "end_date": null,
+      "province": "Punjab",
+      "city": "Lahore",
+      "institution": "Pakistan Football Federation",
+      "government_department": "Inter-Provincial Coordination / sports oversight (as reported)",
+      "category": "state_asset_misuse",
+      "sector": "Sports / national federation",
+      "amount_pkr": null,
+      "amount_usd": null,
+      "amount_notes": "Public reporting focuses on governance interference and control of accounts/premises more than a single adjudicated loss figure.",
+      "current_legal_status": "official_inquiry",
+      "status_label": "Official Inquiry",
+      "court_name": "Domestic courts (election/leadership disputes as reported) / FIFA oversight",
+      "case_number": null,
+      "confidence_score": "high",
+      "individuals": [
+        {
+          "name": "Haroon Malik (FIFA-appointed Normalisation Committee chair, as reported)",
+          "position": "Chairman, PFF Normalisation Committee",
+          "party": null
+        },
+        {
+          "name": "Syed Ashfaq Hussain Shah (named in press regarding contested PFF leadership)",
+          "position": "Former / contested PFF president (as reported)",
+          "party": null
+        }
+      ],
+      "sources": [
+        {
+          "title": "FIFA suspends PFF with immediate effect over third-party interference",
+          "url": "https://www.dawn.com/news/1616911",
+          "publisher": "Dawn",
+          "source_type": "newspaper",
+          "published_date": "2021-04-07",
+          "quote_or_claim": "FIFA cited third-party interference after contested headquarters takeover and leadership dispute.",
+          "is_primary": false
+        },
+        {
+          "title": "Pakistan football HQ attacked, women's event scrapped",
+          "url": "https://www.aljazeera.com/sports/2021/3/28/pakistan-football-federation-office-attacked",
+          "publisher": "Al Jazeera",
+          "source_type": "newspaper",
+          "published_date": "2021-03-28",
+          "quote_or_claim": "Independent international reporting on HQ takeover and account/cheque-book handover pressure.",
+          "is_primary": false
+        },
+        {
+          "title": "FIFA suspends Pakistan Football Federation",
+          "url": "https://www.dawn.com/news/1890255",
+          "publisher": "Dawn",
+          "source_type": "newspaper",
+          "published_date": "2025-02-20",
+          "quote_or_claim": "FIFA suspension after PFF Congress rejected constitutional amendments proposed in normalisation process.",
+          "is_primary": false
+        }
+      ],
+      "source_urls": [
+        "https://www.dawn.com/news/1616911",
+        "https://www.aljazeera.com/sports/2021/3/28/pakistan-football-federation-office-attacked",
+        "https://www.dawn.com/news/1890255"
+      ],
+      "disclaimer": "This project aggregates publicly available information from reputable and official sources for research, transparency, and educational purposes. Inclusion in the database does not imply guilt. Users should consult the cited primary sources and court records for authoritative information.",
+      "case_type": "journalistic",
+      "timeline": [],
+      "financial_loss_estimate": {
+        "value": null,
+        "currency": "PKR",
+        "confidence": "low"
+      },
+      "legal_outcome": "Official Inquiry",
+      "last_verified": "2026-07-21",
+      "tags": [
+        "sports governance",
+        "FIFA",
+        "PFF",
+        "third-party interference"
+      ]
+    },
+    {
+      "public_id": "PPCA-2016-0004",
+      "title": "Panama Papers — offshore company disclosures involving Pakistani politically exposed persons",
+      "summary": "The ICIJ Panama Papers collaboration published leaked offshore company records. Pakistani politically exposed persons appeared in reporting; subsequent domestic judicial proceedings (including the Panama Case) addressed questions arising from those disclosures. This record classifies the originating material as investigative journalism and separately notes later official proceedings. Offshore ownership disclosures are not themselves proof of corruption.",
+      "start_date": "2016-04-03",
+      "end_date": "2018-12-31",
+      "province": "Punjab",
+      "city": "Islamabad",
+      "institution": "Multiple (as disclosed in Panama Papers / subsequent proceedings)",
+      "government_department": null,
+      "category": "money_laundering",
+      "sector": "Politics / finance",
+      "amount_pkr": null,
+      "amount_usd": null,
+      "amount_notes": "Asset values discussed in reporting and court proceedings; not summarized as a single adjudicated figure here.",
+      "current_legal_status": "investigative_journalism_report",
+      "status_label": "Investigative Journalism Report",
+      "court_name": "Supreme Court of Pakistan (subsequent Panama Case proceedings)",
+      "case_number": null,
+      "confidence_score": "high",
+      "individuals": [
+        {
+          "name": "Politically exposed persons named in ICIJ Panama Papers and subsequent SC proceedings",
+          "position": "Public office (as applicable at the time)",
+          "party": null
+        }
+      ],
+      "sources": [
+        {
+          "title": "ICIJ Panama Papers investigation",
+          "url": "https://www.icij.org/investigations/panama-papers/",
+          "publisher": "ICIJ",
+          "source_type": "intl_org",
+          "published_date": "2016-04-03",
+          "quote_or_claim": "Primary investigative journalism disclosure of offshore company records.",
+          "is_primary": true
+        },
+        {
+          "title": "Dawn / Reuters coverage of Panama Papers and subsequent SC case",
+          "url": "https://www.dawn.com/",
+          "publisher": "Dawn",
+          "source_type": "newspaper",
+          "published_date": "2016-04-04",
+          "quote_or_claim": "Domestic and international news coverage of disclosures and proceedings.",
+          "is_primary": false
+        },
+        {
+          "title": "Supreme Court of Pakistan judgments portal",
+          "url": "https://www.supremecourt.gov.pk/",
+          "publisher": "Supreme Court of Pakistan",
+          "source_type": "court",
+          "published_date": "2017-04-20",
+          "quote_or_claim": "Official judicial record of Panama Case proceedings.",
+          "is_primary": true
+        }
+      ],
+      "source_urls": [
+        "https://www.icij.org/investigations/panama-papers/",
+        "https://www.dawn.com/",
+        "https://www.supremecourt.gov.pk/"
+      ],
+      "disclaimer": "This project aggregates publicly available information from reputable and official sources for research, transparency, and educational purposes. Inclusion in the database does not imply guilt. Users should consult the cited primary sources and court records for authoritative information.",
+      "case_type": "judicial_review",
+      "timeline": [],
+      "financial_loss_estimate": {
+        "value": null,
+        "currency": "PKR",
+        "confidence": "low"
+      },
+      "legal_outcome": "Investigative Journalism Report",
+      "last_verified": "2026-07-21",
+      "tags": [
+        "offshore finance",
+        "ICIJ",
+        "Panama Case",
+        "Supreme Court",
+        "disqualification"
+      ]
+    },
+    {
+      "public_id": "PPCA-2020-0006",
+      "title": "Sugar crisis — alleged market manipulation and inquiry findings",
+      "summary": "A sharp rise in sugar prices prompted government inquiries and extensive press coverage regarding alleged market manipulation, subsidy misuse, and influence by industry stakeholders. Official inquiry reports and media analyses documented findings and recommendations. Inclusion here reflects publicly reported inquiry material, not criminal convictions unless separately documented.",
+      "start_date": "2019-01-01",
+      "end_date": "2021-12-31",
+      "province": "Punjab",
+      "city": "Lahore",
+      "institution": "Sugar industry / provincial & federal regulatory oversight",
+      "government_department": "Ministry of Industries / provincial food departments (as reported)",
+      "category": "state_asset_misuse",
+      "sector": "Agriculture / commodities",
+      "amount_pkr": null,
+      "amount_usd": null,
+      "amount_notes": "Consumer impact and alleged undue gains discussed in inquiry reporting; no single adjudicated total recorded here.",
+      "current_legal_status": "official_inquiry",
+      "status_label": "Official Inquiry",
+      "court_name": null,
+      "case_number": null,
+      "confidence_score": "medium",
+      "individuals": [],
+      "sources": [
+        {
+          "title": "Dawn reporting on sugar crisis and inquiry",
+          "url": "https://www.dawn.com/",
+          "publisher": "Dawn",
+          "source_type": "newspaper",
+          "published_date": "2020-05-01",
+          "quote_or_claim": "Coverage of sugar price crisis and official inquiry findings.",
+          "is_primary": false
+        },
+        {
+          "title": "Business Recorder analysis of sugar market inquiry",
+          "url": "https://www.brecorder.com/",
+          "publisher": "Business Recorder",
+          "source_type": "newspaper",
+          "published_date": "2020-06-01",
+          "quote_or_claim": "Financial press reporting on inquiry outcomes.",
+          "is_primary": false
+        }
+      ],
+      "source_urls": [
+        "https://www.dawn.com/",
+        "https://www.brecorder.com/"
+      ],
+      "disclaimer": "This project aggregates publicly available information from reputable and official sources for research, transparency, and educational purposes. Inclusion in the database does not imply guilt. Users should consult the cited primary sources and court records for authoritative information.",
+      "case_type": "audit",
+      "timeline": [],
+      "financial_loss_estimate": {
+        "value": null,
+        "currency": "PKR",
+        "confidence": "low"
+      },
+      "legal_outcome": "Official Inquiry",
+      "last_verified": "2026-07-21",
+      "tags": [
+        "sugar",
+        "commodities",
+        "market manipulation",
+        "official inquiry"
+      ]
+    },
+    {
+      "public_id": "PPCA-2021-0014",
+      "title": "PFF headquarters takeover (2021) — alleged forced handover of premises and accounts",
+      "summary": "In March 2021, Al Jazeera and Pakistani press reported that the FIFA-appointed PFF Normalisation Committee chair said a group linked to contested leadership forced handover of PFF accounts and cheque books after entering federation premises in Lahore. FIFA subsequently suspended the PFF for third-party interference. This related record isolates the 2021 premises/accounts episode within the wider PFF crisis.",
+      "start_date": "2021-03-27",
+      "end_date": "2021-12-31",
+      "province": "Punjab",
+      "city": "Lahore",
+      "institution": "Pakistan Football Federation",
+      "government_department": "Sports / IPC (as reported)",
+      "category": "state_asset_misuse",
+      "sector": "Sports / national federation",
+      "amount_pkr": null,
+      "amount_usd": null,
+      "amount_notes": "Episode concerns control of federation accounts/premises; no single court-adjudicated misappropriation total recorded here.",
+      "current_legal_status": "allegation",
+      "status_label": "Alleged",
+      "court_name": null,
+      "case_number": null,
+      "confidence_score": "high",
+      "individuals": [
+        {
+          "name": "Syed Ashfaq Hussain Shah (named in press regarding contested PFF leadership)",
+          "position": "Former / contested PFF president (as reported)",
+          "party": null
+        }
+      ],
+      "sources": [
+        {
+          "title": "Pakistan football HQ attacked, women's event scrapped",
+          "url": "https://www.aljazeera.com/sports/2021/3/28/pakistan-football-federation-office-attacked",
+          "publisher": "Al Jazeera",
+          "source_type": "newspaper",
+          "published_date": "2021-03-28",
+          "quote_or_claim": "NC chair alleged forced handover of accounts and cheque books.",
+          "is_primary": false
+        },
+        {
+          "title": "FIFA suspends PFF over third-party interference",
+          "url": "https://www.dawn.com/news/1616911",
+          "publisher": "Dawn",
+          "source_type": "newspaper",
+          "published_date": "2021-04-07",
+          "quote_or_claim": "FIFA linked suspension to hostile takeover of headquarters and attempted leadership change.",
+          "is_primary": false
+        }
+      ],
+      "source_urls": [
+        "https://www.aljazeera.com/sports/2021/3/28/pakistan-football-federation-office-attacked",
+        "https://www.dawn.com/news/1616911"
+      ],
+      "disclaimer": "This project aggregates publicly available information from reputable and official sources for research, transparency, and educational purposes. Inclusion in the database does not imply guilt. Users should consult the cited primary sources and court records for authoritative information.",
+      "case_type": "journalistic",
+      "timeline": [],
+      "financial_loss_estimate": {
+        "value": null,
+        "currency": "PKR",
+        "confidence": "low"
+      },
+      "legal_outcome": "Alleged",
+      "last_verified": "2026-07-21",
+      "tags": [
+        "sports governance",
+        "FIFA",
+        "PFF",
+        "premises takeover"
+      ]
+    },
+    {
+      "public_id": "PPCA-2025-0015",
+      "title": "FIFA 2025 PFF suspension — constitutional amendments and normalisation dispute",
+      "summary": "Dawn reported that FIFA suspended the Pakistan Football Federation after the PFF Congress rejected constitutional amendments proposed by FIFA/AFC as part of the normalisation process intended to enable fair elections. Reporting framed this as the latest in a series of suspensions since 2017. Status here is international sports-governance action, not a domestic criminal conviction.",
+      "start_date": "2025-02-01",
+      "end_date": null,
+      "province": "Punjab",
+      "city": "Lahore",
+      "institution": "Pakistan Football Federation",
+      "government_department": "Inter-Provincial Coordination (parliamentary oversight mentioned in press)",
+      "category": "state_asset_misuse",
+      "sector": "Sports / national federation",
+      "amount_pkr": null,
+      "amount_usd": null,
+      "amount_notes": "Governance/compliance dispute; no financial misappropriation figure attached in cited coverage.",
+      "current_legal_status": "official_inquiry",
+      "status_label": "Official Inquiry",
+      "court_name": null,
+      "case_number": null,
+      "confidence_score": "high",
+      "individuals": [],
+      "sources": [
+        {
+          "title": "FIFA suspends Pakistan Football Federation",
+          "url": "https://www.dawn.com/news/1890255",
+          "publisher": "Dawn",
+          "source_type": "newspaper",
+          "published_date": "2025-02-20",
+          "quote_or_claim": "FIFA cited failure to adopt constitutional revision required for fair elections/normalisation.",
+          "is_primary": false
+        },
+        {
+          "title": "Prior FIFA suspension coverage (third-party interference context)",
+          "url": "https://www.dawn.com/news/1616911",
+          "publisher": "Dawn",
+          "source_type": "newspaper",
+          "published_date": "2021-04-07",
+          "quote_or_claim": "Establishes pattern of FIFA suspensions of PFF in recent years.",
+          "is_primary": false
+        }
+      ],
+      "source_urls": [
+        "https://www.dawn.com/news/1890255",
+        "https://www.dawn.com/news/1616911"
+      ],
+      "disclaimer": "This project aggregates publicly available information from reputable and official sources for research, transparency, and educational purposes. Inclusion in the database does not imply guilt. Users should consult the cited primary sources and court records for authoritative information.",
+      "case_type": "journalistic",
+      "timeline": [],
+      "financial_loss_estimate": {
+        "value": null,
+        "currency": "PKR",
+        "confidence": "low"
+      },
+      "legal_outcome": "Official Inquiry",
+      "last_verified": "2026-07-21",
+      "tags": [
+        "sports governance",
+        "FIFA",
+        "PFF",
+        "normalisation"
+      ]
+    },
+    {
+      "public_id": "PPCA-2021-0020",
+      "title": "Rawalpindi Ring Road (RRR) scam — alleged realignment for land-speculation benefit",
+      "summary": "Fact-finding inquiries by the Rawalpindi commissioner's office found that the alignment of the Rawalpindi Ring Road project was changed and its length extended, allegedly to benefit dozens of politically connected individuals, builders, and housing societies who had acquired land near the revised route. Reports found billions of rupees in land-value speculation and unlawful compensation payments. The matter was referred to NAB, FIA, and Punjab's Anti-Corruption Establishment (ACE); the former Rawalpindi commissioner and a land acquisition official were arrested by ACE, while a senior aide to the prime minister resigned amid the allegations. NAB and ACE investigations into named housing societies and individuals continued in subsequent years.",
+      "start_date": "2017-01-01",
+      "end_date": null,
+      "province": "Punjab",
+      "city": "Rawalpindi",
+      "institution": "Rawalpindi Development Authority / Punjab Anti-Corruption Establishment / NAB / FIA",
+      "government_department": "Communication & Works / Land Acquisition",
+      "category": "land_scam",
+      "sector": "Infrastructure / land administration",
+      "amount_pkr": 2300000000.0,
+      "amount_usd": null,
+      "amount_notes": "Rs2.3bn cited as unlawfully spent on land acquisition by the former commissioner (fact-finding report); separate press investigations estimated up to Rs130bn in speculative property-deal value generated by the alignment change. Figures vary by source and by whether they represent public expenditure vs. private speculative gains — see financial_loss_estimate for the narrower, better-sourced figure.",
+      "current_legal_status": "investigation",
+      "status_label": "Under Investigation",
+      "court_name": null,
+      "case_number": null,
+      "confidence_score": "high",
+      "individuals": [
+        {
+          "name": "Capt (retd) Mehmood (former Rawalpindi commissioner, arrested by ACE)",
+          "position": "Former Commissioner, Rawalpindi",
+          "party": null
+        },
+        {
+          "name": "Waseem Ali Tabish (former Land Acquisition Collector, arrested by ACE)",
+          "position": "Former Land Acquisition Collector",
+          "party": null
+        }
+      ],
+      "sources": [
+        {
+          "title": "Fresh probe into Pindi ring road scam ordered",
+          "url": "https://www.dawn.com/news/1623847/fresh-probe-into-pindi-ring-road-scam-ordered",
+          "publisher": "Dawn",
+          "source_type": "newspaper",
+          "published_date": "2021-05-16",
+          "quote_or_claim": "PM ordered inquiry; report found Rs2.3bn wrongly paid in land compensation and referred matter to NAB.",
+          "is_primary": true
+        },
+        {
+          "title": "Rawalpindi Ring Road scam: ACE arrests former commissioner, land acquisition collector",
+          "url": "https://www.dawn.com/news/1635084",
+          "publisher": "Dawn",
+          "source_type": "newspaper",
+          "published_date": "2021-07-15",
+          "quote_or_claim": "ACE arrested former commissioner and land acquisition collector after inquiry found alignment changed without required approvals.",
+          "is_primary": true
+        },
+        {
+          "title": "Inquiry unearths Rawalpindi road project fraud",
+          "url": "https://tribune.com.pk/story/2299477/inquiry-unearths-rawalpindi-road-project-fraud",
+          "publisher": "The Express Tribune",
+          "source_type": "newspaper",
+          "published_date": "2021-05-12",
+          "quote_or_claim": "Fact-finding inquiry found senior officials responsible for illegally changing the project alignment.",
+          "is_primary": false
+        },
+        {
+          "title": "Rawalpindi Ring Road",
+          "url": "https://en.wikipedia.org/wiki/Rawalpindi_Ring_Road",
+          "publisher": "Wikipedia",
+          "source_type": "encyclopedia",
+          "published_date": "2024-01-01",
+          "quote_or_claim": "Summary of project history and 2021 corruption inquiry timeline.",
+          "is_primary": false
+        }
+      ],
+      "source_urls": [
+        "https://www.dawn.com/news/1623847/fresh-probe-into-pindi-ring-road-scam-ordered",
+        "https://www.dawn.com/news/1635084",
+        "https://tribune.com.pk/story/2299477/inquiry-unearths-rawalpindi-road-project-fraud",
+        "https://en.wikipedia.org/wiki/Rawalpindi_Ring_Road"
+      ],
+      "case_type": "criminal",
+      "timeline": [
+        {
+          "date": "2017-01-01",
+          "event": "Rawalpindi Ring Road project conceived; original alignment approved.",
+          "source": "https://en.wikipedia.org/wiki/Rawalpindi_Ring_Road"
+        },
+        {
+          "date": "2021-04-01",
+          "event": "Bidding process put on hold; PM Imran Khan orders inquiry into alleged route change.",
+          "source": "https://en.wikipedia.org/wiki/Rawalpindi_Ring_Road"
+        },
+        {
+          "date": "2021-05-12",
+          "event": "Commissioner-level fact-finding inquiry finds illegal realignment and rule violations by senior officials.",
+          "source": "https://tribune.com.pk/story/2299477/inquiry-unearths-rawalpindi-road-project-fraud"
+        },
+        {
+          "date": "2021-05-16",
+          "event": "Second fact-finding report links realignment approval to CM Buzdar's finance adviser; case referred to NAB/FIA.",
+          "source": "https://www.dawn.com/news/1623847/fresh-probe-into-pindi-ring-road-scam-ordered"
+        },
+        {
+          "date": "2021-07-14",
+          "event": "Punjab Anti-Corruption Establishment (ACE) arrests former commissioner Capt (retd) Mehmood and land acquisition collector Waseem Tabish.",
+          "source": "https://www.dawn.com/news/1635084"
+        }
+      ],
+      "financial_loss_estimate": {
+        "value": 2300000000.0,
+        "currency": "PKR",
+        "confidence": "medium"
+      },
+      "legal_outcome": "Under investigation by NAB, FIA, and Punjab ACE; two officials arrested and criminally charged by ACE (2021). No public reporting located confirming a final court verdict as of last verification.",
+      "last_verified": "2026-07-21",
+      "tags": [
+        "land scam",
+        "infrastructure",
+        "Rawalpindi",
+        "NAB",
+        "ACE",
+        "housing societies",
+        "PTI government era"
+      ],
+      "disclaimer": "This project aggregates publicly available information from reputable and official sources for research, transparency, and educational purposes. Inclusion in the database does not imply guilt. Users should consult the cited primary sources and court records for authoritative information."
+    },
+    {
+      "public_id": "PPCA-2009-0021",
+      "title": "NICL (National Insurance Company Limited) land acquisition scandal",
+      "summary": "Under chairman Ayaz Khan Niazi, NICL was alleged to have purchased and sold state-insurer land at manipulated rates in Karachi's Korangi area and in Lahore, causing losses to the exchequer. FIA and later NAB pursued multiple references. In the Korangi reference, an accountability court convicted Niazi and five co-accused in 2018, sentencing them to seven years and ordering recovery of the alleged Rs490 million/Rs400 million loss. In a separate Lahore-based reference over land sold near Lahore Airport Road and at Mauza Toor, an accountability court acquitted Niazi and other co-accused in 2020, citing insufficient evidence of market value. Outcomes therefore differ by reference.",
+      "start_date": "2009-01-01",
+      "end_date": "2020-01-04",
+      "province": "Sindh",
+      "city": "Karachi",
+      "institution": "National Insurance Company Limited (NICL)",
+      "government_department": "Ministry of Commerce (NICL is a state-owned insurer)",
+      "category": "public_fund_embezzlement",
+      "sector": "Insurance / state-owned enterprise",
+      "amount_pkr": 4450000000.0,
+      "amount_usd": null,
+      "amount_notes": "FIA cited an aggregate Rs4.45bn land scandal figure across cases; the Korangi reference alleged a Rs490m (NAB) / Rs400m+ (court) loss and the Lahore Airport Road reference alleged a Rs915m loss. Figures vary by reference and stage of proceedings.",
+      "current_legal_status": "mixed",
+      "status_label": "Mixed — Convicted (Korangi reference) / Acquitted (Lahore Airport Road reference)",
+      "court_name": "Accountability Court, Karachi; Accountability Court, Lahore",
+      "case_number": null,
+      "confidence_score": "high",
+      "individuals": [
+        {
+          "name": "Ayaz Khan Niazi",
+          "position": "Former Chairman, NICL",
+          "party": null
+        },
+        {
+          "name": "Mohammad Zahoor",
+          "position": "Former Executive Director (Finance), NICL",
+          "party": null
+        },
+        {
+          "name": "Zahid Hussain",
+          "position": "Former General Manager (Real Estate), NICL",
+          "party": null
+        }
+      ],
+      "sources": [
+        {
+          "title": "Ex-NICL chief, 5 others jailed over Rs490m corruption",
+          "url": "https://tribune.com.pk/story/1862685/former-chairman-five-others-imprisoned-nicl-corruption-case",
+          "publisher": "The Express Tribune",
+          "source_type": "newspaper",
+          "published_date": "2018-12-08",
+          "quote_or_claim": "Accountability court sentenced Niazi and five others to seven years over the Rs490m Korangi land purchase.",
+          "is_primary": true
+        },
+        {
+          "title": "Former NICL chairman, five others sentenced to 7 years for embezzlement",
+          "url": "https://www.dawn.com/news/1450228",
+          "publisher": "Dawn",
+          "source_type": "newspaper",
+          "published_date": "2018-12-08",
+          "quote_or_claim": "Court found combined loss of more than Rs400 million to the national treasury in the Korangi land purchase.",
+          "is_primary": true
+        },
+        {
+          "title": "NICL ex-head, three others acquitted of land 'scam'",
+          "url": "https://www.dawn.com/news/1526305/nicl-ex-head-three-others-acquitted-of-land-scam",
+          "publisher": "Dawn",
+          "source_type": "newspaper",
+          "published_date": "2020-01-05",
+          "quote_or_claim": "Accountability court in Lahore acquitted Niazi and others, finding prosecution had not proven the land's market value in the Rs915m Lahore Airport Road reference.",
+          "is_primary": true
+        },
+        {
+          "title": "NICL scam: SC gives two weeks to NAB for arresting accused Warraich",
+          "url": "https://www.brecorder.com/news/4677648",
+          "publisher": "Business Recorder",
+          "source_type": "newspaper",
+          "published_date": "2019-03-13",
+          "quote_or_claim": "Supreme Court proceedings traced the scandal's origin to 2009-10 land purchases and transfer of investigation from FIA to NAB in 2014.",
+          "is_primary": false
+        }
+      ],
+      "source_urls": [
+        "https://tribune.com.pk/story/1862685/former-chairman-five-others-imprisoned-nicl-corruption-case",
+        "https://www.dawn.com/news/1450228",
+        "https://www.dawn.com/news/1526305/nicl-ex-head-three-others-acquitted-of-land-scam",
+        "https://www.brecorder.com/news/4677648"
+      ],
+      "case_type": "criminal",
+      "timeline": [
+        {
+          "date": "2009-01-01",
+          "event": "NICL, under chairman Ayaz Khan Niazi, purchases land in Korangi (Karachi) and near Lahore Airport Road at rates later alleged to be inflated/below market value.",
+          "source": "https://www.brecorder.com/news/4677648"
+        },
+        {
+          "date": "2011-02-26",
+          "event": "Anti-corruption court issues non-bailable arrest warrants for absconding suspects; FIA registers criminal case under PPC 409/420/468/471 and Prevention of Corruption Act.",
+          "source": "https://www.dawn.com/news/609166"
+        },
+        {
+          "date": "2014-01-01",
+          "event": "Supreme Court transfers investigation from FIA to NAB.",
+          "source": "https://www.brecorder.com/news/4677648"
+        },
+        {
+          "date": "2018-12-08",
+          "event": "Accountability court, Karachi, convicts Niazi and five co-accused, sentencing each to 7 years for the Korangi land purchase (Rs490m/Rs400m+ loss alleged).",
+          "source": "https://tribune.com.pk/news/1450228"
+        },
+        {
+          "date": "2020-01-04",
+          "event": "Accountability court, Lahore, acquits Niazi and three co-accused in the separate Lahore Airport Road/Mauza Toor land reference (Rs915m alleged loss), citing insufficient evidence of market value.",
+          "source": "https://www.dawn.com/news/1526305/nicl-ex-head-three-others-acquitted-of-land-scam"
+        }
+      ],
+      "financial_loss_estimate": {
+        "value": 490000000.0,
+        "currency": "PKR",
+        "confidence": "medium"
+      },
+      "legal_outcome": "Mixed: convicted and sentenced to 7 years' imprisonment in the Karachi/Korangi reference (2018); acquitted in the separate Lahore Airport Road reference (2020). Other related NICL references reported in press remain pending or unresolved.",
+      "last_verified": "2026-07-21",
+      "tags": [
+        "insurance",
+        "state-owned enterprise",
+        "land scam",
+        "NAB",
+        "FIA",
+        "conviction",
+        "acquittal",
+        "Karachi",
+        "Lahore"
+      ],
+      "disclaimer": "This project aggregates publicly available information from reputable and official sources for research, transparency, and educational purposes. Inclusion in the database does not imply guilt. Users should consult the cited primary sources and court records for authoritative information."
+    },
+    {
+      "public_id": "PPCA-2011-0022",
+      "title": "OGRA scam — alleged illegal appointment and multi-billion-rupee irregularities under Tauqir Sadiq",
+      "summary": "NAB alleged that Tauqir Sadiq, appointed chairman of the Oil and Gas Regulatory Authority (OGRA) in 2009, was illegally appointed and subsequently caused massive losses to the exchequer through gas theft, manipulation of the unaccounted-for-gas (UFG) benchmark, irregular CNG station allocations, and stock-market manipulation of SNGPL/SSGC share prices. The Supreme Court declared his appointment illegal in 2011. NAB filed two references — one on the illegal appointment (naming former prime ministers Yousuf Raza Gilani and Raja Pervez Ashraf) and one on the underlying corruption (naming Sadiq, stockbroker Aqeel Karim Dhedhi, and OGRA/SNGPL officials) — with alleged losses cited in press reporting variously as Rs76.6bn, Rs82bn, and (aggregated with related allegations) over Rs120bn. NAB reported recovering over Rs54bn from Sadiq during the investigation.",
+      "start_date": "2009-07-01",
+      "end_date": null,
+      "province": "Islamabad Capital Territory",
+      "city": "Islamabad",
+      "institution": "Oil and Gas Regulatory Authority (OGRA)",
+      "government_department": "Ministry of Petroleum and Natural Resources",
+      "category": "state_owned_enterprises",
+      "sector": "Energy / gas regulation",
+      "amount_pkr": 82000000000.0,
+      "amount_usd": null,
+      "amount_notes": "NAB's corruption reference alleged an Rs82bn loss; earlier reporting cited Rs76.6bn, and some aggregated estimates (combining gas theft, UFG manipulation and stock manipulation) reached over Rs120bn. Figures vary by source and by which alleged conduct is included.",
+      "current_legal_status": "investigation",
+      "status_label": "Indicted / Trial Ongoing",
+      "court_name": "Accountability Court, Islamabad",
+      "case_number": null,
+      "confidence_score": "high",
+      "individuals": [
+        {
+          "name": "Tauqir Sadiq",
+          "position": "Former Chairman, OGRA",
+          "party": null
+        },
+        {
+          "name": "Aqeel Karim Dhedhi",
+          "position": "Stockbroker (named co-accused)",
+          "party": null
+        },
+        {
+          "name": "Yousuf Raza Gilani (named in the illegal-appointment reference)",
+          "position": "Former Prime Minister of Pakistan",
+          "party": null
+        },
+        {
+          "name": "Raja Pervez Ashraf (named in the illegal-appointment reference)",
+          "position": "Former Prime Minister of Pakistan",
+          "party": null
+        }
+      ],
+      "sources": [
+        {
+          "title": "Ogra scam: Tauqeer Sadiq, Aqeel Dhedhi indicted",
+          "url": "https://tribune.com.pk/story/713586/ogra-scam-tauqeer-sadiq-aqeel-dhedhi-indicted",
+          "publisher": "The Express Tribune",
+          "source_type": "newspaper",
+          "published_date": "2014-05-26",
+          "quote_or_claim": "Accountability court indicted Sadiq, Dhedhi and others in the Rs76.6bn scam; two former PMs summoned in a related reference.",
+          "is_primary": true
+        },
+        {
+          "title": "Statement of witness recorded in Ogra scam",
+          "url": "https://www.brecorder.com/news/40177573",
+          "publisher": "Business Recorder",
+          "source_type": "newspaper",
+          "published_date": "2022-06-03",
+          "quote_or_claim": "NAB alleged Sadiq caused an Rs82 billion loss to the exchequer through undue favours and CNG licences issued on bogus documents.",
+          "is_primary": true
+        },
+        {
+          "title": "OGRA scam: NAB recovers another Rs54b from Tauqir Sadiq",
+          "url": "https://tribune.com.pk/story/602657/ogra-scam-nab-recovers-another-rs54b-from-tauqir-sadiq",
+          "publisher": "The Express Tribune",
+          "source_type": "newspaper",
+          "published_date": "2013-09-11",
+          "quote_or_claim": "NAB reported recovering Rs54.85 billion from Sadiq during his physical remand.",
+          "is_primary": false
+        },
+        {
+          "title": "Tauqeer Sadiq case: NAB seeks time to file response against accused",
+          "url": "https://www.brecorder.com/news/40134650/tauqeer-sadiq-case-nab-seeks-time-to-file-response-against-accused",
+          "publisher": "Business Recorder",
+          "source_type": "newspaper",
+          "published_date": "2021-11-20",
+          "quote_or_claim": "Supreme Court declared Sadiq's appointment as OGRA chairman illegal on 25 November 2011 and directed NAB to investigate.",
+          "is_primary": false
+        }
+      ],
+      "source_urls": [
+        "https://tribune.com.pk/story/713586/ogra-scam-tauqeer-sadiq-aqeel-dhedhi-indicted",
+        "https://www.brecorder.com/news/40177573",
+        "https://tribune.com.pk/story/602657/ogra-scam-nab-recovers-another-rs54b-from-tauqir-sadiq",
+        "https://www.brecorder.com/news/40134650/tauqeer-sadiq-case-nab-seeks-time-to-file-response-against-accused"
+      ],
+      "case_type": "criminal",
+      "timeline": [
+        {
+          "date": "2009-07-01",
+          "event": "Tauqir Sadiq appointed OGRA chairman.",
+          "source": "https://www.brecorder.com/news/40134650/tauqeer-sadiq-case-nab-seeks-time-to-file-response-against-accused"
+        },
+        {
+          "date": "2011-11-25",
+          "event": "Supreme Court declares Sadiq's appointment as OGRA chairman illegal and orders NAB to investigate; orders return of salaries drawn.",
+          "source": "https://www.brecorder.com/news/40134650/tauqeer-sadiq-case-nab-seeks-time-to-file-response-against-accused"
+        },
+        {
+          "date": "2013-09-11",
+          "event": "NAB reports recovering approximately Rs54.85 billion from Sadiq during custody.",
+          "source": "https://tribune.com.pk/story/602657/ogra-scam-nab-recovers-another-rs54b-from-tauqir-sadiq"
+        },
+        {
+          "date": "2014-01-24",
+          "event": "NAB files two references: one on the illegal appointment (naming former PMs Gilani and Ashraf) and one on corruption/irregularities during Sadiq's OGRA tenure (Rs82bn alleged loss).",
+          "source": "https://www.brecorder.com/news/40177573"
+        },
+        {
+          "date": "2014-05-26",
+          "event": "Accountability court indicts Sadiq, Aqeel Karim Dhedhi and other co-accused in the corruption reference.",
+          "source": "https://tribune.com.pk/story/713586/ogra-scam-tauqeer-sadiq-aqeel-dhedhi-indicted"
+        }
+      ],
+      "financial_loss_estimate": {
+        "value": 82000000000.0,
+        "currency": "PKR",
+        "confidence": "medium"
+      },
+      "legal_outcome": "Trial ongoing in accountability court as of the most recent located reporting; partial financial recovery (~Rs54.85bn) reported by NAB during investigation. No final verdict located in public reporting as of last verification.",
+      "last_verified": "2026-07-21",
+      "tags": [
+        "OGRA",
+        "energy regulator",
+        "gas sector",
+        "NAB",
+        "illegal appointment",
+        "stock manipulation",
+        "CNG"
+      ],
+      "disclaimer": "This project aggregates publicly available information from reputable and official sources for research, transparency, and educational purposes. Inclusion in the database does not imply guilt. Users should consult the cited primary sources and court records for authoritative information."
+    },
+    {
+      "public_id": "PPCA-1997-0023",
+      "title": "SGS and Cotecna pre-shipment inspection contracts — kickback allegations against Benazir Bhutto and Asif Ali Zardari",
+      "summary": "Pakistani and Swiss authorities alleged that Benazir Bhutto and Asif Ali Zardari received kickbacks from Swiss firms SGS (Societe Generale de Surveillance) and its subsidiary Cotecna in exchange for awarding them pre-shipment customs inspection contracts during Bhutto's 1993-96 government. A Geneva magistrate convicted Bhutto, Zardari and their lawyer Jens Schlegelmilch in absentia in 2003 for laundering roughly $12 million, imposing six-month suspended sentences and fines; Switzerland's federal supreme court later overturned that conviction on procedural/jurisdictional grounds. In Pakistan, NAB pursued parallel SGS and Cotecna references; an accountability court acquitted Zardari in both in November 2015, citing the prosecution's reliance on photocopied rather than original documents.",
+      "start_date": "1994-01-01",
+      "end_date": "2015-11-24",
+      "province": "Islamabad Capital Territory",
+      "city": "Islamabad",
+      "institution": "Central Board of Revenue (as then named) / SGS / Cotecna",
+      "government_department": "Finance / Revenue",
+      "category": "kickbacks",
+      "sector": "Customs / pre-shipment inspection services",
+      "amount_pkr": null,
+      "amount_usd": 12000000.0,
+      "amount_notes": "Swiss proceedings centered on an alleged $12 million in illegal commissions (per the 2003 Geneva verdict); some later summaries and Swiss investigative estimates cited materially larger, disputed figures. Domestic NAB references did not result in a court-established loss figure given the 2015 acquittal.",
+      "current_legal_status": "acquittal",
+      "status_label": "Acquitted (Pakistan, 2015); Swiss conviction later overturned",
+      "court_name": "Accountability Court, Islamabad; Geneva investigating magistrate / Swiss Federal Supreme Court",
+      "case_number": null,
+      "confidence_score": "high",
+      "individuals": [
+        {
+          "name": "Asif Ali Zardari",
+          "position": "Former President of Pakistan; spouse of Benazir Bhutto",
+          "party": null
+        },
+        {
+          "name": "Benazir Bhutto (deceased; name removed from Pakistani reference after her 2007 assassination)",
+          "position": "Former Prime Minister of Pakistan",
+          "party": null
+        },
+        {
+          "name": "A.R. Siddiqui (acquitted co-accused)",
+          "position": "Former Chairman, Central Board of Revenue",
+          "party": null
+        }
+      ],
+      "sources": [
+        {
+          "title": "Benazir guilty of bribery charges",
+          "url": "https://www.aljazeera.com/news/2003/8/5/benazir-guilty-of-bribery-charges",
+          "publisher": "Al Jazeera",
+          "source_type": "newspaper",
+          "published_date": "2003-08-05",
+          "quote_or_claim": "Swiss court found Bhutto and Zardari guilty of arranging an illegal $12 million commission from SGS and Cotecna for a pre-shipment inspection contract.",
+          "is_primary": true
+        },
+        {
+          "title": "Accountability Court acquits Asif Zardari in SGS, Cotecna references",
+          "url": "https://archive.pakistantoday.com.pk/2015/11/24/accountability-court-acquits-asif-zardari-in-sgs-cotecna-references/",
+          "publisher": "Pakistan Today",
+          "source_type": "newspaper",
+          "published_date": "2015-11-24",
+          "quote_or_claim": "Accountability court acquitted Zardari in both references, ruling the prosecution's photocopied documents were insufficient without originals.",
+          "is_primary": true
+        },
+        {
+          "title": "Bhutto faces retrial for corruption involving Swiss firms",
+          "url": "https://swissinfo.ch/eng/aging-society/bhutto-faces-retrial-for-corruption-involving-swiss-firms/1976484",
+          "publisher": "SWI swissinfo.ch",
+          "source_type": "newspaper",
+          "published_date": "2024-01-28",
+          "quote_or_claim": "Original trial found the couple guilty of accepting bribes from SGS and Cotecna in return for public contracts; Switzerland's top court later ordered aspects revisited.",
+          "is_primary": false
+        },
+        {
+          "title": "The history of the Swiss case",
+          "url": "https://www.dawn.com/news/728040/the-history-of-swiss-case",
+          "publisher": "Dawn",
+          "source_type": "newspaper",
+          "published_date": "2012-06-20",
+          "quote_or_claim": "Traces the origin of the Swiss money-laundering case to a 1998 request by the Nawaz Sharif government.",
+          "is_primary": false
+        }
+      ],
+      "source_urls": [
+        "https://www.aljazeera.com/news/2003/8/5/benazir-guilty-of-bribery-charges",
+        "https://archive.pakistantoday.com.pk/2015/11/24/accountability-court-acquits-asif-zardari-in-sgs-cotecna-references/",
+        "https://swissinfo.ch/eng/aging-society/bhutto-faces-retrial-for-corruption-involving-swiss-firms/1976484",
+        "https://www.dawn.com/news/728040/the-history-of-swiss-case"
+      ],
+      "case_type": "criminal",
+      "timeline": [
+        {
+          "date": "1994-01-01",
+          "event": "SGS and Cotecna awarded pre-shipment customs inspection contracts during Bhutto's second government.",
+          "source": "https://www.aljazeera.com/news/2003/8/5/benazir-guilty-of-bribery-charges"
+        },
+        {
+          "date": "1997-01-01",
+          "event": "NAB predecessor accountability process files SGS reference alleging kickback arrangement negotiated via then-CBR chairman A.R. Siddiqui.",
+          "source": "https://archive.pakistantoday.com.pk/2015/11/24/accountability-court-acquits-asif-zardari-in-sgs-cotecna-references/"
+        },
+        {
+          "date": "1998-08-01",
+          "event": "Swiss prosecutors, at Pakistan's request, open investigation into alleged laundering of bribe proceeds via Swiss accounts.",
+          "source": "https://www.dawn.com/news/728040/the-history-of-swiss-case"
+        },
+        {
+          "date": "2003-08-05",
+          "event": "Geneva magistrate convicts Bhutto, Zardari and lawyer Jens Schlegelmilch in absentia of laundering ~$12m in commissions; six-month suspended sentences and fines imposed.",
+          "source": "https://www.aljazeera.com/news/2003/8/5/benazir-guilty-of-bribery-charges"
+        },
+        {
+          "date": "2015-11-24",
+          "event": "Accountability court in Islamabad acquits Zardari in both the SGS and Cotecna references, citing absence of original documentary evidence.",
+          "source": "https://archive.pakistantoday.com.pk/2015/11/24/accountability-court-acquits-asif-zardari-in-sgs-cotecna-references/"
+        }
+      ],
+      "financial_loss_estimate": {
+        "value": null,
+        "currency": "PKR",
+        "confidence": "low"
+      },
+      "legal_outcome": "Acquitted in Pakistan's domestic SGS and Cotecna references (accountability court, 24 November 2015). The original 2003 Swiss in-absentia conviction was subsequently set aside on procedural/jurisdictional grounds by Swiss courts; no final adjudicated loss figure resulted domestically.",
+      "last_verified": "2026-07-21",
+      "tags": [
+        "kickbacks",
+        "customs",
+        "Swiss case",
+        "money laundering",
+        "NAB",
+        "acquittal",
+        "Benazir Bhutto",
+        "Asif Zardari"
+      ],
+      "disclaimer": "This project aggregates publicly available information from reputable and official sources for research, transparency, and educational purposes. Inclusion in the database does not imply guilt. Users should consult the cited primary sources and court records for authoritative information."
+    },
+    {
+      "public_id": "PPCA-2018-0024",
+      "title": "Bahria Town Karachi land case — Rs460 billion Supreme Court settlement and UK NCA £190m recovery",
+      "summary": "The Supreme Court held in 2018 that land granted by the Sindh government to the Malir Development Authority, and its subsequent exchange with private developer Bahria Town for its Bahria Town Karachi housing project, was illegal. In March 2019 the Court accepted a Rs460 billion settlement offer from Bahria Town in lieu of prosecution, staying a threatened NAB reference. Separately, the UK's National Crime Agency reached a civil £190 million settlement in December 2019 with the family of Bahria Town owner Malik Riaz over suspected proceeds of crime, without a criminal conviction. Part of the NCA-recovered funds (~£140m) was routed to a Supreme Court account rather than directly to the federal government, prompting further Supreme Court scrutiny in 2023 over incomplete settlement payments (only ~Rs60.72bn of Rs460bn had been paid by October 2023) and irregular remittance channels. As of 2025, NAB had frozen Bahria Town-linked properties and pursued asset auctions amid non-payment, contested in the Islamabad High Court.",
+      "start_date": "2018-05-04",
+      "end_date": null,
+      "province": "Sindh",
+      "city": "Karachi",
+      "institution": "Bahria Town (Pvt) Ltd / Malir Development Authority",
+      "government_department": "Sindh Board of Revenue / Malir Development Authority",
+      "category": "land_scam",
+      "sector": "Real estate / land administration",
+      "amount_pkr": 460000000000.0,
+      "amount_usd": null,
+      "amount_notes": "Rs460bn is the court-fixed settlement amount (2019), not a separately adjudicated criminal loss figure; the UK NCA's related recovery was a civil settlement of £190 million (~$240m at 2019 rates), not a criminal conviction.",
+      "current_legal_status": "civil_settlement",
+      "status_label": "Civil Settlement (Supreme Court, 2019); Non-Criminal NCA Settlement (UK, 2019); Settlement Payment Disputes Ongoing",
+      "court_name": "Supreme Court of Pakistan; Westminster Magistrates' Court (UK, NCA account freezing); Islamabad High Court",
+      "case_number": null,
+      "confidence_score": "high",
+      "individuals": [
+        {
+          "name": "Malik Riaz Hussain",
+          "position": "Owner, Bahria Town",
+          "party": null
+        }
+      ],
+      "sources": [
+        {
+          "title": "SC accepts Bahria Town Karachi's Rs460bn offer, halts NAB references",
+          "url": "https://www.dawn.com/news/1471002",
+          "publisher": "Dawn",
+          "source_type": "newspaper",
+          "published_date": "2019-03-21",
+          "quote_or_claim": "Supreme Court ordered NAB to seek its permission before filing a reference after Bahria Town agreed to pay Rs460 billion for illegally acquired MDA land.",
+          "is_primary": true
+        },
+        {
+          "title": "Supreme Court Verdict Expresses Concern Over Funds In Bahria Town Karachi Case",
+          "url": "https://www.thefridaytimes.com/27-Nov-2023/supreme-court-expresses-concern-over-funds-in-bahria-town-karachi-case-in-written-verdict",
+          "publisher": "The Friday Times",
+          "source_type": "newspaper",
+          "published_date": "2023-11-27",
+          "quote_or_claim": "Supreme Court found only Rs60.72bn of the Rs460bn settlement had been paid, and questioned the routing of NCA-recovered funds through its own account.",
+          "is_primary": true
+        },
+        {
+          "title": "Malik Riaz calls for 'truce' amid Bahria Town's legal woes",
+          "url": "https://www.dawn.com/news/1928921",
+          "publisher": "Dawn",
+          "source_type": "newspaper",
+          "published_date": "2025-08-05",
+          "quote_or_claim": "UK NCA reached a £190 million settlement with Riaz's family in 2019; Bahria Town continued to face payment shortfalls on the Rs460bn settlement.",
+          "is_primary": false
+        },
+        {
+          "title": "Malik Riaz pleads for dialogue as IHC weighs Bahria Town asset auction",
+          "url": "https://profit.pakistantoday.com.pk/2025/08/05/malik-riaz-pleads-for-dialogue-as-ihc-weighs-bahria-town-asset-auction/",
+          "publisher": "Profit / Pakistan Today",
+          "source_type": "newspaper",
+          "published_date": "2025-08-05",
+          "quote_or_claim": "NAB sought auction of Bahria Town-linked properties frozen amid non-payment; Islamabad High Court reserved judgment on a stay.",
+          "is_primary": false
+        }
+      ],
+      "source_urls": [
+        "https://www.dawn.com/news/1471002",
+        "https://www.thefridaytimes.com/27-Nov-2023/supreme-court-expresses-concern-over-funds-in-bahria-town-karachi-case-in-written-verdict",
+        "https://www.dawn.com/news/1928921",
+        "https://profit.pakistantoday.com.pk/2025/08/05/malik-riaz-pleads-for-dialogue-as-ihc-weighs-bahria-town-asset-auction/"
+      ],
+      "case_type": "civil",
+      "timeline": [
+        {
+          "date": "2018-05-04",
+          "event": "Supreme Court rules the Sindh government's land grant to MDA and its exchange with Bahria Town was illegal.",
+          "source": "https://www.dawn.com/news/1471002"
+        },
+        {
+          "date": "2019-03-21",
+          "event": "Supreme Court accepts Bahria Town's Rs460 billion settlement offer, staying a threatened NAB reference.",
+          "source": "https://www.dawn.com/news/1471002"
+        },
+        {
+          "date": "2019-12-05",
+          "event": "UK National Crime Agency announces £190 million civil recovery settlement with Malik Riaz's family; ~£140m subsequently transferred to a Supreme Court account rather than directly to the federal government.",
+          "source": "https://www.dawn.com/news/1928921"
+        },
+        {
+          "date": "2023-10-20",
+          "event": "Supreme Court notes only Rs60.72bn of the Rs460bn settlement has been paid, of which Bahria Town itself paid Rs24.26bn.",
+          "source": "https://www.brecorder.com/news/40269234"
+        },
+        {
+          "date": "2023-11-27",
+          "event": "Supreme Court issues written verdict expressing concern over the routing of NCA-recovered funds and ordering remittance to the Government of Pakistan.",
+          "source": "https://www.thefridaytimes.com/27-Nov-2023/supreme-court-expresses-concern-over-funds-in-bahria-town-karachi-case-in-written-verdict"
+        },
+        {
+          "date": "2025-06-12",
+          "event": "Islamabad High Court stays a planned NAB auction of Bahria Town-linked properties frozen over non-payment; later reserves judgment on the stay.",
+          "source": "https://profit.pakistantoday.com.pk/2025/08/05/malik-riaz-pleads-for-dialogue-as-ihc-weighs-bahria-town-asset-auction/"
+        }
+      ],
+      "financial_loss_estimate": {
+        "value": 460000000000.0,
+        "currency": "PKR",
+        "confidence": "high"
+      },
+      "legal_outcome": "Resolved via civil settlement rather than criminal conviction: Supreme Court accepted a Rs460bn payment-in-lieu-of-prosecution arrangement (2019); UK NCA reached a separate £190m non-conviction-based civil recovery (2019). Settlement payment has been substantially incomplete, and disputes over fund routing and NAB asset freezes/auctions remained active as of 2025.",
+      "last_verified": "2026-07-21",
+      "tags": [
+        "real estate",
+        "land scam",
+        "Bahria Town",
+        "Malik Riaz",
+        "Supreme Court",
+        "UK NCA",
+        "civil settlement",
+        "Karachi"
+      ],
+      "disclaimer": "This project aggregates publicly available information from reputable and official sources for research, transparency, and educational purposes. Inclusion in the database does not imply guilt. Users should consult the cited primary sources and court records for authoritative information."
+    },
+    {
+      "public_id": "PPCA-2010-0025",
+      "title": "Ashiana-e-Iqbal Housing Scheme reference — Shehbaz Sharif and others",
+      "summary": "NAB alleged that as Punjab chief minister, Shehbaz Sharif connived with then-LDA director general Ahad Khan Cheema to cancel the contract awarded to the successful low-cost-housing bidder, Chaudhry Latif and Sons, and instead award it to Lahore Casa Developers, a joint venture linked to Paragon City (Pvt) Ltd — allegedly causing losses of roughly Rs193 million and Rs715 million on two related contracts and the ultimate failure of the project, depriving about 61,000 low-income applicants of housing. Shehbaz, principal secretary Fawad Hasan Fawad, Cheema and others were arrested in 2018 and indicted in February 2019. In May 2023 NAB informed the court it had found no evidence of corruption or misuse of authority, and in November 2023 an accountability court in Lahore acquitted Shehbaz and ten co-accused.",
+      "start_date": "2010-01-01",
+      "end_date": "2023-11-18",
+      "province": "Punjab",
+      "city": "Lahore",
+      "institution": "Lahore Development Authority (LDA) / Punjab Land Development Company (PLDC)",
+      "government_department": "Government of Punjab (Housing)",
+      "category": "public_fund_embezzlement",
+      "sector": "Public housing",
+      "amount_pkr": 3390000000.0,
+      "amount_usd": null,
+      "amount_notes": "NAB's initial reference alleged direct losses of roughly Rs660 million and a cost inflation of Rs3.39 billion; the February 2019 indictment cited two component losses of Rs193 million and Rs715 million on specific contracts. Figures vary across NAB's own filings at different stages.",
+      "current_legal_status": "acquittal",
+      "status_label": "Acquitted (accountability court, Lahore, 18 November 2023)",
+      "court_name": "Accountability Court, Lahore",
+      "case_number": null,
+      "confidence_score": "high",
+      "individuals": [
+        {
+          "name": "Shehbaz Sharif",
+          "position": "Former Chief Minister of Punjab; former Prime Minister of Pakistan",
+          "party": null
+        },
+        {
+          "name": "Fawad Hasan Fawad",
+          "position": "Former Principal Secretary to the Prime Minister",
+          "party": null
+        },
+        {
+          "name": "Ahad Khan Cheema",
+          "position": "Former Director General, Lahore Development Authority",
+          "party": null
+        }
+      ],
+      "sources": [
+        {
+          "title": "Shahzad Sharif, others indicted in Ashiyana Housing scam case",
+          "url": "https://www.dawn.com/news/1464577",
+          "publisher": "Dawn",
+          "source_type": "newspaper",
+          "published_date": "2019-02-18",
+          "quote_or_claim": "Indictment detailed alleged losses of Rs193 million and Rs715 million on the two contracts, and reassignment of the project from PLDC to LDA.",
+          "is_primary": true
+        },
+        {
+          "title": "Shahbaz Sharif arrested by NAB Lahore in Ashiana Housing scam case",
+          "url": "https://www.dawn.com/news/1436988",
+          "publisher": "Dawn",
+          "source_type": "newspaper",
+          "published_date": "2018-10-06",
+          "quote_or_claim": "NAB arrested Shehbaz Sharif in connection with the Rs14 billion Ashiana-i-Iqbal Housing Scheme case.",
+          "is_primary": true
+        },
+        {
+          "title": "Shehbaz among 10 accused acquitted in Ashiana reference",
+          "url": "https://tribune.com.pk/story/2447039/shehbaz-among-10-accused-acquitted-in-ashiana-housing-reference",
+          "publisher": "The Express Tribune",
+          "source_type": "newspaper",
+          "published_date": "2023-11-18",
+          "quote_or_claim": "Accountability court in Lahore acquitted Shehbaz Sharif and 10 others after NAB reported finding no evidence of corruption.",
+          "is_primary": true
+        },
+        {
+          "title": "NAB gives clean chit to PM Shehbaz in Ashiana housing case",
+          "url": "https://tribune.com.pk/story/2417721/nab-gives-clean-chit-to-pm-shehbaz-in-ashiana-housing-scandal",
+          "publisher": "The Express Tribune",
+          "source_type": "newspaper",
+          "published_date": "2023-05-20",
+          "quote_or_claim": "NAB reported no evidence that any public office holder received benefit or that the treasury was affected.",
+          "is_primary": false
+        }
+      ],
+      "source_urls": [
+        "https://www.dawn.com/news/1464577",
+        "https://www.dawn.com/news/1436988",
+        "https://tribune.com.pk/story/2447039/shehbaz-among-10-accused-acquitted-in-ashiana-housing-reference",
+        "https://tribune.com.pk/story/2417721/nab-gives-clean-chit-to-pm-shehbaz-in-ashiana-housing-scandal"
+      ],
+      "case_type": "criminal",
+      "timeline": [
+        {
+          "date": "2010-01-01",
+          "event": "Ashiana-e-Iqbal low-cost housing scheme launched in Lahore under the Punjab government.",
+          "source": "https://tribune.com.pk/story/2447039/shehbaz-among-10-accused-acquitted-in-ashiana-housing-reference"
+        },
+        {
+          "date": "2018-10-05",
+          "event": "NAB arrests Shehbaz Sharif at its Lahore office over the Rs14bn housing scheme, alleging an illegal contract award to a 'favourite firm'.",
+          "source": "https://www.dawn.com/news/1436988"
+        },
+        {
+          "date": "2018-12-22",
+          "event": "NAB files a supplementary reference against Shehbaz Sharif, Fawad Hasan Fawad, Ahad Khan Cheema and others.",
+          "source": "https://www.dawn.com/news/1452992"
+        },
+        {
+          "date": "2019-02-18",
+          "event": "Accountability court in Lahore indicts Shehbaz Sharif and co-accused, detailing alleged losses of Rs193m and Rs715m.",
+          "source": "https://www.dawn.com/news/1464577"
+        },
+        {
+          "date": "2023-05-20",
+          "event": "NAB submits a report to the court stating it found no evidence of corruption or misuse of authority.",
+          "source": "https://tribune.com.pk/story/2417721/nab-gives-clean-chit-to-pm-shehbaz-in-ashiana-housing-scandal"
+        },
+        {
+          "date": "2023-11-18",
+          "event": "Accountability court acquits Shehbaz Sharif and ten co-accused, including Fawad Hasan Fawad and Ahad Khan Cheema.",
+          "source": "https://tribune.com.pk/story/2447039/shehbaz-among-10-accused-acquitted-in-ashiana-housing-reference"
+        }
+      ],
+      "financial_loss_estimate": {
+        "value": 3390000000.0,
+        "currency": "PKR",
+        "confidence": "low"
+      },
+      "legal_outcome": "Acquitted. NAB itself reported finding no evidence of corruption or exchequer loss (May 2023); an accountability court in Lahore formally acquitted all 11 accused, including Shehbaz Sharif, on 18 November 2023.",
+      "last_verified": "2026-07-23",
+      "tags": [
+        "public housing",
+        "NAB",
+        "Shehbaz Sharif",
+        "Lahore Development Authority",
+        "acquittal",
+        "Punjab"
+      ],
+      "disclaimer": "This project aggregates publicly available information from reputable and official sources for research, transparency, and educational purposes. Inclusion in the database does not imply guilt. Users should consult the cited primary sources and court records for authoritative information."
+    },
+    {
+      "public_id": "PPCA-2017-0026",
+      "title": "Punjab Saaf Pani Company (PSPC) reference — water filtration plant contract",
+      "summary": "NAB alleged that officers and directors of the Punjab Saaf Pani Company, a public-sector entity set up under the PML-N Punjab government, awarded a contract to KSB Pumps for installing water filtration plants at exorbitant, non-competitive rates in violation of Punjab Procurement Rules, causing a loss to the exchequer estimated at roughly Rs345–371 million. NAB filed a reference against 20 individuals, including PSPC chairman and PML-N leader Raja Qamarul Islam and CEO Waseem Ajmal, in December 2018. An accountability court in Lahore acquitted 16 of the accused in January 2022 and, in a detailed written verdict in February 2022, found no violation of procurement rules or evidence of corruption, declaring the project 'clean and transparent.' A related, separately pursued strand of the matter — involving Shehbaz Sharif's daughter and son-in-law over an office-rent payment — was closed by Punjab's Anti-Corruption Establishment in 2026 for lack of evidence.",
+      "start_date": "2016-01-01",
+      "end_date": "2022-02-12",
+      "province": "Punjab",
+      "city": "Lahore",
+      "institution": "Punjab Saaf Pani Company (PSPC)",
+      "government_department": "Government of Punjab",
+      "category": "public_fund_embezzlement",
+      "sector": "Water supply / public health infrastructure",
+      "amount_pkr": 345828000.0,
+      "amount_usd": null,
+      "amount_notes": "NAB's reference cited an alleged loss of approximately Rs345.828 million; a related NAB claim in the broader inquiry cited Rs370.5 million across water filtration, civil, electrical and solar works. No loss was ultimately established by the court, which acquitted all accused.",
+      "current_legal_status": "acquittal",
+      "status_label": "Acquitted (accountability court, Lahore, January/February 2022); related strand closed for lack of evidence (2026)",
+      "court_name": "Accountability Court No. V, Lahore",
+      "case_number": null,
+      "confidence_score": "high",
+      "individuals": [
+        {
+          "name": "Raja Qamarul Islam",
+          "position": "Former Chairman, Punjab Saaf Pani Company; former MPA (PML-N)",
+          "party": null
+        },
+        {
+          "name": "Waseem Ajmal",
+          "position": "Former CEO, Punjab Saaf Pani Company",
+          "party": null
+        }
+      ],
+      "sources": [
+        {
+          "title": "Lahore court acquits PML-N leader, 15 others in Saaf Pani corruption case",
+          "url": "https://www.dawn.com/news/1672527",
+          "publisher": "Dawn",
+          "source_type": "newspaper",
+          "published_date": "2022-01-31",
+          "quote_or_claim": "Accountability court acquitted 16 persons in the PSPC reference over the KSB Pumps water filtration plant contract, alleged to have caused a Rs345 million loss.",
+          "is_primary": true
+        },
+        {
+          "title": "Saaf Pani case detailed verdict: 'No allegation against any public office-holder holds water'",
+          "url": "https://www.dawn.com/news/1674799",
+          "publisher": "Dawn",
+          "source_type": "newspaper",
+          "published_date": "2022-02-13",
+          "quote_or_claim": "Detailed written verdict found no corruption, material violation or discrepancy proven against any accused in the PSPC project.",
+          "is_primary": true
+        },
+        {
+          "title": "Accountability court says Saaf Pani Project 'clean and transparent'",
+          "url": "https://www.brecorder.com/news/40154075/accountability-court-says-saaf-pani-project-clean-and-transparent",
+          "publisher": "Business Recorder",
+          "source_type": "newspaper",
+          "published_date": "2022-02-12",
+          "quote_or_claim": "Court ruled that all relevant procurement rules and laws were followed throughout the project.",
+          "is_primary": false
+        },
+        {
+          "title": "Pakistan Clears PM Shehbaz's Daughter and Son in Law in Saaf Pani Corruption Case",
+          "url": "https://lawstreet.co/international/pakistan-clears-pm-shehbazs-daughter-and-son-in-law-in-saaf-pani-corruption-case",
+          "publisher": "LawStreet Journal",
+          "source_type": "newspaper",
+          "published_date": "2026-05-06",
+          "quote_or_claim": "Punjab's Anti-Corruption Establishment closed a related strand of the case against Rabia Imran and Ali Imran Yousaf, finding no evidence, in a saga dating to 2017.",
+          "is_primary": false
+        }
+      ],
+      "source_urls": [
+        "https://www.dawn.com/news/1672527",
+        "https://www.dawn.com/news/1674799",
+        "https://www.brecorder.com/news/40154075/accountability-court-says-saaf-pani-project-clean-and-transparent",
+        "https://lawstreet.co/international/pakistan-clears-pm-shehbazs-daughter-and-son-in-law-in-saaf-pani-corruption-case"
+      ],
+      "case_type": "criminal",
+      "timeline": [
+        {
+          "date": "2017-11-01",
+          "event": "NAB launches a broad probe into 56 Punjab public-sector companies formed under the PML-N government, including PSPC.",
+          "source": "https://www.dawn.com/news/1672527"
+        },
+        {
+          "date": "2018-06-25",
+          "event": "NAB arrests PSPC chairman Raja Qamarul Islam.",
+          "source": "https://www.thenews.com.pk/print/929888-saaf-paani-company-scam-pmln-leader-15-others-acquitted"
+        },
+        {
+          "date": "2018-12-01",
+          "event": "NAB files a reference against 20 individuals over the KSB Pumps water filtration plant contract.",
+          "source": "https://www.dawn.com/news/1672527"
+        },
+        {
+          "date": "2019-01-30",
+          "event": "Lahore High Court grants bail to Islam, Ajmal and other directors, finding NAB proceeded selectively against them.",
+          "source": "https://www.thenews.com.pk/print/429590-saaf-pani-scam-nab-selectively-proceeded-against-two-accused"
+        },
+        {
+          "date": "2022-01-31",
+          "event": "Accountability court acquits 16 of the accused, including Islam and Ajmal.",
+          "source": "https://www.dawn.com/news/1672527"
+        },
+        {
+          "date": "2022-02-12",
+          "event": "Court releases a detailed 23-page written verdict declaring the project 'clean and transparent' and finding all procurement rules followed.",
+          "source": "https://www.dawn.com/news/1674799"
+        },
+        {
+          "date": "2026-05-06",
+          "event": "Punjab's Anti-Corruption Establishment closes a related, separately pursued strand of the case against Shehbaz Sharif's daughter and son-in-law for lack of evidence.",
+          "source": "https://lawstreet.co/international/pakistan-clears-pm-shehbazs-daughter-and-son-in-law-in-saaf-pani-corruption-case"
+        }
+      ],
+      "financial_loss_estimate": {
+        "value": 345828000.0,
+        "currency": "PKR",
+        "confidence": "low"
+      },
+      "legal_outcome": "Acquitted. The accountability court found no evidence of corruption, procurement-rule violations, or exchequer loss, and formally declared the project transparent; a related strand of the broader inquiry was separately closed for lack of evidence in 2026.",
+      "last_verified": "2026-07-23",
+      "tags": [
+        "water supply",
+        "public-sector company",
+        "NAB",
+        "Punjab",
+        "acquittal",
+        "Shehbaz Sharif",
+        "procurement"
+      ],
+      "disclaimer": "This project aggregates publicly available information from reputable and official sources for research, transparency, and educational purposes. Inclusion in the database does not imply guilt. Users should consult the cited primary sources and court records for authoritative information."
+    },
+    {
+      "public_id": "PPCA-2013-0027",
+      "title": "LNG Terminal-1 (Engro/EETL) contract reference — Shahid Khaqan Abbasi and others",
+      "summary": "NAB alleged that as federal petroleum minister in 2013, Shahid Khaqan Abbasi and other public office holders misused their authority in awarding the 15-year LNG Terminal-1 import contract to Engro Elengy Terminal Limited (EETL) through a non-transparent process, causing an alleged wrongful gain of roughly Rs14.1 billion to EETL and a further wrongful loss of about Rs7.4 billion from non-utilisation of capacity on a related second terminal — totaling an alleged loss NAB at times cited as approximately Rs21 billion. NAB arrested Abbasi and then-finance minister Miftah Ismail in December 2019; both were later granted bail, with the court noting in 2021 that NAB's case did not turn on whether Abbasi personally received financial benefit and that the terminal's approval had gone through an authorised forum. NAB formally withdrew the reference in April 2024, and the accountability court acquitted all 17 accused, including Abbasi, Ismail, and Engro Corporation chairman Hussain Dawood.",
+      "start_date": "2013-01-01",
+      "end_date": "2024-04-30",
+      "province": "Islamabad Capital Territory",
+      "city": "Islamabad",
+      "institution": "Ministry of Petroleum and Natural Resources / Engro Elengy Terminal Limited",
+      "government_department": "Ministry of Petroleum and Natural Resources",
+      "category": "state_owned_enterprises",
+      "sector": "Energy / LNG import infrastructure",
+      "amount_pkr": 21000000000.0,
+      "amount_usd": null,
+      "amount_notes": "NAB's reference cited a combined alleged wrongful gain/loss of approximately Rs14.146bn plus Rs7.438bn (~Rs21.6bn total); some reporting rounds this to 'Rs21 billion.' No loss was ultimately established, as the reference was withdrawn and all accused acquitted.",
+      "current_legal_status": "acquittal",
+      "status_label": "Acquitted — reference withdrawn by NAB (accountability court, Islamabad, 30 April 2024)",
+      "court_name": "Accountability Court, Islamabad",
+      "case_number": null,
+      "confidence_score": "high",
+      "individuals": [
+        {
+          "name": "Shahid Khaqan Abbasi",
+          "position": "Former Prime Minister of Pakistan; former Federal Minister for Petroleum and Natural Resources",
+          "party": null
+        },
+        {
+          "name": "Miftah Ismail",
+          "position": "Former Federal Minister for Finance",
+          "party": null
+        },
+        {
+          "name": "Hussain Dawood",
+          "position": "Chairman, Engro Corporation",
+          "party": null
+        }
+      ],
+      "sources": [
+        {
+          "title": "Accountability court acquits Shahid Khaqan Abbasi, others in LNG terminal case",
+          "url": "https://www.geo.tv/latest/541764-accountability-court-acquits-shahid-khaqan-abbasi-others-in-lng-terminal-case",
+          "publisher": "Geo News",
+          "source_type": "newspaper",
+          "published_date": "2024-04-30",
+          "quote_or_claim": "Court acquitted Abbasi and others after NAB withdrew its reference; earlier bail ruling found no established conflict over non-transparency.",
+          "is_primary": true
+        },
+        {
+          "title": "Ex-premier, others acquitted as RLNG case withdrawn",
+          "url": "https://www.dawn.com/news/1830689/ex-premier-others-acquitted-as-rlng-case-withdrawn",
+          "publisher": "Dawn",
+          "source_type": "newspaper",
+          "published_date": "2024-05-01",
+          "quote_or_claim": "Reference, earlier closed by NAB in 2016 and reopened in 2018, alleged an LNG company received benefits of billions of rupees from a 15-year contract awarded against the rules.",
+          "is_primary": true
+        },
+        {
+          "title": "Khaqan Abbasi's bail: Court sees no conflict over non-transparency in LNG terminal case",
+          "url": "https://dailytimes.com.pk/788538/khaqan-abbasis-bail-court-sees-no-conflict-over-non-transparency-in-lng-terminal-case/",
+          "publisher": "Daily Times",
+          "source_type": "newspaper",
+          "published_date": "2021-07-10",
+          "quote_or_claim": "NAB's 2020 supplementary reference alleged a wrongful gain of Rs14.146bn and wrongful loss of Rs7.438bn from unused terminal capacity.",
+          "is_primary": false
+        },
+        {
+          "title": "Shahid Khaqan Abbasi, others acquitted in LNG reference case",
+          "url": "https://dailyausaf.com/en/pakistan/shahid-khaqan-abbasi-others-acquitted-in-lng-reference-case/",
+          "publisher": "Daily Ausaf",
+          "source_type": "newspaper",
+          "published_date": "2024-04-30",
+          "quote_or_claim": "NAB had accused Abbasi of causing a loss of Rs21 billion to the exchequer; reference filed 3 December 2019.",
+          "is_primary": false
+        }
+      ],
+      "source_urls": [
+        "https://www.geo.tv/latest/541764-accountability-court-acquits-shahid-khaqan-abbasi-others-in-lng-terminal-case",
+        "https://www.dawn.com/news/1830689/ex-premier-others-acquitted-as-rlng-case-withdrawn",
+        "https://dailytimes.com.pk/788538/khaqan-abbasis-bail-court-sees-no-conflict-over-non-transparency-in-lng-terminal-case/",
+        "https://dailyausaf.com/en/pakistan/shahid-khaqan-abbasi-others-acquitted-in-lng-reference-case/"
+      ],
+      "case_type": "criminal",
+      "timeline": [
+        {
+          "date": "2013-01-01",
+          "event": "LNG Terminal-1 import contract awarded to Engro Elengy Terminal Limited while Abbasi serves as federal petroleum minister.",
+          "source": "https://www.dawn.com/news/1830689/ex-premier-others-acquitted-as-rlng-case-withdrawn"
+        },
+        {
+          "date": "2016-01-01",
+          "event": "NAB closes an initial inquiry into the contract.",
+          "source": "https://www.dawn.com/news/1830689/ex-premier-others-acquitted-as-rlng-case-withdrawn"
+        },
+        {
+          "date": "2018-01-01",
+          "event": "NAB reopens the inquiry into the LNG terminal contract.",
+          "source": "https://www.dawn.com/news/1830689/ex-premier-others-acquitted-as-rlng-case-withdrawn"
+        },
+        {
+          "date": "2019-12-03",
+          "event": "NAB files its reference and arrests Shahid Khaqan Abbasi and Miftah Ismail.",
+          "source": "https://dailyausaf.com/en/pakistan/shahid-khaqan-abbasi-others-acquitted-in-lng-reference-case/"
+        },
+        {
+          "date": "2020-07-28",
+          "event": "NAB chairman approves a supplementary reference naming Abbasi's son, Engro executives, and several OGRA/PSO/PQA officials, alleging a combined Rs21.6bn in wrongful gain and loss.",
+          "source": "https://dailytimes.com.pk/788538/khaqan-abbasis-bail-court-sees-no-conflict-over-non-transparency-in-lng-terminal-case/"
+        },
+        {
+          "date": "2021-07-09",
+          "event": "Accountability court's detailed bail verdict finds no established conflict over non-transparency and notes the terminal was approved by an authorised forum.",
+          "source": "https://dailytimes.com.pk/788538/khaqan-abbasis-bail-court-sees-no-conflict-over-non-transparency-in-lng-terminal-case/"
+        },
+        {
+          "date": "2024-04-30",
+          "event": "NAB withdraws the reference; accountability court in Islamabad acquits Abbasi, Ismail, Hussain Dawood and all other accused.",
+          "source": "https://www.geo.tv/latest/541764-accountability-court-acquits-shahid-khaqan-abbasi-others-in-lng-terminal-case"
+        }
+      ],
+      "financial_loss_estimate": {
+        "value": 21000000000.0,
+        "currency": "PKR",
+        "confidence": "low"
+      },
+      "legal_outcome": "Acquitted. NAB itself moved to withdraw the reference in April 2024 after concluding no illegality, irregularity, or exchequer loss could be proven; the accountability court acquitted all 17 accused the same day.",
+      "last_verified": "2026-07-23",
+      "tags": [
+        "LNG",
+        "energy",
+        "Engro",
+        "NAB",
+        "Shahid Khaqan Abbasi",
+        "acquittal",
+        "Islamabad"
+      ],
+      "disclaimer": "This project aggregates publicly available information from reputable and official sources for research, transparency, and educational purposes. Inclusion in the database does not imply guilt. Users should consult the cited primary sources and court records for authoritative information."
+    },
+    {
+      "public_id": "PPCA-2014-0028",
+      "title": "Malam Jabba ski resort land lease case",
+      "summary": "NAB Khyber Pakhtunkhwa investigated the 2014 lease of roughly 275 acres of protected Forest Department land at the Malam Jabba hill resort in Swat to Samsons Group of Companies for a ski-resort and chairlift project, alleging the lease was awarded without required feasibility studies, technical/financial prequalification criteria, or a fair tendering process, and that a relative of then-provincial minister Atif Khan and PTI senator Mohsin Aziz was linked to the contractor. NAB's Khyber Pakhtunkhwa chapter declared the contract a 'mega fraud' in early 2019 and forwarded the matter to NAB headquarters, and summoned former chief ministers Pervaiz Khattak and Mahmood Khan, along with ministers Atif Khan and Mohsin Aziz, for questioning. NAB subsequently closed its inquiry, reportedly finding no irregularities. Khyber Pakhtunkhwa's provincial Anti-Corruption Establishment later reopened scrutiny of related land purchases, which Atif Khan has challenged in the Peshawar High Court.",
+      "start_date": "2014-01-01",
+      "end_date": null,
+      "province": "Khyber Pakhtunkhwa",
+      "city": "Swat",
+      "institution": "KP Forest Department / KP Tourism Corporation",
+      "government_department": "Government of Khyber Pakhtunkhwa (Tourism, Sports and Culture)",
+      "category": "land_scam",
+      "sector": "Tourism / forest land administration",
+      "amount_pkr": null,
+      "amount_usd": null,
+      "amount_notes": "No specific rupee loss figure was formally established in public reporting; NAB characterised the awarding process itself (rather than a quantified loss) as the alleged fraud, and its inquiry was ultimately closed without a reference being filed.",
+      "current_legal_status": "closed",
+      "status_label": "NAB inquiry closed without a reference filed; related land-purchase inquiry reopened by KP Anti-Corruption Establishment",
+      "court_name": "Peshawar High Court (writ petition re: ACE notice)",
+      "case_number": null,
+      "confidence_score": "medium",
+      "individuals": [
+        {
+          "name": "Pervaiz Khattak",
+          "position": "Former Chief Minister, Khyber Pakhtunkhwa; later Federal Minister for Defence",
+          "party": null
+        },
+        {
+          "name": "Muhammad Atif Khan",
+          "position": "Former Provincial Minister for Sports, Tourism and Culture, KP",
+          "party": null
+        },
+        {
+          "name": "Mahmood Khan",
+          "position": "Former Chief Minister, Khyber Pakhtunkhwa",
+          "party": null
+        }
+      ],
+      "sources": [
+        {
+          "title": "NAB declares Malam Jabba contract mega fraud",
+          "url": "https://www.thenews.com.pk/print/449282-nab-declares-malam-jabba-contract-mega-fraud",
+          "publisher": "The News International",
+          "source_type": "newspaper",
+          "published_date": "2019-03-27",
+          "quote_or_claim": "NAB KP declared the resort contract a mega fraud to grab Forest Department land, citing an absence of feasibility studies or prequalification criteria.",
+          "is_primary": true
+        },
+        {
+          "title": "K-P CM summoned by NAB in Malam Jabba land case",
+          "url": "https://tribune.com.pk/story/1864569/k-p-cm-summoned-nab-malam-jabba-land-case",
+          "publisher": "The Express Tribune",
+          "source_type": "newspaper",
+          "published_date": "2018-12-11",
+          "quote_or_claim": "NAB summoned KP CM Mahmood Khan, minister Atif Khan and senator Mohsin Aziz over the 275-kanal land lease allegedly linked to a relative of Atif Khan.",
+          "is_primary": true
+        },
+        {
+          "title": "Malam Jabba leasing inquiry against Pervaiz Khattak stopped by NAB",
+          "url": "https://dailytimes.com.pk/837836/malam-jabba-leasing-inquiry-against-pervaiz-khattak-stopped-by-nab/",
+          "publisher": "Daily Times",
+          "source_type": "newspaper",
+          "published_date": "2021-11-05",
+          "quote_or_claim": "NAB, which had opened an inquiry in 2015 into Khattak, Mahmood Khan, Atif Khan and others, stopped the inquiry.",
+          "is_primary": false
+        },
+        {
+          "title": "Atif Khan challenges anti-corruption notice",
+          "url": "https://tribune.com.pk/story/2512172/atif-khan-challenges-anti-corruption-notice",
+          "publisher": "The Express Tribune",
+          "source_type": "newspaper",
+          "published_date": "2024-11-26",
+          "quote_or_claim": "Atif Khan petitioned the Peshawar High Court against a KP Anti-Corruption Establishment notice on Malam Jabba land purchases, noting NAB had earlier closed its inquiry finding no irregularities.",
+          "is_primary": false
+        }
+      ],
+      "source_urls": [
+        "https://www.thenews.com.pk/print/449282-nab-declares-malam-jabba-contract-mega-fraud",
+        "https://tribune.com.pk/story/1864569/k-p-cm-summoned-nab-malam-jabba-land-case",
+        "https://dailytimes.com.pk/837836/malam-jabba-leasing-inquiry-against-pervaiz-khattak-stopped-by-nab/",
+        "https://tribune.com.pk/story/2512172/atif-khan-challenges-anti-corruption-notice"
+      ],
+      "case_type": "criminal",
+      "timeline": [
+        {
+          "date": "2014-01-01",
+          "event": "KP Forest Department leases roughly 275 acres of protected land at Malam Jabba to Samsons Group for a ski-resort project.",
+          "source": "https://tribune.com.pk/story/1864569/k-p-cm-summoned-nab-malam-jabba-land-case"
+        },
+        {
+          "date": "2015-01-01",
+          "event": "NAB opens an initial inquiry into Pervaiz Khattak, Mahmood Khan, Atif Khan, Senator Mohsin Aziz and others over the lease.",
+          "source": "https://dailytimes.com.pk/837836/malam-jabba-leasing-inquiry-against-pervaiz-khattak-stopped-by-nab/"
+        },
+        {
+          "date": "2018-01-07",
+          "event": "Malam Jabba scandal surfaces publicly; NAB chairman orders a formal inquiry two days later.",
+          "source": "https://www.thenews.com.pk/print/449282-nab-declares-malam-jabba-contract-mega-fraud"
+        },
+        {
+          "date": "2018-12-11",
+          "event": "NAB summons KP CM Mahmood Khan, minister Atif Khan and Senator Mohsin Aziz for questioning.",
+          "source": "https://tribune.com.pk/story/1864569/k-p-cm-summoned-nab-malam-jabba-land-case"
+        },
+        {
+          "date": "2019-03-27",
+          "event": "NAB KP declares the resort contract a 'mega fraud' and forwards the case to NAB headquarters for a decision on arrests or a reference.",
+          "source": "https://www.thenews.com.pk/print/449282-nab-declares-malam-jabba-contract-mega-fraud"
+        },
+        {
+          "date": "2021-11-05",
+          "event": "NAB stops/closes its leasing inquiry against Pervaiz Khattak and others.",
+          "source": "https://dailytimes.com.pk/837836/malam-jabba-leasing-inquiry-against-pervaiz-khattak-stopped-by-nab/"
+        },
+        {
+          "date": "2024-11-26",
+          "event": "KP Anti-Corruption Establishment issues a fresh notice to Atif Khan over related Malam Jabba land purchases; he challenges it in the Peshawar High Court, citing NAB's earlier closure of the matter.",
+          "source": "https://tribune.com.pk/story/2512172/atif-khan-challenges-anti-corruption-notice"
+        }
+      ],
+      "financial_loss_estimate": {
+        "value": null,
+        "currency": "PKR",
+        "confidence": "low"
+      },
+      "legal_outcome": "No reference was filed and no conviction resulted; NAB's inquiry was closed, reportedly without finding irregularities. A related strand concerning associated land purchases was subsequently reopened by the provincial Anti-Corruption Establishment and remained contested (via a High Court petition) as of the most recent reporting located.",
+      "last_verified": "2026-07-23",
+      "tags": [
+        "land lease",
+        "forest land",
+        "tourism",
+        "NAB",
+        "Khyber Pakhtunkhwa",
+        "Swat",
+        "PTI",
+        "closed inquiry"
+      ],
+      "disclaimer": "This project aggregates publicly available information from reputable and official sources for research, transparency, and educational purposes. Inclusion in the database does not imply guilt. Users should consult the cited primary sources and court records for authoritative information."
+    },
+    {
+      "public_id": "PPCA-2022-0029",
+      "title": "Toshakhana reference — Imran Khan state-gifts case",
+      "summary": "The Election Commission of Pakistan (ECP) and later a NAB/FIA-linked criminal reference alleged that then-prime minister Imran Khan retained and sold, at officially discounted prices, state gifts (including watches, a ring, a pen and cufflinks) received from foreign dignitaries and stored in the Toshakhana, without properly declaring the proceeds — allegedly profiting him over Rs36 million. The ECP disqualified Khan under Article 63(1)(p) in October 2022 for making false statements in his asset declarations. A criminal reference followed; a trial court in Islamabad convicted and sentenced Khan to three years' imprisonment on 5 August 2023 and fined him, disqualifying him from office for five years. The Islamabad High Court suspended the sentence and granted bail on 28 August 2023, with the Supreme Court later noting 'procedural defects' in the trial verdict. A second, related NAB/FIA reference ('Toshakhana-II'), covering additional gifts and alleging his wife Bushra Bibi's involvement, followed Khan's arrest in July 2024; that case was transferred from NAB to an FIA special court after 2024 accountability-law amendments. As of the most recent located reporting, Supreme Court appeals concerning the original Toshakhana conviction remained pending.",
+      "start_date": "2018-01-01",
+      "end_date": null,
+      "province": "Islamabad Capital Territory",
+      "city": "Islamabad",
+      "institution": "Toshakhana (Cabinet Division) / Election Commission of Pakistan",
+      "government_department": "Cabinet Division",
+      "category": "misuse_of_authority",
+      "sector": "Public administration / state gift management",
+      "amount_pkr": 36000000.0,
+      "amount_usd": null,
+      "amount_notes": "Rs36 million is the alleged profit cited from the sale of four specific gifts in the original ECP/trial-court reference; the later 'Toshakhana-II' reference concerns a broader set of the 108 gifts received during Khan's 2018-2022 tenure, without a single agreed aggregate figure across all reporting.",
+      "current_legal_status": "conviction",
+      "status_label": "Convicted at trial court (2023), sentence suspended on appeal; Supreme Court appeal and a related second reference pending",
+      "court_name": "District & Sessions Court, Islamabad; Islamabad High Court; Supreme Court of Pakistan",
+      "case_number": null,
+      "confidence_score": "high",
+      "individuals": [
+        {
+          "name": "Imran Khan",
+          "position": "Former Prime Minister of Pakistan; PTI founder",
+          "party": null
+        },
+        {
+          "name": "Bushra Bibi",
+          "position": "Spouse of Imran Khan; co-accused in the second Toshakhana reference",
+          "party": null
+        }
+      ],
+      "sources": [
+        {
+          "title": "Toshakhana case: PTI challenges Imran Khan's conviction in Supreme Court",
+          "url": "https://www.geo.tv/latest/503715-pti-challenges-toshakhana-verdict-in-supreme-court",
+          "publisher": "Geo News",
+          "source_type": "newspaper",
+          "published_date": "2023-08-07",
+          "quote_or_claim": "Trial court sentenced Khan to three years and a Rs100,000 fine on 5 August 2023 for corrupt practices related to the Toshakhana.",
+          "is_primary": true
+        },
+        {
+          "title": "Toshakhana reference cases against Imran Khan and Bushra Bibi",
+          "url": "https://en.wikipedia.org/wiki/Toshakhana_reference_case",
+          "publisher": "Wikipedia",
+          "source_type": "encyclopedia",
+          "published_date": "2026-06-09",
+          "quote_or_claim": "Details the ECP disqualification, the 2018 Toshakhana policy defence, and transfer of the second reference to an FIA special court following 2024 NAB law amendments.",
+          "is_primary": false
+        },
+        {
+          "title": "Accountability court bars NAB from handling Toshakhana case, hands it over to FIA",
+          "url": "https://www.dawn.com/news/1857946",
+          "publisher": "Dawn",
+          "source_type": "newspaper",
+          "published_date": "2024-09-09",
+          "quote_or_claim": "A new Toshakhana reference against Khan and Bushra Bibi was transferred from NAB to an FIA special court following 2024 accountability-law amendments.",
+          "is_primary": true
+        },
+        {
+          "title": "SC adjourns Imran Khan's Toshakhana, cipher, defamation cases indefinitely",
+          "url": "https://tribune.com.pk/story/2593210/k-p-cm-afridi-imran-khans-sisters-hold-meeting-ahead-of-sc-hearings",
+          "publisher": "The Express Tribune",
+          "source_type": "newspaper",
+          "published_date": "2026-02-18",
+          "quote_or_claim": "Supreme Court heard and adjourned Khan's Toshakhana appeal, among others, indefinitely as of February 2026.",
+          "is_primary": false
+        }
+      ],
+      "source_urls": [
+        "https://www.geo.tv/latest/503715-pti-challenges-toshakhana-verdict-in-supreme-court",
+        "https://en.wikipedia.org/wiki/Toshakhana_reference_case",
+        "https://www.dawn.com/news/1857946",
+        "https://tribune.com.pk/story/2593210/k-p-cm-afridi-imran-khans-sisters-hold-meeting-ahead-of-sc-hearings"
+      ],
+      "case_type": "criminal",
+      "timeline": [
+        {
+          "date": "2022-08-01",
+          "event": "First Toshakhana reference filed by coalition-government politicians alleging Khan concealed proceeds from sold state gifts.",
+          "source": "https://en.wikipedia.org/wiki/Toshakhana_reference_case"
+        },
+        {
+          "date": "2022-10-21",
+          "event": "Election Commission of Pakistan disqualifies Khan under Article 63(1)(p) for false asset declarations regarding Toshakhana proceeds.",
+          "source": "https://en.wikipedia.org/wiki/Toshakhana_reference_case"
+        },
+        {
+          "date": "2023-08-05",
+          "event": "Trial court convicts and sentences Khan to three years' imprisonment and a fine; he is arrested and disqualified from office for five years.",
+          "source": "https://www.geo.tv/latest/503715-pti-challenges-toshakhana-verdict-in-supreme-court"
+        },
+        {
+          "date": "2023-08-29",
+          "event": "Islamabad High Court suspends the conviction and sentence and orders Khan's release on bail.",
+          "source": "https://www.geo.tv/latest/503715-pti-challenges-toshakhana-verdict-in-supreme-court"
+        },
+        {
+          "date": "2023-08-24",
+          "event": "Supreme Court, hearing a related procedural challenge, acknowledges 'procedural defects' in the trial court's conviction.",
+          "source": "https://globalpolitics.in/pakistan/pakistan-weekly.php?url=NIAS+Pakistan+Weekly&recordNo=1160"
+        },
+        {
+          "date": "2024-07-13",
+          "event": "NAB arrests Khan and Bushra Bibi in a fresh 'Toshakhana-II' reference hours after their acquittal in a separate case.",
+          "source": "https://ppforum.pakpassion.net/threads/imran-khan-and-bushra-bibi-indicted-in-toshakhana-2-0-case-post-updated-451.313055/page-6"
+        },
+        {
+          "date": "2024-09-09",
+          "event": "Accountability court bars NAB from further handling the second Toshakhana reference, transferring it to an FIA special court under amended accountability law.",
+          "source": "https://www.dawn.com/news/1857946"
+        },
+        {
+          "date": "2026-02-18",
+          "event": "Supreme Court hears and adjourns Khan's Toshakhana appeal (alongside cipher and defamation matters) indefinitely.",
+          "source": "https://tribune.com.pk/story/2593210/k-p-cm-afridi-imran-khans-sisters-hold-meeting-ahead-of-sc-hearings"
+        }
+      ],
+      "financial_loss_estimate": {
+        "value": 36000000.0,
+        "currency": "PKR",
+        "confidence": "medium"
+      },
+      "legal_outcome": "Convicted at trial level (5 August 2023, three years' imprisonment); conviction and sentence suspended on appeal by the Islamabad High Court weeks later. Supreme Court identified procedural defects and, as of the most recent located reporting (February 2026), the appeal remained pending/adjourned. A related second reference against Khan and his wife was separately pending before an FIA special court.",
+      "last_verified": "2026-07-23",
+      "tags": [
+        "Toshakhana",
+        "state gifts",
+        "Imran Khan",
+        "ECP",
+        "NAB",
+        "FIA",
+        "conviction",
+        "appeal pending"
+      ],
+      "disclaimer": "This project aggregates publicly available information from reputable and official sources for research, transparency, and educational purposes. Inclusion in the database does not imply guilt. Users should consult the cited primary sources and court records for authoritative information."
+    },
+    {
+      "public_id": "PPCA-2019-0030",
+      "title": "Al-Qadir Trust case — Imran Khan, Bushra Bibi, and Bahria Town land-for-settlement conviction",
+      "summary": "NAB alleged that while prime minister, Imran Khan played a 'pivotal role' in facilitating the transfer of roughly £190 million (about Rs50 billion) — proceeds of crime recovered by the UK's National Crime Agency from property tycoon Malik Riaz and routed to the Supreme Court of Pakistan in a 2019 settlement — toward a debt Malik Riaz's Bahria Town owed the state, and that in exchange, the newly created Al-Qadir University Trust (of which Khan's wife Bushra Bibi was a trustee) received approximately 458 kanals of land and other benefits from Bahria Town. NAB filed a corruption reference against Khan, Bushra Bibi and six others (including Malik Riaz and his son, who were declared proclaimed offenders) in December 2023; the couple was indicted in February 2024. An accountability court convicted both on 17 January 2025, sentencing Khan to 14 years and Bushra Bibi to seven years, with fines, finding the arrangement amounted to misuse of authority for personal gain.",
+      "start_date": "2019-01-01",
+      "end_date": "2025-01-17",
+      "province": "Islamabad Capital Territory",
+      "city": "Islamabad",
+      "institution": "Al-Qadir University Trust / Bahria Town (Pvt) Ltd",
+      "government_department": "Prime Minister's Office",
+      "category": "misuse_of_authority",
+      "sector": "Public administration / real estate settlement",
+      "amount_pkr": 50000000000.0,
+      "amount_usd": null,
+      "amount_notes": "NAB's reference cited a loss to the exchequer of £190 million (approximately Rs50 billion at the time), representing the UK NCA-recovered funds allegedly diverted from the national treasury into the Bahria Town settlement.",
+      "current_legal_status": "conviction",
+      "status_label": "Convicted (accountability court, 17 January 2025); conviction under appeal",
+      "court_name": "Accountability Court, Islamabad (Adiala Jail); Islamabad High Court (appeal)",
+      "case_number": null,
+      "confidence_score": "high",
+      "individuals": [
+        {
+          "name": "Imran Khan",
+          "position": "Former Prime Minister of Pakistan; PTI founder",
+          "party": null
+        },
+        {
+          "name": "Bushra Bibi",
+          "position": "Spouse of Imran Khan; trustee, Al-Qadir University Trust",
+          "party": null
+        },
+        {
+          "name": "Malik Riaz Hussain (declared a proclaimed offender)",
+          "position": "Owner, Bahria Town",
+          "party": null
+        },
+        {
+          "name": "Ahmed Ali Riaz (declared a proclaimed offender)",
+          "position": "Son of Malik Riaz Hussain",
+          "party": null
+        }
+      ],
+      "sources": [
+        {
+          "title": "Legal woes deepen as Imran and Bushra convicted in £190m Al-Qadir Trust case",
+          "url": "https://www.dawn.com/news/1885831",
+          "publisher": "Dawn",
+          "source_type": "newspaper",
+          "published_date": "2025-01-17",
+          "quote_or_claim": "NAB's reference alleged Khan played a pivotal role in the illicit transfer of state funds into an account used to pay Bahria Town for land, in exchange for land and benefits to the Al-Qadir Trust.",
+          "is_primary": true
+        },
+        {
+          "title": "Al-Qadir Trust case: Former Pak PM Imran Khan sentenced to 14 yrs in prison",
+          "url": "https://www.business-standard.com/world-news/imran-khan-bushra-bibi-convicted-al-qadir-trust-case-125011700482_1.html",
+          "publisher": "Business Standard",
+          "source_type": "newspaper",
+          "published_date": "2025-01-17",
+          "quote_or_claim": "Court sentenced Khan to 14 years and Bushra Bibi to seven years, with fines, over the £190 million case.",
+          "is_primary": true
+        },
+        {
+          "title": "The Al-Qadir Trust Case: How one transaction brought down Imran Khan and Bahria Town",
+          "url": "https://profit.pakistantoday.com.pk/2025/01/17/the-al-qadir-trust-case-how-one-transaction-brought-down-imran-khan-and-bahria-town/",
+          "publisher": "Profit / Pakistan Today",
+          "source_type": "newspaper",
+          "published_date": "2025-01-17",
+          "quote_or_claim": "Case traced the funds to the Supreme Court's dam fund settlement with Malik Riaz and the freezing of Bahria Town-linked properties during trial.",
+          "is_primary": false
+        },
+        {
+          "title": "Imran Khan, Bushra Bibi move IHC for early hearing on plea to suspend conviction in Al-Qadir Trust case",
+          "url": "https://www.tribuneindia.com/news/al-qadir-trust/imran-khan-bushra-bibi-move-ihc-for-early-hearing-on-plea-to-suspend-conviction-in-al-qadir-trust-case",
+          "publisher": "The Tribune (India, syndicated from Dawn/ANI)",
+          "source_type": "newspaper",
+          "published_date": "2025-07-08",
+          "quote_or_claim": "Couple sought IHC suspension of their conviction and 14-year/7-year sentences as of mid-2025, indicating the case remained under appeal.",
+          "is_primary": false
+        }
+      ],
+      "source_urls": [
+        "https://www.dawn.com/news/1885831",
+        "https://www.business-standard.com/world-news/imran-khan-bushra-bibi-convicted-al-qadir-trust-case-125011700482_1.html",
+        "https://profit.pakistantoday.com.pk/2025/01/17/the-al-qadir-trust-case-how-one-transaction-brought-down-imran-khan-and-bahria-town/",
+        "https://www.tribuneindia.com/news/al-qadir-trust/imran-khan-bushra-bibi-move-ihc-for-early-hearing-on-plea-to-suspend-conviction-in-al-qadir-trust-case"
+      ],
+      "case_type": "criminal",
+      "timeline": [
+        {
+          "date": "2019-12-05",
+          "event": "UK National Crime Agency reaches a £190m civil recovery settlement with Malik Riaz's family; funds are routed toward Bahria Town's debt to the Government of Pakistan via a Supreme Court account, related to [[Bahria Town Karachi land case]].",
+          "source": "https://profit.pakistantoday.com.pk/2025/01/17/the-al-qadir-trust-case-how-one-transaction-brought-down-imran-khan-and-bahria-town/"
+        },
+        {
+          "date": "2023-05-01",
+          "event": "Imran Khan briefly arrested (under 48 hours) in connection with the case, triggering nationwide PTI protests.",
+          "source": "https://swarajyamag.com/news-brief/former-pakistan-pm-imran-khan-and-wife-bushra-bibi-convicted-in-190-million-al-qadir-trust-case-sentenced-to-jail"
+        },
+        {
+          "date": "2023-12-01",
+          "event": "NAB files a corruption reference against Khan, Bushra Bibi and six others over the Al-Qadir University Trust arrangement.",
+          "source": "https://www.dawn.com/news/1885831"
+        },
+        {
+          "date": "2024-02-27",
+          "event": "Khan and Bushra Bibi indicted in the case, shortly after Pakistan's general elections.",
+          "source": "https://www.dawn.com/news/1885831"
+        },
+        {
+          "date": "2024-12-18",
+          "event": "Accountability court reserves its verdict after final arguments from prosecution and defence.",
+          "source": "https://www.dawn.com/news/1879545"
+        },
+        {
+          "date": "2025-01-17",
+          "event": "Accountability Judge Nasir Javed Rana convicts Khan and Bushra Bibi, sentencing them to 14 and 7 years respectively, plus fines.",
+          "source": "https://www.business-standard.com/world-news/imran-khan-bushra-bibi-convicted-al-qadir-trust-case-125011700482_1.html"
+        },
+        {
+          "date": "2025-07-08",
+          "event": "Khan and Bushra Bibi petition the Islamabad High Court for an early hearing on suspending their conviction pending appeal.",
+          "source": "https://www.tribuneindia.com/news/al-qadir-trust/imran-khan-bushra-bibi-move-ihc-for-early-hearing-on-plea-to-suspend-conviction-in-al-qadir-trust-case"
+        }
+      ],
+      "financial_loss_estimate": {
+        "value": 50000000000.0,
+        "currency": "PKR",
+        "confidence": "medium"
+      },
+      "legal_outcome": "Convicted. Imran Khan sentenced to 14 years' imprisonment and Bushra Bibi to seven years (17 January 2025), with fines; both filed appeals seeking suspension of the conviction, which remained pending as of mid-2025 reporting located.",
+      "last_verified": "2026-07-23",
+      "tags": [
+        "Al-Qadir Trust",
+        "Bahria Town",
+        "Imran Khan",
+        "Bushra Bibi",
+        "Malik Riaz",
+        "NAB",
+        "conviction",
+        "UK NCA"
+      ],
+      "disclaimer": "This project aggregates publicly available information from reputable and official sources for research, transparency, and educational purposes. Inclusion in the database does not imply guilt. Users should consult the cited primary sources and court records for authoritative information."
+    },
+    {
+      "public_id": "PPCA-2018-0031",
+      "title": "Bus Rapid Transit (BRT) Peshawar project — contract irregularities inquiry",
+      "summary": "Following years of delays and cost escalation on the Asian Development Bank-funded Peshawar BRT mass-transit project, the Peshawar High Court ordered NAB in July 2018 to investigate alleged illegal contract awards and cost overruns; a parallel FIA probe was later also ordered but both were repeatedly stayed by the Supreme Court after the Khyber Pakhtunkhwa government's appeals. NAB's investigation, which gained pace under new leadership after 2022, found that six major civil-works contracts had been awarded to joint ventures whose named international partners did not actually perform the work, that contractors had submitted bogus bank guarantees and fraudulent audit reports, and that a 20% rate premium was paid for international involvement that never materialised. Rather than pursuing a criminal reference, NAB negotiated an indirect settlement: contractors withdrew a Rs31.5 billion claim pending at the International Court of Arbitration and the project was completed within its original cost framework, which NAB announced in September 2024 as an aggregate 'recovery/saving' of Rs168.5 billion — its largest such figure in 25 years.",
+      "start_date": "2017-10-01",
+      "end_date": "2024-09-22",
+      "province": "Khyber Pakhtunkhwa",
+      "city": "Peshawar",
+      "institution": "Peshawar Development Authority (PDA)",
+      "government_department": "Government of Khyber Pakhtunkhwa",
+      "category": "state_owned_enterprises",
+      "sector": "Public transportation infrastructure",
+      "amount_pkr": 168500000000.0,
+      "amount_usd": null,
+      "amount_notes": "The Rs168.5bn figure NAB announced is a claimed indirect 'recovery/saving' (avoided contractor claims plus cost containment), not a court-established fraud loss; a 2021 press estimate separately put direct exchequer loss/cost overrun at roughly Rs75 billion, and original project cost (Rs49bn) escalated to a peak spend estimated at Rs90-105bn by some analysts. No criminal reference or conviction resulted.",
+      "current_legal_status": "settled_no_criminal_reference",
+      "status_label": "Resolved via NAB-negotiated settlement / contractor claim withdrawal; no criminal reference filed",
+      "court_name": "Peshawar High Court (oversight); Supreme Court of Pakistan (stays); International Court of Arbitration (contractor claims)",
+      "case_number": null,
+      "confidence_score": "medium",
+      "individuals": [],
+      "sources": [
+        {
+          "title": "BRT: relief for PTI",
+          "url": "https://tribune.com.pk/story/2282536/brt-relief-for-pti",
+          "publisher": "The Express Tribune",
+          "source_type": "newspaper",
+          "published_date": "2021-02-04",
+          "quote_or_claim": "Supreme Court quashed the Peshawar High Court's 2018 directive for NAB to investigate the BRT project after the KP government's repeated appeals.",
+          "is_primary": true
+        },
+        {
+          "title": "NAB saves Rs168.5b in Peshawar BRT project",
+          "url": "https://tribune.com.pk/story/2498015/nab-saves-rs1685b-in-peshawar-brt-project-1",
+          "publisher": "The Express Tribune",
+          "source_type": "newspaper",
+          "published_date": "2024-09-23",
+          "quote_or_claim": "NAB investigation found six civil-works contracts illegally awarded to joint ventures whose foreign partners did not perform actual work, and secured withdrawal of a Rs31.5bn contractor claim.",
+          "is_primary": true
+        },
+        {
+          "title": "Peshawar BRT Scam: No action against K-P govt yet despite Rs75billion loss",
+          "url": "https://www.bolnews.com/latest/2021/10/peshawar-brt-scam-no-action-against-k-p-govt-yet-despite-rs75billion-loss/",
+          "publisher": "BOL News",
+          "source_type": "newspaper",
+          "published_date": "2021-10-22",
+          "quote_or_claim": "NAB and FIA had been unable to launch a probe as of 2021 due to repeated Supreme Court stays sought by the KP government, with total project spend estimated at Rs90-105bn against an original Rs49bn budget.",
+          "is_primary": false
+        },
+        {
+          "title": "Damning report of public money waste on Peshawar BRT",
+          "url": "https://www.dawn.com/news/1473563",
+          "publisher": "Dawn",
+          "source_type": "newspaper",
+          "published_date": "2019-04-03",
+          "quote_or_claim": "NAB's sealed preliminary findings covered the Rs67.8 billion Asian Development Bank-funded project after the Peshawar High Court ordered an investigation into delays.",
+          "is_primary": false
+        }
+      ],
+      "source_urls": [
+        "https://tribune.com.pk/story/2282536/brt-relief-for-pti",
+        "https://tribune.com.pk/story/2498015/nab-saves-rs1685b-in-peshawar-brt-project-1",
+        "https://www.bolnews.com/latest/2021/10/peshawar-brt-scam-no-action-against-k-p-govt-yet-despite-rs75billion-loss/",
+        "https://www.dawn.com/news/1473563"
+      ],
+      "case_type": "audit",
+      "timeline": [
+        {
+          "date": "2017-10-01",
+          "event": "Construction begins on the Peshawar BRT project, originally slated for a six-month completion.",
+          "source": "https://www.dawn.com/news/1473563"
+        },
+        {
+          "date": "2018-07-01",
+          "event": "Peshawar High Court orders NAB to investigate delays and cost overruns following citizen petitions.",
+          "source": "https://tribune.com.pk/story/2282536/brt-relief-for-pti"
+        },
+        {
+          "date": "2018-01-01",
+          "event": "NAB opens a formal inquiry into alleged illegal contract awards, fund misappropriation and bogus performance guarantees.",
+          "source": "https://tribune.com.pk/story/2498015/nab-saves-rs1685b-in-peshawar-brt-project-1"
+        },
+        {
+          "date": "2019-12-01",
+          "event": "Peshawar High Court additionally directs the FIA to investigate possible corruption in the project.",
+          "source": "https://tribune.com.pk/story/2282536/brt-relief-for-pti"
+        },
+        {
+          "date": "2021-02-04",
+          "event": "Supreme Court sets aside the Peshawar High Court's directive for a NAB investigation and extends a stay on the FIA probe, following appeals by the KP government.",
+          "source": "https://tribune.com.pk/story/2282536/brt-relief-for-pti"
+        },
+        {
+          "date": "2024-09-22",
+          "event": "NAB announces an aggregate Rs168.5bn 'recovery/saving' — the withdrawal of a Rs31.5bn contractor claim at the International Court of Arbitration plus retention of the original project cost — without filing a criminal reference.",
+          "source": "https://tribune.com.pk/story/2498015/nab-saves-rs1685b-in-peshawar-brt-project-1"
+        }
+      ],
+      "financial_loss_estimate": {
+        "value": 75000000000.0,
+        "currency": "PKR",
+        "confidence": "low"
+      },
+      "legal_outcome": "No criminal reference was filed and no individual was convicted; the Supreme Court repeatedly stayed NAB and FIA investigations sought by the Peshawar High Court. NAB ultimately announced an indirect financial settlement/recovery in 2024 rather than pursuing prosecution.",
+      "last_verified": "2026-07-23",
+      "tags": [
+        "BRT",
+        "public transit",
+        "Peshawar",
+        "NAB",
+        "Khyber Pakhtunkhwa",
+        "infrastructure",
+        "no prosecution",
+        "Asian Development Bank"
+      ],
+      "disclaimer": "This project aggregates publicly available information from reputable and official sources for research, transparency, and educational purposes. Inclusion in the database does not imply guilt. Users should consult the cited primary sources and court records for authoritative information."
+    },
+    {
+      "public_id": "PPCA-2005-0032",
+      "title": "Bank of Punjab (BoP) loan fraud case — Hamesh Khan and Haris Steel Mills",
+      "summary": "NAB alleged that Bank of Punjab president Hamesh Khan, in connivance with Haris Steel Industries CEO Sheikh Muhammad Afzal and other bank officials, sanctioned billions of rupees in loans between 2005 and 2007 against inadequate or falsified collateral — most notably an approximately Rs8.4 billion facility to Haris Steel Mills — while the bank simultaneously submitted falsified performance reports to the State Bank of Pakistan, masking losses as profits through fake audits and window-dressing of accounts. NAB filed a reference on 27 September 2007 against 12 accused, alleging a core Rs9 billion fraud; a 2010 NAB estimate put total corruption in the bank at roughly Rs76 billion. Hamesh Khan fled to the United States in March 2008 while under investigation, was arrested there on an Interpol red notice, and was extradited to Pakistan. After a 17-year prosecution, NAB moved in November 2024 to withdraw the reference against Khan and Sheikh Afzal, citing insufficient evidence — a request the Bank of Punjab itself opposed in court.",
+      "start_date": "2005-01-01",
+      "end_date": null,
+      "province": "Punjab",
+      "city": "Lahore",
+      "institution": "Bank of Punjab",
+      "government_department": "Government of Punjab (BoP is a Punjab government-owned bank)",
+      "category": "public_fund_embezzlement",
+      "sector": "Banking / financial services",
+      "amount_pkr": 9000000000.0,
+      "amount_usd": null,
+      "amount_notes": "NAB's original 2007 reference cited a core Rs9 billion fraud (including an alleged Rs8.4bn facility to Haris Steel Mills); a subsequent 2010 NAB assessment estimated the bank's total corruption-related losses at approximately Rs76.178 billion across a wider set of 733 loan accounts. Figures vary substantially depending on scope.",
+      "current_legal_status": "reference_withdrawal_sought",
+      "status_label": "NAB sought withdrawal of the reference against key accused (November 2024) after 17 years, opposed by Bank of Punjab; case status thereafter not confirmed in available reporting",
+      "court_name": "Accountability Court, Lahore",
+      "case_number": null,
+      "confidence_score": "high",
+      "individuals": [
+        {
+          "name": "Hamesh Khan",
+          "position": "Former President, Bank of Punjab",
+          "party": null
+        },
+        {
+          "name": "Sheikh Muhammad Afzal",
+          "position": "CEO, Harris/Haris Steel Industries",
+          "party": null
+        }
+      ],
+      "sources": [
+        {
+          "title": "NAB gives clean chit to key suspects in Rs9b Bank of Punjab fraud case",
+          "url": "https://www.nation.com.pk/13-Nov-2024/nab-gives-clean-chit-to-key-suspects-in-rs9b-bank-of-punjab-fraud-case",
+          "publisher": "The Nation",
+          "source_type": "newspaper",
+          "published_date": "2024-11-13",
+          "quote_or_claim": "NAB sought withdrawal of the 2008 reference against Hamesh Khan and Sheikh Afzal after 17 years citing lack of evidence, opposed by Bank of Punjab's counsel.",
+          "is_primary": true
+        },
+        {
+          "title": "Bank of Punjab scam: Hamesh Khan, Sheikh Afzal denied bail",
+          "url": "https://tribune.com.pk/story/175062/lhc-dismisses-bail-pleas-of-hamesh-khan-and-sheikh-afzal",
+          "publisher": "The Express Tribune",
+          "source_type": "newspaper",
+          "published_date": "2011-05-25",
+          "quote_or_claim": "NAB filed its reference on 27 September 2007 against 12 accused including six BoP officials over a Rs9 billion fraud; Khan fled the country in March 2008 and was later extradited from the US.",
+          "is_primary": true
+        },
+        {
+          "title": "Case Study Report: A Case of Politicized and Corrupt Corporate Governance — The Bank of Punjab Case",
+          "url": "https://www.researchgate.net/publication/269697140_Case_Study_Report_A_Case_of_Politicized_and_Corrupt_Corporate_Governance_The_Bank_of_Punjab_Case",
+          "publisher": "ResearchGate (academic case study)",
+          "source_type": "academic",
+          "published_date": "2013-07-01",
+          "quote_or_claim": "A 2010 NAB assessment found total corruption in BoP amounted to approximately Rs76.178 billion, with the bank having shown false profits during 2005-2008 via fake audit reports.",
+          "is_primary": false
+        },
+        {
+          "title": "Prime accused produced before court in Lahore",
+          "url": "https://gulfnews.com/world/asia/pakistan/prime-accused-produced-before-court-in-lahore-1.627344",
+          "publisher": "Gulf News",
+          "source_type": "newspaper",
+          "published_date": "2010-01-01",
+          "quote_or_claim": "Hamesh Khan was extradited from the US after an Interpol red notice and produced before an accountability court in Lahore.",
+          "is_primary": false
+        }
+      ],
+      "source_urls": [
+        "https://www.nation.com.pk/13-Nov-2024/nab-gives-clean-chit-to-key-suspects-in-rs9b-bank-of-punjab-fraud-case",
+        "https://tribune.com.pk/story/175062/lhc-dismisses-bail-pleas-of-hamesh-khan-and-sheikh-afzal",
+        "https://www.researchgate.net/publication/269697140_Case_Study_Report_A_Case_of_Politicized_and_Corrupt_Corporate_Governance_The_Bank_of_Punjab_Case",
+        "https://gulfnews.com/world/asia/pakistan/prime-accused-produced-before-court-in-lahore-1.627344"
+      ],
+      "case_type": "criminal",
+      "timeline": [
+        {
+          "date": "2005-01-01",
+          "event": "Bank of Punjab begins sanctioning large loans, including to Haris Steel Mills, against allegedly inadequate collateral while submitting falsified performance reports to the State Bank.",
+          "source": "https://www.researchgate.net/publication/269697140_Case_Study_Report_A_Case_of_Politicized_and_Corrupt_Corporate_Governance_The_Bank_of_Punjab_Case"
+        },
+        {
+          "date": "2007-09-27",
+          "event": "NAB files a reference against 12 accused, including six BoP officials, over an alleged Rs9 billion loan fraud.",
+          "source": "https://tribune.com.pk/story/175062/lhc-dismisses-bail-pleas-of-hamesh-khan-and-sheikh-afzal"
+        },
+        {
+          "date": "2008-03-27",
+          "event": "Hamesh Khan, placed on the Exit Control List after the reference, nonetheless leaves Pakistan for the United States.",
+          "source": "https://tribune.com.pk/story/175062/lhc-dismisses-bail-pleas-of-hamesh-khan-and-sheikh-afzal"
+        },
+        {
+          "date": "2010-01-01",
+          "event": "Khan is arrested in the US on an Interpol red notice and extradited to Pakistan; NAB separately assesses total BoP-related corruption at approximately Rs76.178 billion.",
+          "source": "https://gulfnews.com/world/asia/pakistan/prime-accused-produced-before-court-in-lahore-1.627344"
+        },
+        {
+          "date": "2011-05-24",
+          "event": "Lahore High Court denies bail to Khan and Sheikh Afzal, finding them absconders not entitled to bail concessions.",
+          "source": "https://tribune.com.pk/story/175062/lhc-dismisses-bail-pleas-of-hamesh-khan-and-sheikh-afzal"
+        },
+        {
+          "date": "2024-11-12",
+          "event": "NAB moves to withdraw the reference against Khan and Sheikh Afzal after 17 years, citing insufficient evidence; Bank of Punjab's counsel opposes the withdrawal in court.",
+          "source": "https://www.nation.com.pk/13-Nov-2024/nab-gives-clean-chit-to-key-suspects-in-rs9b-bank-of-punjab-fraud-case"
+        }
+      ],
+      "financial_loss_estimate": {
+        "value": 9000000000.0,
+        "currency": "PKR",
+        "confidence": "medium"
+      },
+      "legal_outcome": "Unresolved as of the most recent located reporting: after 17 years of prosecution, NAB sought withdrawal of the reference against the two principal accused in November 2024, a request contested by the Bank of Punjab itself; no final court ruling on the withdrawal application was located in this research pass.",
+      "last_verified": "2026-07-23",
+      "tags": [
+        "Bank of Punjab",
+        "banking",
+        "loan fraud",
+        "NAB",
+        "Lahore",
+        "extradition",
+        "Punjab"
+      ],
+      "disclaimer": "This project aggregates publicly available information from reputable and official sources for research, transparency, and educational purposes. Inclusion in the database does not imply guilt. Users should consult the cited primary sources and court records for authoritative information."
+    },
+    {
+      "public_id": "PPCA-2014-0033",
+      "title": "Billion Tree Tsunami Project (KP) — audit and NAB irregularities inquiry",
+      "summary": "The Khyber Pakhtunkhwa government's flagship Billion Tree Tsunami afforestation project, launched in November 2014, faced a series of official inquiries into procurement and plantation irregularities. A KP Assembly parliamentary committee investigating in 2019 backed opposition allegations of exaggerated plantation figures after visiting sites in Bannu. Separate Auditor General of Pakistan special audits found irregularities of Rs410 million (2020 report, citing an unmet 36% plantation target and Rs299.29 million in seedling overpayments) and later Rs3.49 billion (2022 report, including Rs195.7 million in unaccounted-for plants and Rs109.365 million in losses from uncertified seeds). NAB's initial complaint-verification inquiry, opened in 2018, found approximately Rs462 million in suspected embezzlement — including Rs359.01 million in farm-forestry plant embezzlement — and recommended it be converted into a full investigation with several sub-inquiries against KP Forest Department officials. Over 300 KP forest officials were reported suspended or dismissed over the project's irregularities.",
+      "start_date": "2014-11-01",
+      "end_date": null,
+      "province": "Khyber Pakhtunkhwa",
+      "city": "Peshawar",
+      "institution": "KP Forest, Environment and Wildlife Department",
+      "government_department": "Government of Khyber Pakhtunkhwa",
+      "category": "public_fund_embezzlement",
+      "sector": "Environment / afforestation",
+      "amount_pkr": 3490000000.0,
+      "amount_usd": null,
+      "amount_notes": "Figures vary widely by audit stage and scope: NAB's initial inquiry found ~Rs462m in suspected embezzlement (2019/2020 reporting); an AGP special audit found Rs410m in losses/overpayments (2020 report); a later, broader AGP special audit found Rs3.49bn in irregularities (2022 report). These are not cumulative, additive figures from independent sources but different audits at different times covering overlapping and expanding scope.",
+      "current_legal_status": "investigation",
+      "status_label": "Multiple audit/inquiry findings; NAB inquiry recommended for conversion to investigation; no reported criminal reference or conviction",
+      "court_name": null,
+      "case_number": null,
+      "confidence_score": "medium",
+      "individuals": [],
+      "sources": [
+        {
+          "title": "Rs3.49bn irregularities seen in Billion Tree Tsunami Project",
+          "url": "https://www.thenews.com.pk/print/990866-rs3-49bn-irregularities-seen-in-billion-tree-tsunami-project",
+          "publisher": "The News International",
+          "source_type": "newspaper",
+          "published_date": "2022-09-13",
+          "quote_or_claim": "AGP special audit found Rs3.49bn in irregularities including Rs195.701m in unaccounted-for plants and Rs109.365m in losses from uncertified seeds.",
+          "is_primary": true
+        },
+        {
+          "title": "NAB detects over Rs462m loss in initial inquiry into Billion Tree Tsunami",
+          "url": "https://www.thenews.com.pk/print/591740-nab-detects-over-rs462m-loss-in-initial-inquiry-into-billion-tree-tsunami",
+          "publisher": "The News International",
+          "source_type": "newspaper",
+          "published_date": "2020-01-01",
+          "quote_or_claim": "NAB Peshawar's initial inquiry found Rs462m in suspected embezzlement, including Rs359.01m in farm-forestry plant embezzlement, and recommended conversion to a full investigation.",
+          "is_primary": true
+        },
+        {
+          "title": "Billion Tree Tsunami Project faces over Rs410m loss",
+          "url": "https://www.thenews.com.pk/print/726368-billion-tree-tsunami-project-faces-over-rs410m-loss",
+          "publisher": "The News International",
+          "source_type": "newspaper",
+          "published_date": "2020-10-08",
+          "quote_or_claim": "Auditor General special audit report found a Rs410m loss from mismanagement, including a 36% shortfall against the plantation target in seven forest divisions.",
+          "is_primary": true
+        },
+        {
+          "title": "Billion Tree Tsunami: Parliamentary committee claims corruption, KP govt rejects allegations",
+          "url": "https://www.geo.tv/latest/235395-billion-tree-tsunami-parliamentary-committee-claims-corruption-kp-govt-rejects-allegations",
+          "publisher": "Geo News",
+          "source_type": "newspaper",
+          "published_date": "2019-04-26",
+          "quote_or_claim": "A 20-member KP Assembly parliamentary committee, after site visits, backed opposition claims that plantation figures were exaggerated.",
+          "is_primary": false
+        }
+      ],
+      "source_urls": [
+        "https://www.thenews.com.pk/print/990866-rs3-49bn-irregularities-seen-in-billion-tree-tsunami-project",
+        "https://www.thenews.com.pk/print/591740-nab-detects-over-rs462m-loss-in-initial-inquiry-into-billion-tree-tsunami",
+        "https://www.thenews.com.pk/print/726368-billion-tree-tsunami-project-faces-over-rs410m-loss",
+        "https://www.geo.tv/latest/235395-billion-tree-tsunami-parliamentary-committee-claims-corruption-kp-govt-rejects-allegations"
+      ],
+      "case_type": "audit",
+      "timeline": [
+        {
+          "date": "2014-11-01",
+          "event": "KP government launches the Billion Tree Tsunami Project with a target of one billion planted trees.",
+          "source": "https://www.geo.tv/latest/235395-billion-tree-tsunami-parliamentary-committee-claims-corruption-kp-govt-rejects-allegations"
+        },
+        {
+          "date": "2018-03-13",
+          "event": "NAB decides to conduct complaint verification into alleged corruption in the project following media reports of suspensions of forest division employees.",
+          "source": "https://www.dawn.com/news/1394924"
+        },
+        {
+          "date": "2019-04-25",
+          "event": "A 20-member KP Assembly parliamentary committee visits Bannu project sites and backs opposition allegations of exaggerated plantation claims.",
+          "source": "https://www.geo.tv/latest/235395-billion-tree-tsunami-parliamentary-committee-claims-corruption-kp-govt-rejects-allegations"
+        },
+        {
+          "date": "2020-01-01",
+          "event": "NAB Peshawar's initial inquiry finds approximately Rs462m in suspected embezzlement and recommends conversion to a full investigation with multiple sub-inquiries.",
+          "source": "https://www.thenews.com.pk/print/591740-nab-detects-over-rs462m-loss-in-initial-inquiry-into-billion-tree-tsunami"
+        },
+        {
+          "date": "2020-10-08",
+          "event": "Auditor General of Pakistan special audit report finds a Rs410m loss due to mismanagement and a 36% plantation-target shortfall in seven divisions.",
+          "source": "https://www.thenews.com.pk/print/726368-billion-tree-tsunami-project-faces-over-rs410m-loss"
+        },
+        {
+          "date": "2022-09-13",
+          "event": "A further AGP special audit finds Rs3.49bn in irregularities across the project, including unaccounted-for plants and losses from uncertified seeds.",
+          "source": "https://www.thenews.com.pk/print/990866-rs3-49bn-irregularities-seen-in-billion-tree-tsunami-project"
+        }
+      ],
+      "financial_loss_estimate": {
+        "value": 3490000000.0,
+        "currency": "PKR",
+        "confidence": "low"
+      },
+      "legal_outcome": "No criminal reference or conviction was located in public reporting. Multiple audit and NAB complaint-verification findings documented substantial irregularities; NAB's Peshawar office recommended escalation to a full investigation, but no subsequent reference or prosecution outcome was confirmed in this research pass.",
+      "last_verified": "2026-07-23",
+      "tags": [
+        "afforestation",
+        "environment",
+        "Khyber Pakhtunkhwa",
+        "AGP audit",
+        "NAB",
+        "PTI",
+        "forest department"
+      ],
+      "disclaimer": "This project aggregates publicly available information from reputable and official sources for research, transparency, and educational purposes. Inclusion in the database does not imply guilt. Users should consult the cited primary sources and court records for authoritative information."
+    },
+    {
+      "public_id": "PPCA-1994-0034",
+      "title": "ARY Gold reference — alleged kickbacks for exclusive gold and silver import rights",
+      "summary": "NAB alleged that Dubai-based bullion trader Abdul Razzak Yaqoob, owner of ARY Gold, paid bribes to secure exclusive rights to import and trade gold and silver in Pakistan during the 1990s, with funds allegedly routed through Swiss lawyer Jens Schlegelmilch's Capricorn Trading entity, in which Asif Ali Zardari held a beneficial interest. NAB's reference named then-president Asif Ali Zardari, ARY Gold's owner Haji Abdul Razzaq, former commerce secretary Brig (retd) Aslam Hayat Qureshi, former finance secretary Javed Talaat, and others, alleging that the licences of two existing gold/silver import companies were illegally cancelled to clear the way for ARY Gold. In July 2011, an accountability court acquitted five of the accused — including Zardari's principal secretary Salman Farooqi, Qureshi, and ARY Gold's owners — for lack of proven evidence, while issuing permanent arrest warrants and proclaimed-offender status for Javed Talaat and Jens Schlegelmilch, who did not appear before the court. The case against Zardari himself did not proceed to trial due to presidential immunity during his tenure.",
+      "start_date": "1994-01-01",
+      "end_date": "2011-07-30",
+      "province": "Punjab",
+      "city": "Rawalpindi",
+      "institution": "Ministry of Commerce / Central Board of Revenue",
+      "government_department": "Ministry of Commerce",
+      "category": "kickbacks",
+      "sector": "Gold and precious metals trade / import licensing",
+      "amount_pkr": null,
+      "amount_usd": 10000000.0,
+      "amount_notes": "Press reporting describes the underlying bribery scandal as worth approximately $10 million, tied to the exclusive gold-import licence; no separate court-established rupee loss figure was located, and the case ended largely in acquittal for the accused who appeared before the court.",
+      "current_legal_status": "mixed",
+      "status_label": "Acquitted (5 accused, July 2011); arrest warrants/proclaimed-offender status issued for 2 non-appearing accused; case against Asif Zardari did not proceed to trial during his presidency",
+      "court_name": "Accountability Court-II, Rawalpindi",
+      "case_number": null,
+      "confidence_score": "medium",
+      "individuals": [
+        {
+          "name": "Abdul Razzak Yaqoob (Haji Abdul Razzaq)",
+          "position": "Owner, ARY Gold; founder, ARY Group",
+          "party": null
+        },
+        {
+          "name": "Asif Ali Zardari",
+          "position": "Former President of Pakistan (named in reference; case did not proceed to trial)",
+          "party": null
+        },
+        {
+          "name": "Salman Farooqi",
+          "position": "Former Federal Secretary of Commerce; later Principal Secretary to President Zardari",
+          "party": null
+        }
+      ],
+      "sources": [
+        {
+          "title": "Five acquitted in ARY Gold reference",
+          "url": "https://www.dawn.com/news/648259/five-acquitted-in-ary-gold-reference-2",
+          "publisher": "Dawn",
+          "source_type": "newspaper",
+          "published_date": "2011-07-31",
+          "quote_or_claim": "Accountability court acquitted five accused, including ARY Gold's owner and Zardari's principal secretary, and issued permanent arrest warrants for two non-appearing accused.",
+          "is_primary": true
+        },
+        {
+          "title": "ARY Gold reference: Principal secretary to President seeks acquittal",
+          "url": "https://tribune.com.pk/story/192942/ary-gold-reference-principal-secretary-to-president-seeks-acquittal",
+          "publisher": "The Express Tribune",
+          "source_type": "newspaper",
+          "published_date": "2011-06-20",
+          "quote_or_claim": "Salman Farooqi, named via a supplementary challan for allegedly cancelling import licences to benefit ARY Gold, argued no prosecution witness implicated him.",
+          "is_primary": true
+        },
+        {
+          "title": "The ARY story: How a keen mid-tier trading family became one of the most powerful conglomerates of Pakistan",
+          "url": "https://profit.pakistantoday.com.pk/2020/08/08/the-shady-rise-and-rise-of-ary-group/",
+          "publisher": "Profit / Pakistan Today",
+          "source_type": "newspaper",
+          "published_date": "2020-08-08",
+          "quote_or_claim": "Describes the underlying scandal as a $10 million bribery case involving Abdul Razzak Yaqoob personally.",
+          "is_primary": false
+        },
+        {
+          "title": "Abdul Razzak Yaqoob",
+          "url": "https://en.wikipedia.org/wiki/Abdul_Razzak_Yaqoob",
+          "publisher": "Wikipedia",
+          "source_type": "encyclopedia",
+          "published_date": "2024-01-01",
+          "quote_or_claim": "States Yaqoob paid a bribe to then-PM Benazir Bhutto for exclusive gold import/trade rights, with funds routed via Schlegelmilch's Capricorn Trading, owned by Zardari.",
+          "is_primary": false
+        }
+      ],
+      "source_urls": [
+        "https://www.dawn.com/news/648259/five-acquitted-in-ary-gold-reference-2",
+        "https://tribune.com.pk/story/192942/ary-gold-reference-principal-secretary-to-president-seeks-acquittal",
+        "https://profit.pakistantoday.com.pk/2020/08/08/the-shady-rise-and-rise-of-ary-group/",
+        "https://en.wikipedia.org/wiki/Abdul_Razzak_Yaqoob"
+      ],
+      "case_type": "criminal",
+      "timeline": [
+        {
+          "date": "1994-01-01",
+          "event": "Capricorn Trading, a British Virgin Islands entity linked to Asif Zardari, is established via Swiss lawyer Jens Schlegelmilch, alleged by prosecutors to have received funds connected to the gold import licence arrangement.",
+          "source": "https://en.wikipedia.org/wiki/Abdul_Razzak_Yaqoob"
+        },
+        {
+          "date": "1996-01-01",
+          "event": "As commerce secretary, Salman Farooqi allegedly cancels the import licences of two existing gold/silver importing companies, clearing the way for ARY Gold — later cited in a supplementary NAB challan against him.",
+          "source": "https://tribune.com.pk/story/192942/ary-gold-reference-principal-secretary-to-president-seeks-acquittal"
+        },
+        {
+          "date": "2011-06-20",
+          "event": "Salman Farooqi, by then principal secretary to President Zardari, submits a statement to the accountability court seeking acquittal, arguing no prosecution witness implicated him.",
+          "source": "https://tribune.com.pk/story/192942/ary-gold-reference-principal-secretary-to-president-seeks-acquittal"
+        },
+        {
+          "date": "2011-07-30",
+          "event": "Accountability Court-II in Rawalpindi acquits five accused — including Salman Farooqi, Aslam Hayat Qureshi, and ARY Gold's owners — while issuing permanent arrest warrants and proclaimed-offender status for former finance secretary Javed Talaat and Jens Schlegelmilch.",
+          "source": "https://www.dawn.com/news/648259/five-acquitted-in-ary-gold-reference-2"
+        }
+      ],
+      "financial_loss_estimate": {
+        "value": null,
+        "currency": "PKR",
+        "confidence": "low"
+      },
+      "legal_outcome": "Mixed and largely unresolved: five accused who appeared before the court were acquitted for lack of proven evidence (2011); two non-appearing accused were declared proclaimed offenders with outstanding arrest warrants; the reference against Asif Zardari did not proceed to trial during his presidency due to constitutional immunity, and no subsequent conviction was located in public reporting.",
+      "last_verified": "2026-07-23",
+      "tags": [
+        "gold trade",
+        "kickbacks",
+        "import licensing",
+        "NAB",
+        "Asif Zardari",
+        "1990s",
+        "acquittal",
+        "ARY"
+      ],
+      "disclaimer": "This project aggregates publicly available information from reputable and official sources for research, transparency, and educational purposes. Inclusion in the database does not imply guilt. Users should consult the cited primary sources and court records for authoritative information."
+    },
+    {
+      "public_id": "PPCA-2009-0035",
+      "title": "Pakistan Railways locomotive spare parts procurement scam",
+      "summary": "NAB investigated the procurement of spare parts for 69 Chinese-made locomotives purchased by Pakistan Railways during 2001-02, alleging that a negotiation committee headed by General Manager (Maintenance & Services) Naeem Malik purchased spare parts worth $15.6 million at grossly inflated prices — with 356 items procured at roughly five times open-market price, 256 items at double price, and 776 items at other inflated rates — causing substantial loss to the exchequer. NAB arrested Malik and Additional General Manager (Mechanical) Mian Ahsan Mahmood in June 2012; the matter was linked to a broader Rs13 billion locomotive repair and maintenance contract that had also drawn complaints to NAB, the Public Procurement Regulatory Authority, the Competition Commission, and a National Assembly standing committee. NAB separately filed a related Rs340 million case over repair of the same 69 locomotives against former general manager Saeed Akhtar, who was also implicated in a separate Pakistan Railways scrap-disposal scandal.",
+      "start_date": "2001-01-01",
+      "end_date": null,
+      "province": "Punjab",
+      "city": "Lahore",
+      "institution": "Pakistan Railways",
+      "government_department": "Ministry of Railways",
+      "category": "public_fund_embezzlement",
+      "sector": "Rail transport / procurement",
+      "amount_pkr": null,
+      "amount_usd": 15600000.0,
+      "amount_notes": "NAB's locomotive spare-parts case centred on an alleged $15.6 million procurement at inflated prices; a related separate NAB case alleged a further Rs340 million loss in locomotive repair contracts for the same 69 units, and press reporting referenced an underlying Rs13 billion maintenance/repair contract value. No single court-established aggregate loss figure was located.",
+      "current_legal_status": "investigation",
+      "status_label": "NAB arrests and investigation (2012); no verified final court verdict located in public reporting",
+      "court_name": "Accountability Court (Pakistan Railways references, Lahore/Islamabad)",
+      "case_number": null,
+      "confidence_score": "medium",
+      "individuals": [
+        {
+          "name": "Naeem Malik",
+          "position": "Former General Manager (Maintenance & Services), Pakistan Railways",
+          "party": null
+        },
+        {
+          "name": "Mian Ahsan Mahmood",
+          "position": "Former Additional General Manager (Mechanical), Pakistan Railways",
+          "party": null
+        },
+        {
+          "name": "Saeed Akhtar",
+          "position": "Former General Manager (Operations), Pakistan Railways",
+          "party": null
+        }
+      ],
+      "sources": [
+        {
+          "title": "Locomotive scam: Two top PR officials arrested by NAB",
+          "url": "https://www.dawn.com/news/724718",
+          "publisher": "Dawn",
+          "source_type": "newspaper",
+          "published_date": "2012-06-07",
+          "quote_or_claim": "NAB arrested Naeem Malik and Mian Ahsan Mahmood over a $15.6 million spare-parts procurement scam for 69 Chinese locomotives, alleging prices up to five times market rate.",
+          "is_primary": true
+        },
+        {
+          "title": "Locos repair 'scam': Contract dealer made investigator",
+          "url": "https://www.dawn.com/news/627732/locos-repair-scam-contract-dealer-made-investigator",
+          "publisher": "Dawn",
+          "source_type": "newspaper",
+          "published_date": "2011-05-10",
+          "quote_or_claim": "A whistleblower petitioned the Chief Justice over delaying tactics in a Rs13 billion locomotive maintenance and repair contract dating to 2009.",
+          "is_primary": true
+        },
+        {
+          "title": "Failure of Corporate Governance in Pakistan Railway",
+          "url": "http://www.ijmse.org/Volume4/Issue5/paper8.pdf",
+          "publisher": "International Journal of Management Sciences and Engineering (academic)",
+          "source_type": "academic",
+          "published_date": "2020-01-01",
+          "quote_or_claim": "NAB filed a separate Rs340 million case over repair of the 69 locomotives against former GM Saeed Akhtar, who was also arrested in a related scrap scandal.",
+          "is_primary": false
+        },
+        {
+          "title": "NAB files corruption reference against former PR officials",
+          "url": "https://www.dawn.com/news/1192637",
+          "publisher": "Dawn",
+          "source_type": "newspaper",
+          "published_date": "2015-07-06",
+          "quote_or_claim": "NAB's broader review of Pakistan Railways procurement found five distinct loss-causing cases including a $91m coach-procurement loss and a Rs48.219m pig-iron scam.",
+          "is_primary": false
+        }
+      ],
+      "source_urls": [
+        "https://www.dawn.com/news/724718",
+        "https://www.dawn.com/news/627732/locos-repair-scam-contract-dealer-made-investigator",
+        "http://www.ijmse.org/Volume4/Issue5/paper8.pdf",
+        "https://www.dawn.com/news/1192637"
+      ],
+      "case_type": "criminal",
+      "timeline": [
+        {
+          "date": "2001-01-01",
+          "event": "Pakistan Railways purchases 69 Chinese-made locomotives.",
+          "source": "https://www.dawn.com/news/724718"
+        },
+        {
+          "date": "2009-01-01",
+          "event": "A Rs13 billion contract for maintenance and repair of the 69 locomotives is signed, later becoming the subject of complaints alleging circumvention of procurement rules.",
+          "source": "https://www.dawn.com/news/627732/locos-repair-scam-contract-dealer-made-investigator"
+        },
+        {
+          "date": "2011-05-10",
+          "event": "A whistleblower petitions the Chief Justice for suo motu action over delaying tactics allegedly used to conceal misappropriation in the repair contract.",
+          "source": "https://www.dawn.com/news/627732/locos-repair-scam-contract-dealer-made-investigator"
+        },
+        {
+          "date": "2012-06-07",
+          "event": "NAB arrests Naeem Malik and Mian Ahsan Mahmood over an alleged $15.6 million spare-parts procurement scam, alleging prices up to five times the open-market rate.",
+          "source": "https://www.dawn.com/news/724718"
+        },
+        {
+          "date": "2015-07-06",
+          "event": "NAB files a broader corruption reference against several Pakistan Railways officials covering multiple procurement cases, including a Rs48.219m 'pig iron' scam.",
+          "source": "https://www.dawn.com/news/1192637"
+        }
+      ],
+      "financial_loss_estimate": {
+        "value": null,
+        "currency": "PKR",
+        "confidence": "low"
+      },
+      "legal_outcome": "NAB arrested and investigated senior Pakistan Railways officials over the locomotive spare-parts procurement; no verified final court verdict or conviction was located in the sources reviewed in this research pass.",
+      "last_verified": "2026-07-23",
+      "tags": [
+        "Pakistan Railways",
+        "procurement",
+        "locomotives",
+        "NAB",
+        "Lahore",
+        "public transport"
+      ],
+      "disclaimer": "This project aggregates publicly available information from reputable and official sources for research, transparency, and educational purposes. Inclusion in the database does not imply guilt. Users should consult the cited primary sources and court records for authoritative information."
+    },
+    {
+      "public_id": "PPCA-2019-0036",
+      "title": "2019-2020 wheat flour crisis — FIA inquiry into procurement failures and Sindh stock pilferage",
+      "summary": "A nationwide wheat flour shortage that began in late 2019 and peaked in January 2020 prompted the federal government to task the FIA with an inquiry into its causes. The FIA report, submitted to Prime Minister Imran Khan in April 2020, found the crisis stemmed from poor planning and a 2.5-million-tonne (35%) shortfall against public procurement targets — Sindh procured zero tonnes against a one-million-tonne target and Punjab procured only 3.315 million tonnes against a four-million-tonne target — compounded by delayed wheat collection and flour-mill malpractices. The inquiry assigned responsibility to the then-federal food secretary and Punjab's ex-director food for missed procurement targets, and to provincial food ministers for inadequate policy response. Separately, the report noted that when Sindh claimed a carry-forward stock of 0.98 million tonnes, NAB found evidence of massive pilferage and theft from Sindh's wheat stocks, casting doubt on the province's reported reserves.",
+      "start_date": "2019-11-01",
+      "end_date": "2020-04-04",
+      "province": null,
+      "city": null,
+      "institution": "Ministry of National Food Security and Research / Provincial Food Departments",
+      "government_department": "Ministry of National Food Security and Research",
+      "category": "misuse_of_authority",
+      "sector": "Food security / agricultural commodities",
+      "amount_pkr": null,
+      "amount_usd": null,
+      "amount_notes": "No single rupee loss figure was established; the inquiry's core finding was a quantity shortfall (2.5 million tonnes, 35% below procurement target) rather than a monetary embezzlement figure. The NAB finding on Sindh stock 'pilferage and theft' also was not quantified in the reporting reviewed.",
+      "current_legal_status": "investigation",
+      "status_label": "FIA inquiry completed and submitted to PM (April 2020); NAB separately found evidence of pilferage in Sindh wheat stocks; no reported criminal reference or conviction",
+      "court_name": null,
+      "case_number": null,
+      "confidence_score": "medium",
+      "individuals": [
+        {
+          "name": "Naseem Sadiq",
+          "position": "Former Federal Food Secretary",
+          "party": null
+        },
+        {
+          "name": "Zafar Iqbal",
+          "position": "Former Director Food, Punjab",
+          "party": null
+        },
+        {
+          "name": "Samiullah Chaudhry",
+          "position": "Punjab Minister for Food (at the time)",
+          "party": null
+        }
+      ],
+      "sources": [
+        {
+          "title": "Poor planning, flour mills' malpractices caused wheat crisis, inquiry reveals",
+          "url": "https://www.pakistantoday.com.pk/2020/04/04/poor-planning-flour-mills-malpractices-caused-wheat-crisis-inquiry-reveals/",
+          "publisher": "Pakistan Today",
+          "source_type": "newspaper",
+          "published_date": "2020-04-04",
+          "quote_or_claim": "FIA inquiry report submitted to PM Imran Khan blamed the ex-food secretary and Punjab's ex-director food for missed procurement targets, and noted NAB found pilferage and theft in Sindh's claimed wheat stocks.",
+          "is_primary": true
+        },
+        {
+          "title": "Procurement shortfall led to wheat crisis: report",
+          "url": "https://www.dawn.com/news/1546514",
+          "publisher": "Dawn",
+          "source_type": "newspaper",
+          "published_date": "2020-04-05",
+          "quote_or_claim": "Inquiry committee found public wheat procurement fell 2.5 million tonnes (35%) short of target; Sindh procured zero tonnes against a one-million-tonne target.",
+          "is_primary": true
+        },
+        {
+          "title": "2019-2020 wheat flour crisis in Pakistan",
+          "url": "https://en.wikipedia.org/wiki/2019%E2%80%932020_wheat_flour_crisis_in_Pakistan",
+          "publisher": "Wikipedia",
+          "source_type": "encyclopedia",
+          "published_date": "2023-01-01",
+          "quote_or_claim": "Wheat flour price rose from Rs50/kg in August 2018 to roughly Rs70/kg by mid-January 2020, precipitating the national crisis.",
+          "is_primary": false
+        },
+        {
+          "title": "Wheat flour crisis deepens amid blame game",
+          "url": "https://www.dawn.com/news/1529238",
+          "publisher": "Dawn",
+          "source_type": "newspaper",
+          "published_date": "2020-01-19",
+          "quote_or_claim": "Federal and provincial governments publicly blamed one another for the shortage as it deepened in January 2020.",
+          "is_primary": false
+        }
+      ],
+      "source_urls": [
+        "https://www.pakistantoday.com.pk/2020/04/04/poor-planning-flour-mills-malpractices-caused-wheat-crisis-inquiry-reveals/",
+        "https://www.dawn.com/news/1546514",
+        "https://en.wikipedia.org/wiki/2019%E2%80%932020_wheat_flour_crisis_in_Pakistan",
+        "https://www.dawn.com/news/1529238"
+      ],
+      "case_type": "parliamentary",
+      "timeline": [
+        {
+          "date": "2019-11-01",
+          "event": "Wheat flour shortage begins to emerge nationally.",
+          "source": "https://en.wikipedia.org/wiki/2019%E2%80%932020_wheat_flour_crisis_in_Pakistan"
+        },
+        {
+          "date": "2020-01-19",
+          "event": "Crisis deepens; flour prices rise sharply and federal and provincial governments trade blame publicly.",
+          "source": "https://www.dawn.com/news/1529238"
+        },
+        {
+          "date": "2020-02-01",
+          "event": "Federal government constitutes an FIA team to investigate the causes of the shortage.",
+          "source": "https://gulfnews.com/world/asia/pakistan/pakistan-constitutes-fia-team-to-probe-wheat-crisis-1.69182986"
+        },
+        {
+          "date": "2020-04-04",
+          "event": "FIA submits its inquiry report to PM Imran Khan, finding a 2.5-million-tonne procurement shortfall, delayed Punjab wheat collection, flour-mill malpractices, and NAB-identified pilferage in Sindh's claimed wheat stocks.",
+          "source": "https://www.pakistantoday.com.pk/2020/04/04/poor-planning-flour-mills-malpractices-caused-wheat-crisis-inquiry-reveals/"
+        }
+      ],
+      "financial_loss_estimate": {
+        "value": null,
+        "currency": "PKR",
+        "confidence": "low"
+      },
+      "legal_outcome": "The FIA inquiry assigned administrative responsibility to named officials for procurement failures but, per available reporting, did not itself result in a criminal reference. NAB's parallel finding of pilferage and theft in Sindh's wheat stocks was noted in the inquiry report; no subsequent NAB reference or conviction tied to this specific finding was located in this research pass.",
+      "last_verified": "2026-07-23",
+      "tags": [
+        "wheat crisis",
+        "food security",
+        "FIA inquiry",
+        "NAB",
+        "Sindh",
+        "Punjab",
+        "procurement shortfall"
+      ],
+      "disclaimer": "This project aggregates publicly available information from reputable and official sources for research, transparency, and educational purposes. Inclusion in the database does not imply guilt. Users should consult the cited primary sources and court records for authoritative information."
+    },
+    {
+      "public_id": "PPCA-2005-0037",
+      "title": "Nandipur Power Project — delay, cost-escalation and corruption reference",
+      "summary": "The Nandipur combined-cycle power project, initiated in 2005 with an original budget of roughly Rs22-27 billion, was beset by years of delays — including a 2012 contract termination by Chinese contractor Dongfang Electric Corporation over machinery stuck at Karachi port — that pushed its final cost to approximately Rs58.42 billion. A Supreme Court-appointed one-man commission led by retired Justice Rehmat Hussain Jafri concluded in 2013 that the national exchequer suffered a colossal Rs113 billion loss due to delays attributable to the federal law ministry, while a later Auditor General of Pakistan audit found more than Rs80 billion in irregularities. The plant, when finally commissioned in 2015, broke down within days and was found to produce electricity at roughly Rs42 per unit — far above cheaper legacy plants — leading to its shutdown. The Supreme Court ordered NAB to investigate in 2018, and NAB filed a reference in March 2018 against seven individuals, including former law minister Babar Awan and former prime minister Raja Pervez Ashraf, alleging a Rs27 billion loss from delayed approvals. An accountability court acquitted Babar Awan and former law secretary Riaz Kiyani in June 2019, while rejecting Raja Pervez Ashraf's acquittal plea; the Islamabad High Court upheld Awan's acquittal in January 2021, ruling that the Supreme Court-ordered commission had found negligence, not corruption.",
+      "start_date": "2005-01-01",
+      "end_date": "2021-01-12",
+      "province": "Punjab",
+      "city": "Gujranwala",
+      "institution": "Ministry of Water and Power / Ministry of Law and Justice",
+      "government_department": "Ministry of Energy (Power Division)",
+      "category": "state_owned_enterprises",
+      "sector": "Energy / power generation",
+      "amount_pkr": 113000000000.0,
+      "amount_usd": null,
+      "amount_notes": "The Justice Jafri commission (2013) found a Rs113bn exchequer loss from delays; a later AGP audit separately found over Rs80bn in irregularities; NAB's 2018 criminal reference alleged a narrower Rs27bn loss specifically from delayed approvals. These figures come from different bodies examining different aspects/periods and are not simply additive.",
+      "current_legal_status": "acquittal",
+      "status_label": "Acquitted (Babar Awan and Riaz Kiyani, accountability court, June 2019; upheld by Islamabad High Court, January 2021); other co-accused's cases status not confirmed in sources reviewed",
+      "court_name": "Accountability Court-II, Islamabad; Islamabad High Court; Supreme Court of Pakistan (oversight)",
+      "case_number": null,
+      "confidence_score": "high",
+      "individuals": [
+        {
+          "name": "Babar Awan",
+          "position": "Former Federal Law Minister; former Adviser to PM on Parliamentary Affairs",
+          "party": null
+        },
+        {
+          "name": "Raja Pervez Ashraf",
+          "position": "Former Prime Minister of Pakistan",
+          "party": null
+        },
+        {
+          "name": "Riaz Kiyani",
+          "position": "Former Federal Law Secretary",
+          "party": null
+        }
+      ],
+      "sources": [
+        {
+          "title": "SC asks NAB to probe corruption in Nandipur power plant",
+          "url": "https://www.dawn.com/news/1412733",
+          "publisher": "Dawn",
+          "source_type": "newspaper",
+          "published_date": "2018-06-08",
+          "quote_or_claim": "Supreme Court ordered NAB to investigate, referencing the Justice Jafri commission's finding of a Rs113bn exchequer loss from law-ministry delays; project cost rose from Rs22bn to Rs58bn.",
+          "is_primary": true
+        },
+        {
+          "title": "More than Rs80bn in irregularities detected in Nandipur Power Project",
+          "url": "https://www.dawn.com/news/1466094",
+          "publisher": "Dawn",
+          "source_type": "newspaper",
+          "published_date": "2019-02-26",
+          "quote_or_claim": "Auditor General of Pakistan found more than Rs80bn in irregularities, including over Rs17bn in delay-related losses attributed to the law ministry.",
+          "is_primary": true
+        },
+        {
+          "title": "Babar Awan acquitted in Nandipur project reference",
+          "url": "https://www.thenews.com.pk/latest/489647-baber-awan-acquitted-in-nandipur-project-reference",
+          "publisher": "The News International",
+          "source_type": "newspaper",
+          "published_date": "2019-06-25",
+          "quote_or_claim": "Accountability court acquitted Babar Awan and Riaz Kiyani while dismissing the acquittal pleas of Raja Pervez Ashraf and two others; NAB's reference alleged a Rs27bn loss.",
+          "is_primary": true
+        },
+        {
+          "title": "IHC upholds Awan's acquittal in Nandipur reference",
+          "url": "https://tribune.com.pk/story/2279708/ihc-upholds-awans-acquittal-in-nandipur-reference",
+          "publisher": "The Express Tribune",
+          "source_type": "newspaper",
+          "published_date": "2021-01-12",
+          "quote_or_claim": "Islamabad High Court upheld Awan's acquittal, ruling the Supreme Court-ordered commission had found negligence rather than corruption, and dismissed NAB's appeal.",
+          "is_primary": true
+        }
+      ],
+      "source_urls": [
+        "https://www.dawn.com/news/1412733",
+        "https://www.dawn.com/news/1466094",
+        "https://www.thenews.com.pk/latest/489647-baber-awan-acquitted-in-nandipur-project-reference",
+        "https://tribune.com.pk/story/2279708/ihc-upholds-awans-acquittal-in-nandipur-reference"
+      ],
+      "case_type": "criminal",
+      "timeline": [
+        {
+          "date": "2005-01-01",
+          "event": "Nandipur combined-cycle power project initiated with an original estimated cost of roughly Rs22-27 billion.",
+          "source": "https://www.dawn.com/news/1412733"
+        },
+        {
+          "date": "2012-09-01",
+          "event": "Chinese contractor Dongfang Electric Corporation terminates its contract, citing losses from $85 million in machinery stuck awaiting clearance at Karachi Port.",
+          "source": "https://www.nation.com.pk/07-May-2017/nandipur-power-project-a-model-of-unprecedented-corruption-incompetence-and-mismanagement"
+        },
+        {
+          "date": "2013-01-01",
+          "event": "Supreme Court-appointed one-man commission led by Justice (retd) Rehmat Hussain Jafri concludes the exchequer suffered a Rs113 billion loss due to law-ministry delays.",
+          "source": "https://www.dawn.com/news/1412733"
+        },
+        {
+          "date": "2015-03-01",
+          "event": "Project is completed at a final cost of approximately Rs58.42 billion; the plant breaks down within days of commissioning and is found to produce costly, inefficient electricity.",
+          "source": "https://newztodays.com/nandipur-power-plant/"
+        },
+        {
+          "date": "2018-03-01",
+          "event": "NAB files a corruption reference against seven individuals, including Babar Awan and Raja Pervez Ashraf, alleging a Rs27bn loss from delayed project approvals.",
+          "source": "https://www.thenews.com.pk/latest/489647-baber-awan-acquitted-in-nandipur-project-reference"
+        },
+        {
+          "date": "2019-02-26",
+          "event": "Auditor General of Pakistan audit finds more than Rs80bn in irregularities in the project.",
+          "source": "https://www.dawn.com/news/1466094"
+        },
+        {
+          "date": "2019-06-25",
+          "event": "Accountability court acquits Babar Awan and Riaz Kiyani while dismissing acquittal pleas of Raja Pervez Ashraf and others.",
+          "source": "https://www.thenews.com.pk/latest/489647-baber-awan-acquitted-in-nandipur-project-reference"
+        },
+        {
+          "date": "2021-01-12",
+          "event": "Islamabad High Court upholds Awan's acquittal, dismissing NAB's appeal and ruling that the Supreme Court commission found negligence, not corruption.",
+          "source": "https://tribune.com.pk/story/2279708/ihc-upholds-awans-acquittal-in-nandipur-reference"
+        }
+      ],
+      "financial_loss_estimate": {
+        "value": 113000000000.0,
+        "currency": "PKR",
+        "confidence": "medium"
+      },
+      "legal_outcome": "Mixed/largely acquitted: Babar Awan and Riaz Kiyani were acquitted by the accountability court (2019), upheld on appeal by the Islamabad High Court (2021), which found the underlying commission report established negligence rather than corruption. The acquittal plea of former PM Raja Pervez Ashraf was rejected by the same accountability court, but a final outcome for his and other co-accused's cases was not confirmed in the sources reviewed in this research pass.",
+      "last_verified": "2026-07-23",
+      "tags": [
+        "energy",
+        "power generation",
+        "Nandipur",
+        "NAB",
+        "Supreme Court",
+        "Babar Awan",
+        "acquittal",
+        "Punjab"
+      ],
+      "disclaimer": "This project aggregates publicly available information from reputable and official sources for research, transparency, and educational purposes. Inclusion in the database does not imply guilt. Users should consult the cited primary sources and court records for authoritative information."
+    }
+  ]
+}

@@ -1,0 +1,1418 @@
+{
+  "meta": {
+    "dataset": "Pakistan Public Corruption Atlas — sample seed",
+    "period": "1960-2026",
+    "disclaimer": "This project aggregates publicly available information from reputable and official sources for research, transparency, and educational purposes. Inclusion in the database does not imply guilt. Users should consult the cited primary sources and court records for authoritative information.",
+    "note": "Sample records summarize publicly reported proceedings. Amounts are as reported by cited sources and may be alleged/estimated. Status fields reflect documented procedural stages, not determinations by this project."
+  },
+  "scandals": [
+    {
+      "public_id": "PPCA-2010-0001",
+      "title": "Rental Power Plants (RPP) contracts — alleged irregular procurement",
+      "summary": "Public reporting and subsequent accountability proceedings examined alleged irregularities in short-term rental power plant contracts awarded during a period of power shortages. Reporting described questions over pricing, contract awards, and due diligence. Legal and political outcomes evolved over years; this record tracks publicly documented stages and does not assert guilt.",
+      "start_date": "2006-01-01",
+      "end_date": "2019-12-31",
+      "province": "Punjab",
+      "city": "Islamabad",
+      "latitude": 33.6844,
+      "longitude": 73.0479,
+      "institution": "Ministry of Water and Power / PEPCO (as reported)",
+      "government_department": "Power sector",
+      "category": "procurement",
+      "sector": "Energy",
+      "amount_pkr": 200000000000,
+      "amount_usd": 1800000000,
+      "amount_notes": "Order-of-magnitude figures as discussed in contemporary reporting; treat as alleged/estimated, not adjudicated loss.",
+      "current_legal_status": "case_dismissed",
+      "court_name": "Supreme Court of Pakistan / accountability forums (as reported)",
+      "case_number": null,
+      "related_legislation": ["National Accountability Ordinance, 1999", "PPRA Rules"],
+      "confidence_score": "high",
+      "content_hash": "rpp-2010-seed",
+      "individuals": [
+        {
+          "full_name": "Public officials named in RPP reporting (see sources)",
+          "position_held": "Various (ministerial / power-sector roles as reported)",
+          "political_party": null,
+          "role_description": "Named in contemporary press coverage of RPP contracts; consult sources for specific attributions."
+        }
+      ],
+      "institutions": [
+        {"name": "PEPCO", "type": "SOE", "province": "National", "relationship": "primary"},
+        {"name": "NAB", "type": "accountability", "province": "National", "relationship": "investigating"}
+      ],
+      "timeline": [
+        {
+          "event_date": "2008-01-01",
+          "title": "Rental power contracts reported amid shortage crisis",
+          "description": "Media and later official scrutiny focused on short-term rental generation contracts.",
+          "status_at_event": "allegation",
+          "source_url": "https://www.dawn.com/",
+          "sort_order": 1
+        },
+        {
+          "event_date": "2012-03-14",
+          "title": "Supreme Court scrutiny of rental power projects reported",
+          "description": "Court proceedings and public reporting addressed RPP contracts.",
+          "status_at_event": "official_inquiry",
+          "source_url": "https://www.dawn.com/",
+          "sort_order": 2
+        },
+        {
+          "event_date": "2019-01-01",
+          "title": "Subsequent accountability outcomes publicly reported as dismissed/closed in parts",
+          "description": "Later reporting described case closures/dismissals for certain references; verify against court/NAB records.",
+          "status_at_event": "case_dismissed",
+          "sort_order": 3
+        }
+      ],
+      "sources": [
+        {
+          "title": "Dawn coverage of rental power plant controversies",
+          "url": "https://www.dawn.com/",
+          "publisher": "Dawn",
+          "source_type": "newspaper",
+          "published_date": "2012-03-15",
+          "accessed_date": "2026-01-15",
+          "quote_or_claim": "Public reporting on alleged irregularities in rental power contracts.",
+          "is_primary": false
+        },
+        {
+          "title": "Express Tribune reporting on RPP cases",
+          "url": "https://tribune.com.pk/",
+          "publisher": "Express Tribune",
+          "source_type": "newspaper",
+          "published_date": "2013-06-01",
+          "accessed_date": "2026-01-15",
+          "quote_or_claim": "Independent newspaper coverage of accountability proceedings related to RPPs.",
+          "is_primary": false
+        }
+      ],
+      "documents": [
+        {
+          "title": "Seek official court judgments and NAB reference documents for authoritative status",
+          "document_type": "court_record",
+          "url": "https://www.supremecourt.gov.pk/"
+        }
+      ],
+      "related_scandal_ids": ["PPCA-2012-0003"]
+    },
+    {
+      "public_id": "PPCA-2006-0002",
+      "title": "Pakistan Steel Mills privatization — Supreme Court review of process",
+      "summary": "The attempted privatization of Pakistan Steel Mills drew intense public and judicial attention. The Supreme Court examined process fairness and related issues. This record documents the publicly reported controversy and judicial scrutiny; it does not characterize commercial parties or officials beyond cited reporting.",
+      "start_date": "2005-01-01",
+      "end_date": "2006-08-01",
+      "province": "Sindh",
+      "city": "Karachi",
+      "latitude": 24.8607,
+      "longitude": 67.0011,
+      "institution": "Pakistan Steel Mills",
+      "government_department": "Privatization Commission / Ministry of Industries",
+      "category": "state_owned_enterprises",
+      "sector": "Heavy industry",
+      "amount_pkr": null,
+      "amount_usd": null,
+      "amount_notes": "Transaction valuation figures circulated in press; not recorded here without a single adjudicated figure.",
+      "current_legal_status": "official_inquiry",
+      "court_name": "Supreme Court of Pakistan",
+      "case_number": null,
+      "related_legislation": ["Privatization Ordinance / related rules as applicable"],
+      "confidence_score": "high",
+      "individuals": [],
+      "institutions": [
+        {"name": "Pakistan Steel Mills", "type": "SOE", "province": "Sindh", "relationship": "primary"},
+        {"name": "Privatization Commission", "type": "government", "province": "National", "relationship": "related"}
+      ],
+      "timeline": [
+        {
+          "event_date": "2005-06-01",
+          "title": "Privatization process publicly contested",
+          "status_at_event": "allegation",
+          "sort_order": 1
+        },
+        {
+          "event_date": "2006-06-23",
+          "title": "Supreme Court judgment reported setting aside privatization",
+          "description": "Widely reported SC decision addressing privatization process; consult official judgment text.",
+          "status_at_event": "official_inquiry",
+          "source_url": "https://www.supremecourt.gov.pk/",
+          "sort_order": 2
+        }
+      ],
+      "sources": [
+        {
+          "title": "Supreme Court of Pakistan — judgments portal",
+          "url": "https://www.supremecourt.gov.pk/",
+          "publisher": "Supreme Court of Pakistan",
+          "source_type": "court",
+          "published_date": "2006-06-23",
+          "accessed_date": "2026-01-15",
+          "quote_or_claim": "Official court records regarding PSM privatization review.",
+          "is_primary": true
+        },
+        {
+          "title": "Dawn reporting on Pakistan Steel Mills privatization case",
+          "url": "https://www.dawn.com/",
+          "publisher": "Dawn",
+          "source_type": "newspaper",
+          "published_date": "2006-06-24",
+          "accessed_date": "2026-01-15",
+          "quote_or_claim": "Newspaper coverage of SC proceedings on PSM.",
+          "is_primary": false
+        }
+      ],
+      "documents": [
+        {
+          "title": "Supreme Court judgment (consult official text)",
+          "document_type": "judgment",
+          "url": "https://www.supremecourt.gov.pk/",
+          "published_date": "2006-06-23"
+        }
+      ],
+      "related_scandal_ids": []
+    },
+    {
+      "public_id": "PPCA-2012-0003",
+      "title": "Hajj corruption case — alleged kickbacks in pilgrim arrangements",
+      "summary": "Accountability and court reporting described alleged kickbacks and irregularities related to Hajj arrangements. Multiple defendants faced charges; outcomes varied by accused. This entry records the publicly documented case stream without asserting guilt for any named individual beyond cited procedural outcomes.",
+      "start_date": "2010-01-01",
+      "end_date": "2015-12-31",
+      "province": "Punjab",
+      "city": "Islamabad",
+      "latitude": 33.6938,
+      "longitude": 73.0652,
+      "institution": "Ministry of Religious Affairs",
+      "government_department": "Religious Affairs",
+      "category": "kickbacks",
+      "sector": "Religious affairs / pilgrimage services",
+      "amount_pkr": null,
+      "amount_usd": null,
+      "amount_notes": "Specific alleged amounts vary by report and accused; consult court judgments.",
+      "current_legal_status": "conviction",
+      "court_name": "Accountability Court / Superior courts (as reported)",
+      "case_number": null,
+      "related_legislation": ["National Accountability Ordinance, 1999"],
+      "confidence_score": "medium",
+      "individuals": [
+        {
+          "full_name": "Individuals prosecuted in Hajj case (see court judgments)",
+          "position_held": "Ministerial / official roles as reported",
+          "political_party": null,
+          "role_description": "Named in court and press reporting; outcomes differ by person — verify primary judgments."
+        }
+      ],
+      "institutions": [
+        {"name": "Ministry of Religious Affairs", "type": "ministry", "province": "National", "relationship": "primary"},
+        {"name": "NAB", "type": "accountability", "province": "National", "relationship": "investigating"}
+      ],
+      "timeline": [
+        {
+          "event_date": "2010-11-01",
+          "title": "Allegations and investigations publicly reported",
+          "status_at_event": "investigation",
+          "sort_order": 1
+        },
+        {
+          "event_date": "2012-04-01",
+          "title": "Charges / trials reported in accountability courts",
+          "status_at_event": "trial",
+          "sort_order": 2
+        },
+        {
+          "event_date": "2015-01-01",
+          "title": "Convictions reported for some accused; appeals and later developments also reported",
+          "status_at_event": "conviction",
+          "sort_order": 3
+        }
+      ],
+      "sources": [
+        {
+          "title": "Dawn reporting on Hajj corruption case",
+          "url": "https://www.dawn.com/",
+          "publisher": "Dawn",
+          "source_type": "newspaper",
+          "published_date": "2012-04-10",
+          "accessed_date": "2026-01-15",
+          "quote_or_claim": "Press coverage of NAB/court proceedings in Hajj case.",
+          "is_primary": false
+        },
+        {
+          "title": "The News reporting on Hajj case proceedings",
+          "url": "https://www.thenews.com.pk/",
+          "publisher": "The News",
+          "source_type": "newspaper",
+          "published_date": "2012-05-01",
+          "accessed_date": "2026-01-15",
+          "quote_or_claim": "Independent newspaper coverage of trial developments.",
+          "is_primary": false
+        }
+      ],
+      "documents": [],
+      "related_scandal_ids": ["PPCA-2010-0001"]
+    },
+    {
+      "public_id": "PPCA-2016-0004",
+      "title": "Panama Papers — offshore company disclosures involving Pakistani politically exposed persons",
+      "summary": "The ICIJ Panama Papers collaboration published leaked offshore company records. Pakistani politically exposed persons appeared in reporting; subsequent domestic judicial proceedings (including the Panama Case) addressed questions arising from those disclosures. This record classifies the originating material as investigative journalism and separately notes later official proceedings. Offshore ownership disclosures are not themselves proof of corruption.",
+      "start_date": "2016-04-03",
+      "end_date": "2018-12-31",
+      "province": "Punjab",
+      "city": "Islamabad",
+      "latitude": 33.7294,
+      "longitude": 73.0931,
+      "institution": "Multiple (as disclosed in Panama Papers / subsequent proceedings)",
+      "government_department": null,
+      "category": "money_laundering",
+      "sector": "Politics / finance",
+      "amount_pkr": null,
+      "amount_usd": null,
+      "amount_notes": "Asset values discussed in reporting and court proceedings; not summarized as a single adjudicated figure here.",
+      "current_legal_status": "investigative_journalism_report",
+      "court_name": "Supreme Court of Pakistan (subsequent Panama Case proceedings)",
+      "case_number": null,
+      "related_legislation": ["Constitution of Pakistan", "National Accountability Ordinance, 1999"],
+      "confidence_score": "high",
+      "individuals": [
+        {
+          "full_name": "Politically exposed persons named in ICIJ Panama Papers and subsequent SC proceedings",
+          "position_held": "Public office (as applicable at the time)",
+          "political_party": null,
+          "role_description": "Named in investigative journalism and later court proceedings; consult ICIJ and SC judgments for attributions and outcomes."
+        }
+      ],
+      "institutions": [
+        {"name": "Supreme Court of Pakistan", "type": "court", "province": "National", "relationship": "related"},
+        {"name": "NAB", "type": "accountability", "province": "National", "relationship": "investigating"}
+      ],
+      "timeline": [
+        {
+          "event_date": "2016-04-03",
+          "title": "ICIJ Panama Papers published",
+          "status_at_event": "investigative_journalism_report",
+          "source_url": "https://www.icij.org/investigations/panama-papers/",
+          "sort_order": 1
+        },
+        {
+          "event_date": "2017-04-20",
+          "title": "Supreme Court Panama Case judgment reported",
+          "description": "SC proceedings arising from petitions related to disclosures; consult official judgment.",
+          "status_at_event": "official_inquiry",
+          "source_url": "https://www.supremecourt.gov.pk/",
+          "sort_order": 2
+        }
+      ],
+      "sources": [
+        {
+          "title": "ICIJ Panama Papers investigation",
+          "url": "https://www.icij.org/investigations/panama-papers/",
+          "publisher": "ICIJ",
+          "source_type": "intl_org",
+          "published_date": "2016-04-03",
+          "accessed_date": "2026-01-15",
+          "quote_or_claim": "Primary investigative journalism disclosure of offshore company records.",
+          "is_primary": true
+        },
+        {
+          "title": "Dawn / Reuters coverage of Panama Papers and subsequent SC case",
+          "url": "https://www.dawn.com/",
+          "publisher": "Dawn",
+          "source_type": "newspaper",
+          "published_date": "2016-04-04",
+          "accessed_date": "2026-01-15",
+          "quote_or_claim": "Domestic and international news coverage of disclosures and proceedings.",
+          "is_primary": false
+        },
+        {
+          "title": "Supreme Court of Pakistan judgments portal",
+          "url": "https://www.supremecourt.gov.pk/",
+          "publisher": "Supreme Court of Pakistan",
+          "source_type": "court",
+          "published_date": "2017-04-20",
+          "accessed_date": "2026-01-15",
+          "quote_or_claim": "Official judicial record of Panama Case proceedings.",
+          "is_primary": true
+        }
+      ],
+      "documents": [
+        {
+          "title": "ICIJ Panama Papers",
+          "document_type": "investigative_dataset",
+          "url": "https://www.icij.org/investigations/panama-papers/",
+          "published_date": "2016-04-03"
+        }
+      ],
+      "related_scandal_ids": ["PPCA-2018-0005"]
+    },
+    {
+      "public_id": "PPCA-2018-0005",
+      "title": "Fake accounts / money-laundering investigation stream (publicly reported)",
+      "summary": "Reporting described investigations into alleged fake bank accounts and money-laundering concerns involving business and political figures. NAB and other agencies were reported as examining aspects of the matter. Statuses and accused lists evolved; this record captures the publicly reported investigation stream.",
+      "start_date": "2015-01-01",
+      "end_date": null,
+      "province": "Sindh",
+      "city": "Karachi",
+      "latitude": 24.9056,
+      "longitude": 67.0822,
+      "institution": "Banking / multiple private and public entities (as reported)",
+      "government_department": null,
+      "category": "money_laundering",
+      "sector": "Banking / finance",
+      "amount_pkr": null,
+      "amount_usd": null,
+      "amount_notes": "Alleged transaction volumes vary widely across reports; omitted pending adjudicated figures.",
+      "current_legal_status": "investigation",
+      "court_name": "Accountability courts (as reported)",
+      "case_number": null,
+      "related_legislation": ["Anti-Money Laundering Act", "National Accountability Ordinance, 1999"],
+      "confidence_score": "medium",
+      "individuals": [],
+      "institutions": [
+        {"name": "NAB", "type": "accountability", "province": "National", "relationship": "investigating"}
+      ],
+      "timeline": [
+        {
+          "event_date": "2018-01-01",
+          "title": "Press reporting on fake accounts inquiries intensifies",
+          "status_at_event": "investigation",
+          "sort_order": 1
+        }
+      ],
+      "sources": [
+        {
+          "title": "Dawn reporting on fake accounts case",
+          "url": "https://www.dawn.com/",
+          "publisher": "Dawn",
+          "source_type": "newspaper",
+          "published_date": "2018-06-01",
+          "accessed_date": "2026-01-15",
+          "quote_or_claim": "Newspaper coverage of alleged fake accounts investigations.",
+          "is_primary": false
+        },
+        {
+          "title": "Business Recorder reporting on related proceedings",
+          "url": "https://www.brecorder.com/",
+          "publisher": "Business Recorder",
+          "source_type": "newspaper",
+          "published_date": "2018-07-01",
+          "accessed_date": "2026-01-15",
+          "quote_or_claim": "Financial press coverage of investigation developments.",
+          "is_primary": false
+        }
+      ],
+      "documents": [],
+      "related_scandal_ids": ["PPCA-2016-0004"]
+    },
+    {
+      "public_id": "PPCA-2020-0006",
+      "title": "Sugar crisis — alleged market manipulation and inquiry findings",
+      "summary": "A sharp rise in sugar prices prompted government inquiries and extensive press coverage regarding alleged market manipulation, subsidy misuse, and influence by industry stakeholders. Official inquiry reports and media analyses documented findings and recommendations. Inclusion here reflects publicly reported inquiry material, not criminal convictions unless separately documented.",
+      "start_date": "2019-01-01",
+      "end_date": "2021-12-31",
+      "province": "Punjab",
+      "city": "Lahore",
+      "latitude": 31.5204,
+      "longitude": 74.3587,
+      "institution": "Sugar industry / provincial & federal regulatory oversight",
+      "government_department": "Ministry of Industries / provincial food departments (as reported)",
+      "category": "state_asset_misuse",
+      "sector": "Agriculture / commodities",
+      "amount_pkr": null,
+      "amount_usd": null,
+      "amount_notes": "Consumer impact and alleged undue gains discussed in inquiry reporting; no single adjudicated total recorded here.",
+      "current_legal_status": "official_inquiry",
+      "court_name": null,
+      "case_number": null,
+      "related_legislation": ["Competition law / food control regulations as applicable"],
+      "confidence_score": "medium",
+      "individuals": [],
+      "institutions": [
+        {"name": "Competition Commission of Pakistan", "type": "regulator", "province": "National", "relationship": "related"}
+      ],
+      "timeline": [
+        {
+          "event_date": "2020-04-01",
+          "title": "Government inquiry into sugar price spike publicly discussed",
+          "status_at_event": "official_inquiry",
+          "sort_order": 1
+        }
+      ],
+      "sources": [
+        {
+          "title": "Dawn reporting on sugar crisis and inquiry",
+          "url": "https://www.dawn.com/",
+          "publisher": "Dawn",
+          "source_type": "newspaper",
+          "published_date": "2020-05-01",
+          "accessed_date": "2026-01-15",
+          "quote_or_claim": "Coverage of sugar price crisis and official inquiry findings.",
+          "is_primary": false
+        },
+        {
+          "title": "Business Recorder analysis of sugar market inquiry",
+          "url": "https://www.brecorder.com/",
+          "publisher": "Business Recorder",
+          "source_type": "newspaper",
+          "published_date": "2020-06-01",
+          "accessed_date": "2026-01-15",
+          "quote_or_claim": "Financial press reporting on inquiry outcomes.",
+          "is_primary": false
+        }
+      ],
+      "documents": [],
+      "related_scandal_ids": []
+    },
+    {
+      "public_id": "PPCA-2002-0007",
+      "title": "Auditor General findings — recurring public procurement irregularities (illustrative aggregate)",
+      "summary": "Auditor General of Pakistan reports routinely document audit observations on public procurement, payroll, and project execution across departments. This seed entry represents the class of publicly published audit observations used as OSINT signals for further case-level research. Individual audit paras must be cited separately when expanded into case records.",
+      "start_date": "2000-01-01",
+      "end_date": "2024-12-31",
+      "province": "National",
+      "city": "Islamabad",
+      "latitude": 33.7380,
+      "longitude": 73.0845,
+      "institution": "Multiple federal departments (audit observations)",
+      "government_department": "Various",
+      "category": "procurement",
+      "sector": "Public administration",
+      "amount_pkr": null,
+      "amount_usd": null,
+      "amount_notes": "Aggregate audit observations; amounts must be taken from specific AGP paras.",
+      "current_legal_status": "official_inquiry",
+      "court_name": null,
+      "case_number": null,
+      "related_legislation": ["Auditor-General Ordinance", "PPRA Rules"],
+      "confidence_score": "high",
+      "individuals": [],
+      "institutions": [
+        {"name": "Auditor General of Pakistan", "type": "oversight", "province": "National", "relationship": "investigating"},
+        {"name": "Public Accounts Committee", "type": "parliamentary", "province": "National", "relationship": "related"}
+      ],
+      "timeline": [
+        {
+          "event_date": "2000-01-01",
+          "title": "Ongoing AGP audit reporting across fiscal years",
+          "status_at_event": "official_inquiry",
+          "sort_order": 1
+        }
+      ],
+      "sources": [
+        {
+          "title": "Auditor General of Pakistan — reports",
+          "url": "https://www.agp.gov.pk/",
+          "publisher": "Auditor General of Pakistan",
+          "source_type": "government",
+          "published_date": "2020-01-01",
+          "accessed_date": "2026-01-15",
+          "quote_or_claim": "Official audit reports documenting observations on public spending.",
+          "is_primary": true
+        },
+        {
+          "title": "Transparency International Pakistan — national integrity reporting",
+          "url": "https://www.transparency.org.pk/",
+          "publisher": "Transparency International Pakistan",
+          "source_type": "intl_org",
+          "published_date": "2021-01-01",
+          "accessed_date": "2026-01-15",
+          "quote_or_claim": "Civil society analysis referencing public audit and integrity indicators.",
+          "is_primary": false
+        }
+      ],
+      "documents": [
+        {
+          "title": "AGP annual / special audit reports",
+          "document_type": "audit_report",
+          "url": "https://www.agp.gov.pk/"
+        }
+      ],
+      "related_scandal_ids": []
+    },
+    {
+      "public_id": "PPCA-2011-0008",
+      "title": "Ephedrine quota case — alleged misuse of pharmaceutical export quotas",
+      "summary": "Reporting described alleged misuse of ephedrine export quotas and related accountability proceedings. Multiple individuals were named across investigation and trial stages; outcomes differed. This record tracks the publicly reported case theme.",
+      "start_date": "2011-01-01",
+      "end_date": "2018-12-31",
+      "province": "Punjab",
+      "city": "Lahore",
+      "latitude": 31.5497,
+      "longitude": 74.3436,
+      "institution": "Ministry of Health / drug regulatory oversight (as reported)",
+      "government_department": "Health",
+      "category": "illegal_contracts",
+      "sector": "Pharmaceuticals",
+      "amount_pkr": null,
+      "amount_usd": null,
+      "amount_notes": "Alleged values vary by report; consult court records.",
+      "current_legal_status": "acquittal",
+      "court_name": "Accountability / superior courts (as reported)",
+      "case_number": null,
+      "related_legislation": ["National Accountability Ordinance, 1999", "Drugs Act / related rules"],
+      "confidence_score": "medium",
+      "individuals": [
+        {
+          "full_name": "Accused persons named in ephedrine quota reporting",
+          "position_held": "Public / private roles as reported",
+          "political_party": null,
+          "role_description": "Outcomes varied; some acquittals and other dispositions reported — verify judgments."
+        }
+      ],
+      "institutions": [
+        {"name": "NAB", "type": "accountability", "province": "National", "relationship": "investigating"}
+      ],
+      "timeline": [
+        {
+          "event_date": "2011-06-01",
+          "title": "Investigation publicly reported",
+          "status_at_event": "investigation",
+          "sort_order": 1
+        },
+        {
+          "event_date": "2016-01-01",
+          "title": "Trial and later acquittals/dispositions reported for some accused",
+          "status_at_event": "acquittal",
+          "sort_order": 2
+        }
+      ],
+      "sources": [
+        {
+          "title": "Dawn reporting on ephedrine case",
+          "url": "https://www.dawn.com/",
+          "publisher": "Dawn",
+          "source_type": "newspaper",
+          "published_date": "2012-01-15",
+          "accessed_date": "2026-01-15",
+          "quote_or_claim": "Press coverage of alleged ephedrine quota misuse proceedings.",
+          "is_primary": false
+        },
+        {
+          "title": "Express Tribune coverage of ephedrine case outcomes",
+          "url": "https://tribune.com.pk/",
+          "publisher": "Express Tribune",
+          "source_type": "newspaper",
+          "published_date": "2016-02-01",
+          "accessed_date": "2026-01-15",
+          "quote_or_claim": "Reporting on court dispositions including acquittals.",
+          "is_primary": false
+        }
+      ],
+      "documents": [],
+      "related_scandal_ids": []
+    },
+    {
+      "public_id": "PPCA-2014-0009",
+      "title": "World Bank sanctions — publicly listed debarments involving Pakistan-related entities",
+      "summary": "The World Bank sanctions (debarment) system publishes entities restricted from Bank-financed projects for fraud/corruption findings under Bank procedures. This seed entry points researchers to the official sanctions database as a primary OSINT source for procurement integrity research. Individual listings must be verified on the Bank site.",
+      "start_date": "2000-01-01",
+      "end_date": "2026-12-31",
+      "province": "National",
+      "city": "Islamabad",
+      "latitude": 33.7077,
+      "longitude": 73.0498,
+      "institution": "World Bank–financed project contractors (various)",
+      "government_department": null,
+      "category": "procurement",
+      "sector": "Development projects",
+      "amount_pkr": null,
+      "amount_usd": null,
+      "amount_notes": "Debarment is an administrative sanction under Bank rules; not a domestic criminal conviction.",
+      "current_legal_status": "official_inquiry",
+      "court_name": null,
+      "case_number": null,
+      "related_legislation": ["World Bank sanctions procedures"],
+      "confidence_score": "high",
+      "individuals": [],
+      "institutions": [
+        {"name": "World Bank", "type": "intl_org", "province": null, "relationship": "investigating"}
+      ],
+      "timeline": [
+        {
+          "event_date": "2000-01-01",
+          "title": "Ongoing publication of World Bank sanctions listings",
+          "status_at_event": "official_inquiry",
+          "source_url": "https://www.worldbank.org/en/about/unit/sanctions",
+          "sort_order": 1
+        }
+      ],
+      "sources": [
+        {
+          "title": "World Bank sanctions / debarment listings",
+          "url": "https://www.worldbank.org/en/about/unit/sanctions",
+          "publisher": "World Bank",
+          "source_type": "intl_org",
+          "published_date": "2024-01-01",
+          "accessed_date": "2026-01-15",
+          "quote_or_claim": "Official administrative sanctions database for Bank-financed projects.",
+          "is_primary": true
+        },
+        {
+          "title": "Transparency International — integrity in development finance commentary",
+          "url": "https://www.transparency.org/",
+          "publisher": "Transparency International",
+          "source_type": "intl_org",
+          "published_date": "2023-01-01",
+          "accessed_date": "2026-01-15",
+          "quote_or_claim": "Civil society context on procurement integrity and sanctions systems.",
+          "is_primary": false
+        }
+      ],
+      "documents": [
+        {
+          "title": "World Bank sanctions system",
+          "document_type": "sanctions_list",
+          "url": "https://www.worldbank.org/en/about/unit/sanctions"
+        }
+      ],
+      "related_scandal_ids": ["PPCA-2002-0007"]
+    },
+    {
+      "public_id": "PPCA-2022-0010",
+      "title": "PPRA / procurement transparency disputes — alleged illegal contracts in public works (illustrative)",
+      "summary": "Public procurement portals, PPRA rules, and press reporting frequently surface disputed awards in infrastructure and public works. This illustrative seed entry models how PPRA-documented tenders plus dual newspaper corroboration can be ingested. Expand with specific tender IDs and court challenges when verified.",
+      "start_date": "2021-01-01",
+      "end_date": null,
+      "province": "Khyber Pakhtunkhwa",
+      "city": "Peshawar",
+      "latitude": 34.0151,
+      "longitude": 71.5249,
+      "institution": "Provincial public works departments (illustrative)",
+      "government_department": "Communication & Works",
+      "category": "infrastructure_fraud",
+      "sector": "Infrastructure",
+      "amount_pkr": 5000000000,
+      "amount_usd": 18000000,
+      "amount_notes": "Illustrative magnitude for UI/analytics demo; replace with verified tender/court figures before production publication.",
+      "current_legal_status": "allegation",
+      "court_name": null,
+      "case_number": null,
+      "related_legislation": ["PPRA Rules", "Public Procurement Regulatory Authority Ordinance"],
+      "confidence_score": "low",
+      "individuals": [],
+      "institutions": [
+        {"name": "PPRA", "type": "regulator", "province": "National", "relationship": "related"}
+      ],
+      "timeline": [
+        {
+          "event_date": "2022-03-01",
+          "title": "Alleged irregular award reported in press; PPRA documentation to be attached",
+          "status_at_event": "allegation",
+          "sort_order": 1
+        }
+      ],
+      "sources": [
+        {
+          "title": "Public Procurement Regulatory Authority (PPRA)",
+          "url": "https://www.ppra.org.pk/",
+          "publisher": "PPRA",
+          "source_type": "government",
+          "published_date": "2022-01-01",
+          "accessed_date": "2026-01-15",
+          "quote_or_claim": "Official procurement regulatory framework and tender publications.",
+          "is_primary": true
+        },
+        {
+          "title": "Dawn / regional reporting on disputed public works awards",
+          "url": "https://www.dawn.com/",
+          "publisher": "Dawn",
+          "source_type": "newspaper",
+          "published_date": "2022-04-01",
+          "accessed_date": "2026-01-15",
+          "quote_or_claim": "Press reporting on alleged irregularities in public works procurement.",
+          "is_primary": false
+        }
+      ],
+      "documents": [
+        {
+          "title": "PPRA rules and tender notices",
+          "document_type": "procurement",
+          "url": "https://www.ppra.org.pk/"
+        }
+      ],
+      "related_scandal_ids": ["PPCA-2002-0007"]
+    },
+    {
+      "public_id": "PPCA-2009-0011",
+      "title": "Balochistan land / housing allotment controversies — alleged land scam patterns",
+      "summary": "Provincial reporting and occasional PAC/audit observations have described disputed land allotments and housing scheme irregularities. This seed models a land-scam category record for map/heatmap coverage of Balochistan; expand with specific gazette notifications and court orders when available.",
+      "start_date": "2008-01-01",
+      "end_date": "2015-12-31",
+      "province": "Balochistan",
+      "city": "Quetta",
+      "latitude": 30.1798,
+      "longitude": 66.9750,
+      "institution": "Provincial housing / revenue departments (as reported)",
+      "government_department": "Housing & Revenue",
+      "category": "land_scam",
+      "sector": "Land administration",
+      "amount_pkr": null,
+      "amount_usd": null,
+      "amount_notes": "Case-specific valuations required from primary documents.",
+      "current_legal_status": "pending",
+      "court_name": "High Court of Balochistan (where petitions reported)",
+      "case_number": null,
+      "related_legislation": ["Provincial land / housing statutes"],
+      "confidence_score": "low",
+      "individuals": [],
+      "institutions": [
+        {"name": "Government of Balochistan", "type": "provincial_government", "province": "Balochistan", "relationship": "primary"}
+      ],
+      "timeline": [
+        {
+          "event_date": "2009-01-01",
+          "title": "Press reports of disputed allotments",
+          "status_at_event": "allegation",
+          "sort_order": 1
+        },
+        {
+          "event_date": "2014-01-01",
+          "title": "Matters described as pending in various forums",
+          "status_at_event": "pending",
+          "sort_order": 2
+        }
+      ],
+      "sources": [
+        {
+          "title": "Dawn reporting on Balochistan land/housing disputes",
+          "url": "https://www.dawn.com/",
+          "publisher": "Dawn",
+          "source_type": "newspaper",
+          "published_date": "2010-05-01",
+          "accessed_date": "2026-01-15",
+          "quote_or_claim": "Regional press coverage of alleged allotment irregularities.",
+          "is_primary": false
+        },
+        {
+          "title": "The News coverage of related provincial controversies",
+          "url": "https://www.thenews.com.pk/",
+          "publisher": "The News",
+          "source_type": "newspaper",
+          "published_date": "2011-03-01",
+          "accessed_date": "2026-01-15",
+          "quote_or_claim": "Independent newspaper corroboration of public disputes.",
+          "is_primary": false
+        }
+      ],
+      "documents": [],
+      "related_scandal_ids": []
+    },
+    {
+      "public_id": "PPCA-2019-0012",
+      "title": "Customs valuation / duty evasion cases — publicly reported enforcement actions",
+      "summary": "FBR and customs authorities periodically publish enforcement actions and face press scrutiny over alleged duty evasion and valuation frauds at ports. This seed entry anchors the customs category for analytics; attach specific SCN/order numbers from official FBR releases when expanding.",
+      "start_date": "2017-01-01",
+      "end_date": null,
+      "province": "Sindh",
+      "city": "Karachi",
+      "latitude": 24.8615,
+      "longitude": 66.9900,
+      "institution": "Federal Board of Revenue / Pakistan Customs",
+      "government_department": "Revenue",
+      "category": "customs",
+      "sector": "Trade / customs",
+      "amount_pkr": 12000000000,
+      "amount_usd": 43000000,
+      "amount_notes": "Illustrative enforcement-scale figure for demo analytics; replace with figures from specific FBR orders.",
+      "current_legal_status": "charge",
+      "court_name": "Customs courts / appellate forums (as applicable)",
+      "case_number": null,
+      "related_legislation": ["Customs Act, 1969"],
+      "confidence_score": "low",
+      "individuals": [],
+      "institutions": [
+        {"name": "Federal Board of Revenue", "type": "revenue", "province": "National", "relationship": "investigating"},
+        {"name": "Pakistan Customs", "type": "enforcement", "province": "National", "relationship": "primary"}
+      ],
+      "timeline": [
+        {
+          "event_date": "2019-06-01",
+          "title": "Enforcement actions and press reporting on alleged duty evasion",
+          "status_at_event": "charge",
+          "sort_order": 1
+        }
+      ],
+      "sources": [
+        {
+          "title": "Federal Board of Revenue",
+          "url": "https://www.fbr.gov.pk/",
+          "publisher": "FBR",
+          "source_type": "government",
+          "published_date": "2019-01-01",
+          "accessed_date": "2026-01-15",
+          "quote_or_claim": "Official revenue authority publications and enforcement notices.",
+          "is_primary": true
+        },
+        {
+          "title": "Business Recorder reporting on customs enforcement",
+          "url": "https://www.brecorder.com/",
+          "publisher": "Business Recorder",
+          "source_type": "newspaper",
+          "published_date": "2019-07-01",
+          "accessed_date": "2026-01-15",
+          "quote_or_claim": "Financial press coverage of customs valuation and evasion cases.",
+          "is_primary": false
+        }
+      ],
+      "documents": [],
+      "related_scandal_ids": []
+    },
+    {
+      "public_id": "PPCA-2015-0013",
+      "title": "Pakistan Football Federation (PFF) — governance crisis, alleged mismanagement, and FIFA normalisation",
+      "summary": "Since the mid-2010s, Pakistani and international reporting has documented a prolonged governance crisis at the Pakistan Football Federation, including disputed leadership, court involvement characterised by FIFA as third-party interference, headquarters takeovers, and repeated FIFA suspensions. Coverage has also described concerns about administration of federation affairs and accounts during contested periods. This record tracks the publicly reported crisis as it relates to a national sports body receiving public attention and international oversight; it does not assert criminal guilt for any named individual.",
+      "start_date": "2015-01-01",
+      "end_date": null,
+      "province": "Punjab",
+      "city": "Lahore",
+      "latitude": 31.5497,
+      "longitude": 74.3436,
+      "institution": "Pakistan Football Federation",
+      "government_department": "Inter-Provincial Coordination / sports oversight (as reported)",
+      "category": "state_asset_misuse",
+      "sector": "Sports / national federation",
+      "amount_pkr": null,
+      "amount_usd": null,
+      "amount_notes": "Public reporting focuses on governance interference and control of accounts/premises more than a single adjudicated loss figure.",
+      "current_legal_status": "official_inquiry",
+      "court_name": "Domestic courts (election/leadership disputes as reported) / FIFA oversight",
+      "case_number": null,
+      "related_legislation": ["FIFA Statutes", "PFF Constitution (as amended / contested)"],
+      "confidence_score": "high",
+      "content_hash": "pff-governance-2015",
+      "individuals": [
+        {
+          "full_name": "Syed Ashfaq Hussain Shah (named in press regarding contested PFF leadership)",
+          "position_held": "Former / contested PFF president (as reported)",
+          "political_party": null,
+          "role_description": "Named in Dawn, Al Jazeera and related reporting regarding disputed PFF control; FIFA did not recognise certain leadership claims as valid under its statutes. Inclusion does not imply a criminal conviction."
+        },
+        {
+          "full_name": "Haroon Malik (FIFA-appointed Normalisation Committee chair, as reported)",
+          "position_held": "Chairman, PFF Normalisation Committee",
+          "political_party": null,
+          "role_description": "Quoted in press as FIFA-appointed NC chair during headquarters and suspension episodes."
+        }
+      ],
+      "institutions": [
+        {"name": "Pakistan Football Federation", "type": "sports_federation", "province": "Punjab", "relationship": "primary"},
+        {"name": "FIFA", "type": "intl_org", "province": null, "relationship": "investigating"},
+        {"name": "Asian Football Confederation", "type": "intl_org", "province": null, "relationship": "related"}
+      ],
+      "timeline": [
+        {
+          "event_date": "2015-01-01",
+          "title": "FIFA suspension / third-party interference period publicly reported",
+          "description": "Press and FIFA communications described suspension linked to third-party interference in PFF affairs.",
+          "status_at_event": "official_inquiry",
+          "source_url": "https://www.dawn.com/",
+          "sort_order": 1
+        },
+        {
+          "event_date": "2017-01-01",
+          "title": "Further FIFA suspension episodes reported in subsequent years",
+          "status_at_event": "official_inquiry",
+          "sort_order": 2
+        },
+        {
+          "event_date": "2021-03-27",
+          "title": "PFF headquarters takeover / accounts dispute widely reported",
+          "description": "Al Jazeera and Dawn reported contested occupation of PFF premises and pressure over accounts/cheque books.",
+          "status_at_event": "allegation",
+          "source_url": "https://www.aljazeera.com/sports/2021/3/28/pakistan-football-federation-office-attacked",
+          "sort_order": 3
+        },
+        {
+          "event_date": "2021-04-07",
+          "title": "FIFA suspends PFF citing third-party interference",
+          "status_at_event": "official_inquiry",
+          "source_url": "https://www.dawn.com/news/1616911",
+          "sort_order": 4
+        },
+        {
+          "event_date": "2025-02-01",
+          "title": "Further FIFA suspension reported over constitutional amendment dispute",
+          "description": "Dawn reported FIFA suspended PFF after congress rejected FIFA/AFC-proposed constitutional revisions during normalisation.",
+          "status_at_event": "official_inquiry",
+          "source_url": "https://www.dawn.com/news/1890255",
+          "sort_order": 5
+        }
+      ],
+      "sources": [
+        {
+          "title": "FIFA suspends PFF with immediate effect over third-party interference",
+          "url": "https://www.dawn.com/news/1616911",
+          "publisher": "Dawn",
+          "source_type": "newspaper",
+          "published_date": "2021-04-07",
+          "accessed_date": "2026-07-21",
+          "quote_or_claim": "FIFA cited third-party interference after contested headquarters takeover and leadership dispute.",
+          "is_primary": false
+        },
+        {
+          "title": "Pakistan football HQ attacked, women's event scrapped",
+          "url": "https://www.aljazeera.com/sports/2021/3/28/pakistan-football-federation-office-attacked",
+          "publisher": "Al Jazeera",
+          "source_type": "newspaper",
+          "published_date": "2021-03-28",
+          "accessed_date": "2026-07-21",
+          "quote_or_claim": "Independent international reporting on HQ takeover and account/cheque-book handover pressure.",
+          "is_primary": false
+        },
+        {
+          "title": "FIFA suspends Pakistan Football Federation",
+          "url": "https://www.dawn.com/news/1890255",
+          "publisher": "Dawn",
+          "source_type": "newspaper",
+          "published_date": "2025-02-20",
+          "accessed_date": "2026-07-21",
+          "quote_or_claim": "FIFA suspension after PFF Congress rejected constitutional amendments proposed in normalisation process.",
+          "is_primary": false
+        }
+      ],
+      "documents": [
+        {
+          "title": "FIFA / AFC communications on PFF normalisation (consult FIFA statements via press citations)",
+          "document_type": "intl_org_statement",
+          "url": "https://www.fifa.com/"
+        }
+      ],
+      "related_scandal_ids": ["PPCA-2021-0014", "PPCA-2025-0015", "PPCA-2018-0016"]
+    },
+    {
+      "public_id": "PPCA-2021-0014",
+      "title": "PFF headquarters takeover (2021) — alleged forced handover of premises and accounts",
+      "summary": "In March 2021, Al Jazeera and Pakistani press reported that the FIFA-appointed PFF Normalisation Committee chair said a group linked to contested leadership forced handover of PFF accounts and cheque books after entering federation premises in Lahore. FIFA subsequently suspended the PFF for third-party interference. This related record isolates the 2021 premises/accounts episode within the wider PFF crisis.",
+      "start_date": "2021-03-27",
+      "end_date": "2021-12-31",
+      "province": "Punjab",
+      "city": "Lahore",
+      "latitude": 31.5204,
+      "longitude": 74.3587,
+      "institution": "Pakistan Football Federation",
+      "government_department": "Sports / IPC (as reported)",
+      "category": "state_asset_misuse",
+      "sector": "Sports / national federation",
+      "amount_pkr": null,
+      "amount_usd": null,
+      "amount_notes": "Episode concerns control of federation accounts/premises; no single court-adjudicated misappropriation total recorded here.",
+      "current_legal_status": "allegation",
+      "court_name": null,
+      "case_number": null,
+      "related_legislation": ["FIFA Statutes"],
+      "confidence_score": "high",
+      "individuals": [
+        {
+          "full_name": "Syed Ashfaq Hussain Shah (named in press regarding contested PFF leadership)",
+          "position_held": "Former / contested PFF president (as reported)",
+          "role_description": "Named by NC chair and press in connection with the 2021 headquarters episode; not a determination of criminal guilt by this project."
+        }
+      ],
+      "institutions": [
+        {"name": "Pakistan Football Federation", "type": "sports_federation", "province": "Punjab", "relationship": "primary"},
+        {"name": "FIFA", "type": "intl_org", "province": null, "relationship": "investigating"}
+      ],
+      "timeline": [
+        {
+          "event_date": "2021-03-27",
+          "title": "HQ takeover / accounts dispute reported",
+          "status_at_event": "allegation",
+          "source_url": "https://www.aljazeera.com/sports/2021/3/28/pakistan-football-federation-office-attacked",
+          "sort_order": 1
+        },
+        {
+          "event_date": "2021-04-07",
+          "title": "FIFA suspension for third-party interference reported",
+          "status_at_event": "official_inquiry",
+          "source_url": "https://www.dawn.com/news/1616911",
+          "sort_order": 2
+        }
+      ],
+      "sources": [
+        {
+          "title": "Pakistan football HQ attacked, women's event scrapped",
+          "url": "https://www.aljazeera.com/sports/2021/3/28/pakistan-football-federation-office-attacked",
+          "publisher": "Al Jazeera",
+          "source_type": "newspaper",
+          "published_date": "2021-03-28",
+          "accessed_date": "2026-07-21",
+          "quote_or_claim": "NC chair alleged forced handover of accounts and cheque books.",
+          "is_primary": false
+        },
+        {
+          "title": "FIFA suspends PFF over third-party interference",
+          "url": "https://www.dawn.com/news/1616911",
+          "publisher": "Dawn",
+          "source_type": "newspaper",
+          "published_date": "2021-04-07",
+          "accessed_date": "2026-07-21",
+          "quote_or_claim": "FIFA linked suspension to hostile takeover of headquarters and attempted leadership change.",
+          "is_primary": false
+        }
+      ],
+      "documents": [],
+      "related_scandal_ids": ["PPCA-2015-0013", "PPCA-2025-0015"]
+    },
+    {
+      "public_id": "PPCA-2025-0015",
+      "title": "FIFA 2025 PFF suspension — constitutional amendments and normalisation dispute",
+      "summary": "Dawn reported that FIFA suspended the Pakistan Football Federation after the PFF Congress rejected constitutional amendments proposed by FIFA/AFC as part of the normalisation process intended to enable fair elections. Reporting framed this as the latest in a series of suspensions since 2017. Status here is international sports-governance action, not a domestic criminal conviction.",
+      "start_date": "2025-02-01",
+      "end_date": null,
+      "province": "Punjab",
+      "city": "Lahore",
+      "latitude": 31.5497,
+      "longitude": 74.3436,
+      "institution": "Pakistan Football Federation",
+      "government_department": "Inter-Provincial Coordination (parliamentary oversight mentioned in press)",
+      "category": "state_asset_misuse",
+      "sector": "Sports / national federation",
+      "amount_pkr": null,
+      "amount_usd": null,
+      "amount_notes": "Governance/compliance dispute; no financial misappropriation figure attached in cited coverage.",
+      "current_legal_status": "official_inquiry",
+      "court_name": null,
+      "case_number": null,
+      "related_legislation": ["FIFA Statutes", "PFF Constitution"],
+      "confidence_score": "high",
+      "individuals": [],
+      "institutions": [
+        {"name": "Pakistan Football Federation", "type": "sports_federation", "province": "Punjab", "relationship": "primary"},
+        {"name": "FIFA", "type": "intl_org", "province": null, "relationship": "investigating"}
+      ],
+      "timeline": [
+        {
+          "event_date": "2025-02-20",
+          "title": "FIFA suspension after Congress rejects amendments (as reported)",
+          "status_at_event": "official_inquiry",
+          "source_url": "https://www.dawn.com/news/1890255",
+          "sort_order": 1
+        }
+      ],
+      "sources": [
+        {
+          "title": "FIFA suspends Pakistan Football Federation",
+          "url": "https://www.dawn.com/news/1890255",
+          "publisher": "Dawn",
+          "source_type": "newspaper",
+          "published_date": "2025-02-20",
+          "accessed_date": "2026-07-21",
+          "quote_or_claim": "FIFA cited failure to adopt constitutional revision required for fair elections/normalisation.",
+          "is_primary": false
+        },
+        {
+          "title": "Prior FIFA suspension coverage (third-party interference context)",
+          "url": "https://www.dawn.com/news/1616911",
+          "publisher": "Dawn",
+          "source_type": "newspaper",
+          "published_date": "2021-04-07",
+          "accessed_date": "2026-07-21",
+          "quote_or_claim": "Establishes pattern of FIFA suspensions of PFF in recent years.",
+          "is_primary": false
+        }
+      ],
+      "documents": [],
+      "related_scandal_ids": ["PPCA-2015-0013", "PPCA-2021-0014"]
+    },
+    {
+      "public_id": "PPCA-2018-0016",
+      "title": "National sports federations — recurring governance and public-fund oversight concerns (PCB/PFF context)",
+      "summary": "Pakistani press and parliamentary committees have periodically examined governance, election disputes, and use of resources in national sports bodies including football and cricket administrations. This umbrella record links researchers to the broader sports-federation oversight theme related to the PFF crisis; expand with specific PAC/audit paras and federation financial statements when verified.",
+      "start_date": "2010-01-01",
+      "end_date": null,
+      "province": "National",
+      "city": "Islamabad",
+      "latitude": 33.6844,
+      "longitude": 73.0479,
+      "institution": "National sports federations (PFF / related bodies)",
+      "government_department": "Inter-Provincial Coordination / sports",
+      "category": "state_asset_misuse",
+      "sector": "Sports",
+      "amount_pkr": null,
+      "amount_usd": null,
+      "amount_notes": "Umbrella theme record — attach case-specific amounts from primary documents before treating as financial findings.",
+      "current_legal_status": "official_inquiry",
+      "court_name": null,
+      "case_number": null,
+      "related_legislation": ["Sports governance frameworks / federation statutes"],
+      "confidence_score": "medium",
+      "individuals": [],
+      "institutions": [
+        {"name": "Pakistan Football Federation", "type": "sports_federation", "province": "National", "relationship": "related"},
+        {"name": "Pakistan Cricket Board", "type": "sports_board", "province": "National", "relationship": "related"}
+      ],
+      "timeline": [
+        {
+          "event_date": "2015-01-01",
+          "title": "Heightened scrutiny of federation governance coinciding with PFF FIFA interventions",
+          "status_at_event": "official_inquiry",
+          "sort_order": 1
+        }
+      ],
+      "sources": [
+        {
+          "title": "Dawn sports coverage of PFF/FIFA governance crises",
+          "url": "https://www.dawn.com/news/1616911",
+          "publisher": "Dawn",
+          "source_type": "newspaper",
+          "published_date": "2021-04-07",
+          "accessed_date": "2026-07-21",
+          "quote_or_claim": "National press documentation of sports federation governance failures.",
+          "is_primary": false
+        },
+        {
+          "title": "Al Jazeera reporting on PFF headquarters crisis",
+          "url": "https://www.aljazeera.com/sports/2021/3/28/pakistan-football-federation-office-attacked",
+          "publisher": "Al Jazeera",
+          "source_type": "newspaper",
+          "published_date": "2021-03-28",
+          "accessed_date": "2026-07-21",
+          "quote_or_claim": "International corroboration of federation premises/accounts dispute.",
+          "is_primary": false
+        }
+      ],
+      "documents": [],
+      "related_scandal_ids": ["PPCA-2015-0013"]
+    },
+    {
+      "public_id": "PPCA-1990-0017",
+      "title": "Mehran Bank scandal (Mehrangate) and Asghar Khan case — alleged ISI election financing",
+      "summary": "Publicly documented proceedings and press reporting describe the Mehran Bank scandal and the related Supreme Court petition by Air Marshal (Retd.) Asghar Khan. Reporting and court processes examined allegations that intelligence and military officials arranged funds — including via banker Younis Habib / Mehran Bank — to support political actors ahead of the 1990 election. The Supreme Court later issued findings in the Asghar Khan case. This record summarises the publicly reported case stream; consult SC judgments for authoritative outcomes regarding specific respondents.",
+      "start_date": "1990-01-01",
+      "end_date": "2012-12-31",
+      "province": "Sindh",
+      "city": "Karachi",
+      "latitude": 24.8607,
+      "longitude": 67.0011,
+      "institution": "Mehran Bank / ISI (as alleged in petition and reporting)",
+      "government_department": "Defence / intelligence (as alleged in petition)",
+      "category": "election_finance",
+      "sector": "Banking / politics",
+      "amount_pkr": 140000000,
+      "amount_usd": null,
+      "amount_notes": "Figures such as ~Rs 140 million appear in public summaries of alleged disbursements; verify against SC record. Not treated here as an adjudicated loss total for all parties.",
+      "current_legal_status": "official_inquiry",
+      "court_name": "Supreme Court of Pakistan (Asghar Khan case)",
+      "case_number": "Asghar Khan case (HR petition as commonly referenced)",
+      "related_legislation": ["Constitution of Pakistan", "banking / election-related statutes as applicable"],
+      "confidence_score": "high",
+      "individuals": [
+        {
+          "full_name": "Younis Habib (banker named in Mehran Bank / Asghar Khan reporting)",
+          "position_held": "Mehran Bank founder (as reported)",
+          "role_description": "Named in press and court-related reporting regarding alleged facilitation of political funds; later public admissions reported in coverage of SC proceedings."
+        }
+      ],
+      "institutions": [
+        {"name": "Mehran Bank", "type": "bank", "province": "Sindh", "relationship": "primary"},
+        {"name": "Supreme Court of Pakistan", "type": "court", "province": "National", "relationship": "related"},
+        {"name": "Inter-Services Intelligence", "type": "intelligence", "province": "National", "relationship": "related"}
+      ],
+      "timeline": [
+        {
+          "event_date": "1990-10-01",
+          "title": "Alleged election-period financing arrangements (as later described in petition/reporting)",
+          "status_at_event": "allegation",
+          "sort_order": 1
+        },
+        {
+          "event_date": "1994-04-07",
+          "title": "Arrest / proceedings involving Younis Habib reported in later summaries",
+          "status_at_event": "investigation",
+          "sort_order": 2
+        },
+        {
+          "event_date": "1996-06-01",
+          "title": "Asghar Khan petition filed in Supreme Court (as commonly dated in public summaries)",
+          "status_at_event": "official_inquiry",
+          "source_url": "https://www.supremecourt.gov.pk/",
+          "sort_order": 3
+        },
+        {
+          "event_date": "2012-10-19",
+          "title": "Supreme Court judgment in Asghar Khan case publicly reported",
+          "status_at_event": "official_inquiry",
+          "source_url": "https://www.dawn.com/",
+          "sort_order": 4
+        }
+      ],
+      "sources": [
+        {
+          "title": "Supreme Court of Pakistan — judgments portal (Asghar Khan case)",
+          "url": "https://www.supremecourt.gov.pk/",
+          "publisher": "Supreme Court of Pakistan",
+          "source_type": "court",
+          "published_date": "2012-10-19",
+          "accessed_date": "2026-07-21",
+          "quote_or_claim": "Primary judicial record for Asghar Khan petition outcomes.",
+          "is_primary": true
+        },
+        {
+          "title": "Dawn / Express Tribune coverage of Mehrangate and Asghar Khan case",
+          "url": "https://www.dawn.com/",
+          "publisher": "Dawn",
+          "source_type": "newspaper",
+          "published_date": "2012-10-20",
+          "accessed_date": "2026-07-21",
+          "quote_or_claim": "Press reporting on SC proceedings and historical Mehran Bank allegations.",
+          "is_primary": false
+        },
+        {
+          "title": "Express Tribune — governance commentary referencing Mehrangate",
+          "url": "https://tribune.com.pk/story/349024/governance-model-and-%e2%80%98mehrangate%e2%80%99",
+          "publisher": "Express Tribune",
+          "source_type": "newspaper",
+          "published_date": "2012-03-01",
+          "accessed_date": "2026-07-21",
+          "quote_or_claim": "Independent newspaper analysis placing Mehrangate in broader governance context.",
+          "is_primary": false
+        }
+      ],
+      "documents": [
+        {
+          "title": "Asghar Khan case judgment (consult official SC text)",
+          "document_type": "judgment",
+          "url": "https://www.supremecourt.gov.pk/",
+          "published_date": "2012-10-19"
+        }
+      ],
+      "related_scandal_ids": ["PPCA-1991-0018"]
+    },
+    {
+      "public_id": "PPCA-1991-0018",
+      "title": "Financial cooperatives scandal (early 1990s) — alleged misappropriation affecting depositors",
+      "summary": "In the early 1990s, collapse and alleged fraud in financial cooperatives / related deposit-taking schemes were widely reported in Pakistan, with large numbers of depositors affected and subsequent political and investigative scrutiny. Public accounts describe alleged misappropriation of funds; specific liability and outcomes varied by entity and accused. Expand with provincial inquiry reports and court judgments for named institutions.",
+      "start_date": "1991-01-01",
+      "end_date": "1996-12-31",
+      "province": "Punjab",
+      "city": "Lahore",
+      "latitude": 31.5204,
+      "longitude": 74.3587,
+      "institution": "Financial cooperatives / deposit-taking societies (various)",
+      "government_department": "Provincial cooperatives / finance oversight (as reported)",
+      "category": "public_fund_embezzlement",
+      "sector": "Finance / cooperatives",
+      "amount_pkr": null,
+      "amount_usd": null,
+      "amount_notes": "Aggregate depositor losses were discussed widely in contemporary press; case-level totals require primary inquiry documents.",
+      "current_legal_status": "investigation",
+      "court_name": "Various (as reported)",
+      "case_number": null,
+      "related_legislation": ["Cooperatives / banking-related provincial statutes"],
+      "confidence_score": "medium",
+      "individuals": [],
+      "institutions": [
+        {"name": "Provincial cooperatives departments", "type": "provincial_government", "province": "Punjab", "relationship": "investigating"}
+      ],
+      "timeline": [
+        {
+          "event_date": "1991-01-01",
+          "title": "Cooperatives failures and alleged frauds widely reported",
+          "status_at_event": "allegation",
+          "sort_order": 1
+        },
+        {
+          "event_date": "1994-01-01",
+          "title": "Continued investigations and political controversy reported",
+          "status_at_event": "investigation",
+          "sort_order": 2
+        }
+      ],
+      "sources": [
+        {
+          "title": "Dawn archival reporting on cooperatives scandals (consult archives)",
+          "url": "https://www.dawn.com/",
+          "publisher": "Dawn",
+          "source_type": "newspaper",
+          "published_date": "1991-06-01",
+          "accessed_date": "2026-07-21",
+          "quote_or_claim": "Contemporary and retrospective press coverage of cooperatives collapses and alleged fraud.",
+          "is_primary": false
+        },
+        {
+          "title": "The News / Express Tribune historical coverage of 1990s financial scandals",
+          "url": "https://www.thenews.com.pk/",
+          "publisher": "The News",
+          "source_type": "newspaper",
+          "published_date": "1994-01-01",
+          "accessed_date": "2026-07-21",
+          "quote_or_claim": "Independent newspaper corroboration of cooperatives-related investigations.",
+          "is_primary": false
+        }
+      ],
+      "documents": [],
+      "related_scandal_ids": ["PPCA-1990-0017"]
+    },
+    {
+      "public_id": "PPCA-1965-0019",
+      "title": "1960s–1970s bureaucratic corruption patterns — academic and historical review",
+      "summary": "Peer-reviewed historical research examines growth of corruption among Pakistan's bureaucratic elite in the 1960s and 1970s, linking development spending, local-government manipulation under the Ayub period, and later nationalisation/political control reforms under the 1970s PPP government to changing opportunity structures for corruption. This is an academic synthesis record for OSINT periodisation — not a single criminal case. Use it to contextualise later scandals; do not treat it as proof of guilt for named living persons.",
+      "start_date": "1960-01-01",
+      "end_date": "1979-12-31",
+      "province": "National",
+      "city": "Islamabad",
+      "latitude": 33.6844,
+      "longitude": 73.0479,
+      "institution": "Federal / provincial civil services (historical)",
+      "government_department": "Establishment / various ministries",
+      "category": "bribery",
+      "sector": "Public administration",
+      "amount_pkr": null,
+      "amount_usd": null,
+      "amount_notes": "Historical academic analysis — no single case amount.",
+      "current_legal_status": "investigative_journalism_report",
+      "court_name": null,
+      "case_number": null,
+      "related_legislation": [],
+      "confidence_score": "medium",
+      "individuals": [],
+      "institutions": [
+        {"name": "Civil Service of Pakistan (historical)", "type": "bureaucracy", "province": "National", "relationship": "primary"}
+      ],
+      "timeline": [
+        {
+          "event_date": "1960-01-01",
+          "title": "Academic literature identifies rising corruption with development spending and local-government politics",
+          "status_at_event": "investigative_journalism_report",
+          "sort_order": 1
+        },
+        {
+          "event_date": "1972-01-01",
+          "title": "Nationalisation and bureaucratic reforms analysed as expanding corruption opportunities",
+          "status_at_event": "investigative_journalism_report",
+          "sort_order": 2
+        }
+      ],
+      "sources": [
+        {
+          "title": "Corruption and the Bureaucratic Elite in Pakistan: The 1960s and 1970s Revisited",
+          "url": "https://www.cambridge.org/core/journals/journal-of-the-royal-asiatic-society/article/abs/corruption-and-the-bureaucratic-elite-in-pakistan-the-1960s-and-1970s-revisited/1748DBE0575D518E0B4E96323048A8D0",
+          "publisher": "Journal of the Royal Asiatic Society / Cambridge University Press",
+          "source_type": "academic",
+          "published_date": "2013-01-01",
+          "accessed_date": "2026-07-21",
+          "quote_or_claim": "Peer-reviewed historical analysis of bureaucratic corruption dynamics in 1960s–1970s Pakistan.",
+          "is_primary": true
+        },
+        {
+          "title": "Transparency International — historical corruption context for Pakistan",
+          "url": "https://www.transparency.org/",
+          "publisher": "Transparency International",
+          "source_type": "intl_org",
+          "published_date": "2020-01-01",
+          "accessed_date": "2026-07-21",
+          "quote_or_claim": "Civil-society integrity framing complementary to academic historical work.",
+          "is_primary": false
+        }
+      ],
+      "documents": [
+        {
+          "title": "JRAS article abstract / DOI",
+          "document_type": "academic",
+          "url": "https://doi.org/10.1017/s1356186313000631",
+          "published_date": "2013-01-01"
+        }
+      ],
+      "related_scandal_ids": ["PPCA-2002-0007"]
+    }
+  ]
+}
