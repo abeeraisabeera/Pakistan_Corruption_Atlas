@@ -1,7 +1,7 @@
 
 # Pakistan Public Corruption Atlas
 
-OSINT research and visualization platform covering publicly documented corruption-related proceedings involving Pakistani public officials, institutions, procurement, and state-owned entities (**1960–2026**).
+OSINT research and visualization platform covering publicly documented corruption-related proceedings involving Pakistani public officials, institutions, procurement, and state-owned entities (**1960–2026**)
 
 > **Disclaimer:** This project aggregates publicly available information from reputable and official sources for research, transparency, and educational purposes. **Inclusion in the database does not imply guilt.** Users should consult the cited primary sources and court records for authoritative information.
 
