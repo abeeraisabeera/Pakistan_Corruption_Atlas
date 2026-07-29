@@ -1,14 +1,3 @@
----
-title: Pakistan Public Corruption Atlas API
-emoji: 🌙
-colorFrom: green
-colorTo: gray
-sdk: docker
-app_port: 7860
-pinned: false
-license: mit
-short_description: Public OSINT research API for documented corruption cases (1960–2026)
----
 
 # Pakistan Public Corruption Atlas
 
