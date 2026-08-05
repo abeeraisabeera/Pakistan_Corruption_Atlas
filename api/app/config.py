@@ -82,6 +82,29 @@ class Settings(BaseSettings):
             return [part.strip() for part in text.split(",") if part.strip()]
         return value
 
+    @field_validator(
+        "use_sqlite",
+        "seed_on_startup",
+        "replace_seed_on_startup",
+        "cors_allow_credentials",
+        "use_meilisearch",
+        "rate_limit_enabled",
+        "require_api_key_for_export",
+        "turnstile_enforce_on_export",
+        mode="before",
+    )
+    @classmethod
+    def parse_boolish(cls, value):  # noqa: ANN001
+        """Vercel sometimes duplicates env values as 'false\\nfalse' — take the first line."""
+        if isinstance(value, str):
+            value = value.strip().splitlines()[0].strip().strip('"').strip("'")
+            lowered = value.lower()
+            if lowered in {"1", "true", "yes", "on"}:
+                return True
+            if lowered in {"0", "false", "no", "off"}:
+                return False
+        return value
+
     @model_validator(mode="after")
     def enforce_environment_guards(self) -> "Settings":
         # Vercel serverless: read-only FS except /tmp; never seed; allow all hosts

@@ -36,18 +36,21 @@ postgresql+asyncpg://USER:PASSWORD@HOST/neondb?sslmode=require
 | **Framework** | Other / FastAPI (auto if detected) |
 | **Install** | `pip install -r requirements.txt` (default) |
 
-3. **Environment variables:**
+3. **Environment variables** (API project — required):
 
 | Key | Value |
 |-----|--------|
 | `USE_SQLITE` | `false` |
-| `DATABASE_URL` | Neon URL with `postgresql+asyncpg://` (**secret**) |
+| `DATABASE_URL` | `postgresql+asyncpg://USER:PASS@HOST/neondb?sslmode=require` |
 | `SEED_ON_STARTUP` | `false` |
 | `REPLACE_SEED_ON_STARTUP` | `false` |
 | `TRUSTED_HOSTS` | `["*"]` |
 | `ENVIRONMENT` | `development` |
-| `DISABLE_DOCS` | `false` |
-| `CORS_ORIGINS` | `["http://localhost:3000"]` first; then your frontend Vercel URL |
+| `CORS_ORIGINS` | `["https://your-frontend.vercel.app"]` |
+
+If the function returns **500 FUNCTION_INVOCATION_FAILED**, open Vercel → Project → **Logs**.
+
+Common cause: duplicate env vars. Example: `USE_SQLITE` set twice becomes `false\nfalse` and crashes Settings. In Vercel → **Settings → Environment Variables**, keep **one** row per key with a single value (`false` or `true`, no quotes, no line breaks). Then **Redeploy**.
 
 4. Deploy. Note the URL, e.g. `https://ppca-api.vercel.app`.
 
