@@ -1,0 +1,28 @@
+services:
+  - type: web
+    name: ppca-api
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: ENVIRONMENT
+        value: development
+      - key: USE_SQLITE
+        value: "false"
+      - key: SEED_ON_STARTUP
+        value: "false"
+      - key: REPLACE_SEED_ON_STARTUP
+        value: "false"
+      - key: DISABLE_DOCS
+        value: "false"
+      - key: TRUSTED_HOSTS
+        value: '["*"]'
+      - key: CORS_ALLOW_CREDENTIALS
+        value: "false"
+      - key: RATE_LIMIT_ENABLED
+        value: "true"
+      - key: LOG_LEVEL
+        value: INFO
+      # Set these in the Render dashboard (do not commit secrets):
+      # DATABASE_URL
+      # CORS_ORIGINS

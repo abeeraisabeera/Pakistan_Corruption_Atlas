@@ -1,7 +1,6 @@
-
 # Pakistan Public Corruption Atlas
 
-OSINT research and visualization platform covering publicly documented corruption-related proceedings involving Pakistani public officials, institutions, procurement, and state-owned entities (**1960–2026**)
+OSINT research and visualization platform covering publicly documented corruption-related proceedings involving Pakistani public officials, institutions, procurement, and state-owned entities (**1960–2026**).
 
 > **Disclaimer:** This project aggregates publicly available information from reputable and official sources for research, transparency, and educational purposes. **Inclusion in the database does not imply guilt.** Users should consult the cited primary sources and court records for authoritative information.
 
@@ -11,10 +10,10 @@ OSINT research and visualization platform covering publicly documented corruptio
 |-------|------------|
 | Frontend | Next.js, React, TypeScript, Tailwind CSS, Framer Motion, ECharts, Leaflet, React Flow |
 | Backend | FastAPI, SQLAlchemy (async), Pydantic |
-| Database | PostgreSQL (Neon-ready) with SQLite demo fallback |
+| Database | PostgreSQL (Neon) with SQLite demo fallback |
 | Search | PostgreSQL FTS + optional Meilisearch |
 | Scrapers | BeautifulSoup, Scrapy-ready modular pipeline, Newspaper3k, Pandas |
-| Deploy | Docker (API / Hugging Face Spaces style), Vercel (frontend) |
+| Deploy | Render (API Docker), Vercel (frontend), Neon (Postgres) |
 
 ## Repository layout
 
@@ -100,9 +99,10 @@ pytest -q
 
 ## Deployment notes
 
-- **Frontend (Vercel):** set `NEXT_PUBLIC_API_URL` to your API origin. Security headers are set in `frontend/next.config.ts`.
-- **Backend (Docker / Hugging Face Spaces):** use `api/Dockerfile` (port **7860**). Point `DATABASE_URL` at Neon Postgres for production; keep `SEED_ON_STARTUP` only for demos. Set `ENVIRONMENT=production` (forces seed off, docs off, requires non-SQLite).
-- **Security:** see [docs/SECURITY.md](docs/SECURITY.md) for rate limits, CORS, API keys, and the production checklist.
+- **Frontend (Vercel):** Root Directory `frontend`. Set `NEXT_PUBLIC_API_URL` to your Render API origin (no trailing slash).
+- **Backend (Render):** connect this repo, Docker runtime, root [`Dockerfile`](Dockerfile) (uses `$PORT`). Point `DATABASE_URL` at Neon (`postgresql+asyncpg://...`). Set `USE_SQLITE=false`, `SEED_ON_STARTUP=false`, and `CORS_ORIGINS` to your Vercel URL. See [`render.yaml`](render.yaml).
+- **Database (Neon):** run [`database/schema.sql`](database/schema.sql), then seed once from the API if needed.
+- **Security:** see [docs/SECURITY.md](docs/SECURITY.md).
 - **Meilisearch:** optional; enable `USE_MEILISEARCH=true` after indexing.
 
 ## Ethics

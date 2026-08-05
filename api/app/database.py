@@ -1,9 +1,19 @@
 from collections.abc import AsyncGenerator
+from urllib.parse import parse_qs, urlencode, urlparse, urlunparse
 
 from sqlalchemy.ext.asyncio import AsyncSession, async_sessionmaker, create_async_engine
 from sqlalchemy.orm import DeclarativeBase
 
 from app.config import settings
+
+# libpq/Neon query params that asyncpg does not accept
+_ASYNCPG_STRIP_PARAMS = {
+    "sslmode",
+    "channel_binding",
+    "sslrootcert",
+    "sslcert",
+    "sslkey",
+}
 
 
 class Base(DeclarativeBase):
@@ -16,7 +26,30 @@ def _database_url() -> str:
     return settings.database_url
 
 
-engine = create_async_engine(_database_url(), echo=False)
+def _engine_kwargs(url: str) -> dict:
+    """Normalize Neon/Postgres URLs for asyncpg (no sslmode query args)."""
+    if url.startswith("sqlite"):
+        return {"url": url, "echo": False}
+
+    parsed = urlparse(url)
+    query = parse_qs(parsed.query)
+    want_ssl = False
+    if "sslmode" in query:
+        mode = (query.get("sslmode") or ["prefer"])[0].lower()
+        want_ssl = mode in {"require", "verify-ca", "verify-full"}
+        for key in list(_ASYNCPG_STRIP_PARAMS):
+            query.pop(key, None)
+    elif "neon.tech" in (parsed.hostname or ""):
+        want_ssl = True
+
+    clean = urlunparse(parsed._replace(query=urlencode(query, doseq=True)))
+    kwargs: dict = {"url": clean, "echo": False}
+    if want_ssl:
+        kwargs["connect_args"] = {"ssl": True}
+    return kwargs
+
+
+engine = create_async_engine(**_engine_kwargs(_database_url()))
 SessionLocal = async_sessionmaker(engine, class_=AsyncSession, expire_on_commit=False)
 
 

@@ -17,10 +17,12 @@ ENV PYTHONPATH=/app:/scrapers
 ENV USE_SQLITE=true
 ENV SAMPLE_DATA_PATH=/data/sample/scandals.json
 ENV SEED_ON_STARTUP=true
-ENV REPLACE_SEED_ON_STARTUP=true
+ENV REPLACE_SEED_ON_STARTUP=false
 ENV ENVIRONMENT=development
 ENV DISABLE_DOCS=false
+ENV TRUSTED_HOSTS=["*"]
 
 EXPOSE 7860
 
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "7860"]
+# Render injects $PORT; default 7860 for local/HF-style runs
+CMD ["sh", "-c", "python -m uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-7860}"]

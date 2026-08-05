@@ -17,13 +17,59 @@ from sqlalchemy import (
     Numeric,
     String,
     Text,
+    TypeDecorator,
     UniqueConstraint,
     func,
 )
+from sqlalchemy.dialects.postgresql import ARRAY, UUID as PG_UUID
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 from sqlalchemy.types import JSON
 
 from app.database import Base
+
+
+class GUID(TypeDecorator):
+    """UUID on Postgres, CHAR(36) on SQLite — always expose Python str."""
+
+    impl = String(36)
+    cache_ok = True
+
+    def load_dialect_impl(self, dialect):
+        if dialect.name == "postgresql":
+            return dialect.type_descriptor(PG_UUID(as_uuid=False))
+        return dialect.type_descriptor(String(36))
+
+    def process_bind_param(self, value, dialect):
+        if value is None:
+            return None
+        return str(value)
+
+    def process_result_value(self, value, dialect):
+        if value is None:
+            return None
+        return str(value)
+
+
+class StringList(TypeDecorator):
+    """TEXT[] on Postgres, JSON array on SQLite."""
+
+    impl = JSON
+    cache_ok = True
+
+    def load_dialect_impl(self, dialect):
+        if dialect.name == "postgresql":
+            return dialect.type_descriptor(ARRAY(Text()))
+        return dialect.type_descriptor(JSON())
+
+    def process_bind_param(self, value, dialect):
+        if value is None:
+            return None
+        return list(value)
+
+    def process_result_value(self, value, dialect):
+        if value is None:
+            return None
+        return list(value)
 
 
 class LegalStatus(str, enum.Enum):
@@ -71,16 +117,39 @@ class ScandalCategory(str, enum.Enum):
     MISUSE_OF_AUTHORITY = "misuse_of_authority"
 
 
-# SQLite-friendly: store enums as strings
-LegalStatusEnum = Enum(LegalStatus, name="legal_status", native_enum=False)
-ConfidenceEnum = Enum(ConfidenceLevel, name="confidence_level", native_enum=False)
-CategoryEnum = Enum(ScandalCategory, name="scandal_category", native_enum=False)
+def _enum_values(enum_cls: type[enum.Enum]) -> list[str]:
+    return [member.value for member in enum_cls]
+
+
+# Use DB enum labels (lowercase values). native_enum=True matches schema.sql on Postgres;
+# SQLite falls back to VARCHAR automatically.
+LegalStatusEnum = Enum(
+    LegalStatus,
+    name="legal_status",
+    native_enum=True,
+    values_callable=_enum_values,
+    validate_strings=True,
+)
+ConfidenceEnum = Enum(
+    ConfidenceLevel,
+    name="confidence_level",
+    native_enum=True,
+    values_callable=_enum_values,
+    validate_strings=True,
+)
+CategoryEnum = Enum(
+    ScandalCategory,
+    name="scandal_category",
+    native_enum=True,
+    values_callable=_enum_values,
+    validate_strings=True,
+)
 
 
 class Scandal(Base):
     __tablename__ = "scandals"
 
-    id: Mapped[str] = mapped_column(String(36), primary_key=True, default=lambda: str(uuid.uuid4()))
+    id: Mapped[str] = mapped_column(GUID(), primary_key=True, default=lambda: str(uuid.uuid4()))
     public_id: Mapped[str] = mapped_column(String(32), unique=True, nullable=False, index=True)
     title: Mapped[str] = mapped_column(String(500), nullable=False)
     summary: Mapped[str] = mapped_column(Text, nullable=False)
@@ -100,7 +169,7 @@ class Scandal(Base):
     current_legal_status: Mapped[LegalStatus] = mapped_column(LegalStatusEnum, nullable=False, index=True)
     court_name: Mapped[Optional[str]] = mapped_column(String(300))
     case_number: Mapped[Optional[str]] = mapped_column(String(200))
-    related_legislation: Mapped[Optional[list]] = mapped_column(JSON, default=list)
+    related_legislation: Mapped[Optional[list]] = mapped_column(StringList, default=list)
     confidence_score: Mapped[ConfidenceLevel] = mapped_column(
         ConfidenceEnum, nullable=False, default=ConfidenceLevel.MEDIUM
     )
@@ -131,9 +200,9 @@ class Scandal(Base):
 class Individual(Base):
     __tablename__ = "individuals"
 
-    id: Mapped[str] = mapped_column(String(36), primary_key=True, default=lambda: str(uuid.uuid4()))
+    id: Mapped[str] = mapped_column(GUID(), primary_key=True, default=lambda: str(uuid.uuid4()))
     full_name: Mapped[str] = mapped_column(String(300), nullable=False, index=True)
-    aliases: Mapped[Optional[list]] = mapped_column(JSON, default=list)
+    aliases: Mapped[Optional[list]] = mapped_column(StringList, default=list)
     political_party: Mapped[Optional[str]] = mapped_column(String(200))
     notes: Mapped[Optional[str]] = mapped_column(Text)
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
@@ -144,8 +213,10 @@ class Individual(Base):
 class ScandalIndividual(Base):
     __tablename__ = "scandal_individuals"
 
-    scandal_id: Mapped[str] = mapped_column(ForeignKey("scandals.id", ondelete="CASCADE"), primary_key=True)
-    individual_id: Mapped[str] = mapped_column(ForeignKey("individuals.id", ondelete="CASCADE"), primary_key=True)
+    scandal_id: Mapped[str] = mapped_column(GUID(), ForeignKey("scandals.id", ondelete="CASCADE"), primary_key=True)
+    individual_id: Mapped[str] = mapped_column(
+        GUID(), ForeignKey("individuals.id", ondelete="CASCADE"), primary_key=True
+    )
     position_held: Mapped[Optional[str]] = mapped_column(String(300))
     role_description: Mapped[Optional[str]] = mapped_column(Text)
 
@@ -156,7 +227,7 @@ class ScandalIndividual(Base):
 class Institution(Base):
     __tablename__ = "institutions"
 
-    id: Mapped[str] = mapped_column(String(36), primary_key=True, default=lambda: str(uuid.uuid4()))
+    id: Mapped[str] = mapped_column(GUID(), primary_key=True, default=lambda: str(uuid.uuid4()))
     name: Mapped[str] = mapped_column(String(300), unique=True, nullable=False)
     type: Mapped[Optional[str]] = mapped_column(String(100))
     province: Mapped[Optional[str]] = mapped_column(String(100))
@@ -166,9 +237,9 @@ class Institution(Base):
 class ScandalInstitution(Base):
     __tablename__ = "scandal_institutions"
 
-    scandal_id: Mapped[str] = mapped_column(ForeignKey("scandals.id", ondelete="CASCADE"), primary_key=True)
+    scandal_id: Mapped[str] = mapped_column(GUID(), ForeignKey("scandals.id", ondelete="CASCADE"), primary_key=True)
     institution_id: Mapped[str] = mapped_column(
-        ForeignKey("institutions.id", ondelete="CASCADE"), primary_key=True
+        GUID(), ForeignKey("institutions.id", ondelete="CASCADE"), primary_key=True
     )
     relationship_type: Mapped[Optional[str]] = mapped_column("relationship", String(100))
 
@@ -179,8 +250,8 @@ class ScandalInstitution(Base):
 class TimelineEvent(Base):
     __tablename__ = "timeline_events"
 
-    id: Mapped[str] = mapped_column(String(36), primary_key=True, default=lambda: str(uuid.uuid4()))
-    scandal_id: Mapped[str] = mapped_column(ForeignKey("scandals.id", ondelete="CASCADE"), index=True)
+    id: Mapped[str] = mapped_column(GUID(), primary_key=True, default=lambda: str(uuid.uuid4()))
+    scandal_id: Mapped[str] = mapped_column(GUID(), ForeignKey("scandals.id", ondelete="CASCADE"), index=True)
     event_date: Mapped[date] = mapped_column(Date, nullable=False)
     title: Mapped[str] = mapped_column(String(500), nullable=False)
     description: Mapped[Optional[str]] = mapped_column(Text)
@@ -194,8 +265,8 @@ class TimelineEvent(Base):
 class Source(Base):
     __tablename__ = "sources"
 
-    id: Mapped[str] = mapped_column(String(36), primary_key=True, default=lambda: str(uuid.uuid4()))
-    scandal_id: Mapped[str] = mapped_column(ForeignKey("scandals.id", ondelete="CASCADE"), index=True)
+    id: Mapped[str] = mapped_column(GUID(), primary_key=True, default=lambda: str(uuid.uuid4()))
+    scandal_id: Mapped[str] = mapped_column(GUID(), ForeignKey("scandals.id", ondelete="CASCADE"), index=True)
     title: Mapped[str] = mapped_column(String(500), nullable=False)
     url: Mapped[str] = mapped_column(Text, nullable=False)
     publisher: Mapped[str] = mapped_column(String(300), nullable=False)
@@ -212,8 +283,8 @@ class Source(Base):
 class SupportingDocument(Base):
     __tablename__ = "supporting_documents"
 
-    id: Mapped[str] = mapped_column(String(36), primary_key=True, default=lambda: str(uuid.uuid4()))
-    scandal_id: Mapped[str] = mapped_column(ForeignKey("scandals.id", ondelete="CASCADE"))
+    id: Mapped[str] = mapped_column(GUID(), primary_key=True, default=lambda: str(uuid.uuid4()))
+    scandal_id: Mapped[str] = mapped_column(GUID(), ForeignKey("scandals.id", ondelete="CASCADE"))
     title: Mapped[str] = mapped_column(String(500), nullable=False)
     document_type: Mapped[Optional[str]] = mapped_column(String(100))
     url: Mapped[Optional[str]] = mapped_column(Text)
@@ -228,19 +299,19 @@ class RelatedScandal(Base):
     __tablename__ = "related_scandals"
     __table_args__ = (UniqueConstraint("scandal_id", "related_id"),)
 
-    scandal_id: Mapped[str] = mapped_column(ForeignKey("scandals.id", ondelete="CASCADE"), primary_key=True)
-    related_id: Mapped[str] = mapped_column(ForeignKey("scandals.id", ondelete="CASCADE"), primary_key=True)
+    scandal_id: Mapped[str] = mapped_column(GUID(), ForeignKey("scandals.id", ondelete="CASCADE"), primary_key=True)
+    related_id: Mapped[str] = mapped_column(GUID(), ForeignKey("scandals.id", ondelete="CASCADE"), primary_key=True)
     relationship: Mapped[Optional[str]] = mapped_column(String(100))
 
 
 class EntityLink(Base):
     __tablename__ = "entity_links"
 
-    id: Mapped[str] = mapped_column(String(36), primary_key=True, default=lambda: str(uuid.uuid4()))
+    id: Mapped[str] = mapped_column(GUID(), primary_key=True, default=lambda: str(uuid.uuid4()))
     source_type: Mapped[str] = mapped_column(String(50), nullable=False)
-    source_id: Mapped[str] = mapped_column(String(36), nullable=False)
+    source_id: Mapped[str] = mapped_column(GUID(), nullable=False)
     target_type: Mapped[str] = mapped_column(String(50), nullable=False)
-    target_id: Mapped[str] = mapped_column(String(36), nullable=False)
+    target_id: Mapped[str] = mapped_column(GUID(), nullable=False)
     link_type: Mapped[str] = mapped_column(String(100), nullable=False)
     amount_pkr: Mapped[Optional[float]] = mapped_column(Numeric(20, 2))
     notes: Mapped[Optional[str]] = mapped_column(Text)
@@ -249,7 +320,7 @@ class EntityLink(Base):
 class ScrapeRun(Base):
     __tablename__ = "scrape_runs"
 
-    id: Mapped[str] = mapped_column(String(36), primary_key=True, default=lambda: str(uuid.uuid4()))
+    id: Mapped[str] = mapped_column(GUID(), primary_key=True, default=lambda: str(uuid.uuid4()))
     source_name: Mapped[str] = mapped_column(String(200), nullable=False)
     started_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
     finished_at: Mapped[Optional[datetime]] = mapped_column(DateTime(timezone=True))
@@ -264,7 +335,7 @@ class ScrapeRun(Base):
 class SourceCache(Base):
     __tablename__ = "source_cache"
 
-    id: Mapped[str] = mapped_column(String(36), primary_key=True, default=lambda: str(uuid.uuid4()))
+    id: Mapped[str] = mapped_column(GUID(), primary_key=True, default=lambda: str(uuid.uuid4()))
     url: Mapped[str] = mapped_column(Text, unique=True, nullable=False)
     content_hash: Mapped[Optional[str]] = mapped_column(String(64))
     raw_content: Mapped[Optional[str]] = mapped_column(Text)
