@@ -1,11 +1,21 @@
 import type { DashboardStats, PaginatedScandals, ScandalDetail } from "./types";
 
-const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:7860";
+/** Server-side / SSR: talk to the FastAPI origin directly. */
+const UPSTREAM = (process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:7860").replace(/\/$/, "");
+
+/**
+ * Browser: same-origin "" so fetch hits Next rewrites (/api → upstream).
+ * Server: absolute upstream URL (no CORS involved).
+ */
+function apiBase(): string {
+  if (typeof window !== "undefined") return "";
+  return UPSTREAM;
+}
 
 async function getJson<T>(path: string, init?: RequestInit): Promise<T> {
   const isServer = typeof window === "undefined";
   // Public read API — never send credentials or API keys from the browser.
-  const res = await fetch(`${API_BASE}${path}`, {
+  const res = await fetch(`${apiBase()}${path}`, {
     ...init,
     credentials: "omit",
     headers: { Accept: "application/json", ...(init?.headers || {}) },
@@ -18,7 +28,7 @@ async function getJson<T>(path: string, init?: RequestInit): Promise<T> {
 }
 
 export function apiUrl(path: string) {
-  return `${API_BASE}${path}`;
+  return `${apiBase()}${path}`;
 }
 
 export async function fetchDashboard(): Promise<DashboardStats> {

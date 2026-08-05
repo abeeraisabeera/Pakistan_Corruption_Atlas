@@ -33,9 +33,24 @@ const securityHeaders = [
     : []),
 ];
 
+const apiUpstream = (process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:7860").replace(
+  /\/$/,
+  ""
+);
+
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
+  async rewrites() {
+    // Browser calls /api/* on the frontend origin; Next proxies to the FastAPI project.
+    // Avoids CORS NetworkErrors on client pages (timeline, analytics, search).
+    return [
+      {
+        source: "/api/:path*",
+        destination: `${apiUpstream}/api/:path*`,
+      },
+    ];
+  },
   async headers() {
     return [
       {

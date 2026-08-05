@@ -71,6 +71,8 @@ app.add_middleware(RequestIdMiddleware)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=settings.cors_origins,
+    # Preview + production *.vercel.app frontends even if CORS_ORIGINS env is incomplete.
+    allow_origin_regex=r"https://([a-z0-9-]+\.)*vercel\.app",
     allow_credentials=settings.cors_allow_credentials,
     allow_methods=["GET", "HEAD", "OPTIONS"],
     allow_headers=["Accept", "Content-Type", "X-API-Key", "X-Request-ID", "Idempotency-Key", "CF-Turnstile-Response"],

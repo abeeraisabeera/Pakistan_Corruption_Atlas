@@ -113,5 +113,5 @@ cd frontend && pnpm install && pnpm dev
 |-------|-----|
 | API 500 / DB error | `USE_SQLITE=false` + valid `postgresql+asyncpg` Neon URL |
 | Empty list | Neon has no rows; seed once locally against Neon |
-| Browser CORS error | `CORS_ORIGINS` must match the frontend origin exactly |
+| Browser CORS / `NetworkError when attempting to fetch resource` | Client pages proxy via Next rewrites (`/api` → `NEXT_PUBLIC_API_URL`). Redeploy **frontend** after setting that env. API also allows `*.vercel.app` via CORS regex; still set `CORS_ORIGINS` to your exact frontend URL. |
 | Cold start slow | First request after idle can take a few seconds on Hobby |

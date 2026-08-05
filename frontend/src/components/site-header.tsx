@@ -59,7 +59,7 @@ export function SiteHeader() {
         </nav>
         <div className="flex items-center gap-2">
           <a
-            href={`${process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:7860"}/api/v1/export/json`}
+            href="/api/v1/export/json"
             className="focus-ring hidden rounded-full border border-[var(--border)] px-3 py-1.5 text-xs font-medium sm:inline-flex"
           >
             Export JSON
