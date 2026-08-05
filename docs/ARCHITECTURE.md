@@ -59,9 +59,8 @@ See `database/schema.sql` for the full PostgreSQL definition. SQLAlchemy models 
 
 ## Production checklist
 
-1. Neon Postgres + run `database/schema.sql` then `database/roles.sql`
-2. Disable demo seed; ingest verified records only (`ENVIRONMENT=production`)
-3. Configure CORS to Vercel domains; disable OpenAPI docs in production
-4. Schedule `scrapers/pipeline.py` via cron / GitHub Actions
-5. Human review queue before publishing Low-confidence rows (`is_published`)
-6. Full security controls: see [SECURITY.md](SECURITY.md)
+1. Neon Postgres + run `database/schema.sql` then optional `database/roles.sql`
+2. Deploy API on Vercel (`api/` root) with Neon `DATABASE_URL`; seed off
+3. Deploy frontend on Vercel (`frontend/` root); set `NEXT_PUBLIC_API_URL`
+4. Set API `CORS_ORIGINS` to the frontend Vercel URL
+5. See [DEPLOY.md](DEPLOY.md) and [SECURITY.md](SECURITY.md)

@@ -13,7 +13,7 @@ OSINT research and visualization platform covering publicly documented corruptio
 | Database | PostgreSQL (Neon) with SQLite demo fallback |
 | Search | PostgreSQL FTS + optional Meilisearch |
 | Scrapers | BeautifulSoup, Scrapy-ready modular pipeline, Newspaper3k, Pandas |
-| Deploy | Render (API Docker), Vercel (frontend), Neon (Postgres) |
+| Deploy | Vercel (frontend + FastAPI), Neon (Postgres) |
 
 ## Repository layout
 
@@ -36,6 +36,7 @@ cd api
 python -m venv .venv
 # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
+# optional scrapers: pip install -r ../scrapers/requirements.txt
 copy .env.example .env
 uvicorn app.main:app --reload --port 7860
 ```
@@ -99,11 +100,12 @@ pytest -q
 
 ## Deployment notes
 
-- **Frontend (Vercel):** Root Directory `frontend`. Set `NEXT_PUBLIC_API_URL` to your Render API origin (no trailing slash).
-- **Backend (Render):** connect this repo, Docker runtime, root [`Dockerfile`](Dockerfile) (uses `$PORT`). Point `DATABASE_URL` at Neon (`postgresql+asyncpg://...`). Set `USE_SQLITE=false`, `SEED_ON_STARTUP=false`, and `CORS_ORIGINS` to your Vercel URL. See [`render.yaml`](render.yaml).
-- **Database (Neon):** run [`database/schema.sql`](database/schema.sql), then seed once from the API if needed.
-- **Security:** see [docs/SECURITY.md](docs/SECURITY.md).
-- **Meilisearch:** optional; enable `USE_MEILISEARCH=true` after indexing.
+Full guide: **[docs/DEPLOY.md](docs/DEPLOY.md)** (Vercel API + Vercel frontend + Neon).
+
+- **API (Vercel):** Root Directory `api`. Env: `USE_SQLITE=false`, `DATABASE_URL` (Neon `postgresql+asyncpg://...`), `SEED_ON_STARTUP=false`, `TRUSTED_HOSTS=["*"]`, `CORS_ORIGINS` = frontend URL.
+- **Frontend (Vercel):** Root Directory `frontend`. Env: `NEXT_PUBLIC_API_URL` = API project URL.
+- **Database (Neon):** [`database/schema.sql`](database/schema.sql); seed once if empty.
+- **Security:** [docs/SECURITY.md](docs/SECURITY.md).
 
 ## Ethics
 
