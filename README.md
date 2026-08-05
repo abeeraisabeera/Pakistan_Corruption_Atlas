@@ -1,114 +1,199 @@
-# Pakistan Public Corruption Atlas
+<div align="center">
 
-OSINT research and visualization platform covering publicly documented corruption-related proceedings involving Pakistani public officials, institutions, procurement, and state-owned entities (**1960–2026**).
+# 🌙 Pakistan Public Corruption Atlas
 
-> **Disclaimer:** This project aggregates publicly available information from reputable and official sources for research, transparency, and educational purposes. **Inclusion in the database does not imply guilt.** Users should consult the cited primary sources and court records for authoritative information.
+### OSINT research atlas · **1960–2026**
 
-## Stack
+[![Live](https://img.shields.io/badge/🌐_Live_Demo-01411C?style=for-the-badge)](https://pakistan-corruption-atlas.vercel.app)
+[![Cases](https://img.shields.io/badge/📂_Cases-0D7377?style=for-the-badge)](https://pakistan-corruption-atlas.vercel.app/cases)
+[![License](https://img.shields.io/badge/License-MIT-D4AF37?style=for-the-badge)](LICENSE)
 
-| Layer | Technology |
-|-------|------------|
-| Frontend | Next.js, React, TypeScript, Tailwind CSS, Framer Motion, ECharts, Leaflet, React Flow |
-| Backend | FastAPI, SQLAlchemy (async), Pydantic |
-| Database | PostgreSQL (Neon) with SQLite demo fallback |
-| Search | PostgreSQL FTS + optional Meilisearch |
-| Scrapers | BeautifulSoup, Scrapy-ready modular pipeline, Newspaper3k, Pandas |
-| Deploy | Vercel (frontend + FastAPI), Neon (Postgres) |
+[![Next.js](https://img.shields.io/badge/Next.js-15-black?style=flat-square&logo=nextdotjs)](frontend/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-async-009688?style=flat-square&logo=fastapi&logoColor=white)](api/)
+[![Postgres](https://img.shields.io/badge/Neon-Postgres-336791?style=flat-square&logo=postgresql&logoColor=white)](database/)
+[![Vercel](https://img.shields.io/badge/Deploy-Vercel-000000?style=flat-square&logo=vercel)](docs/DEPLOY.md)
 
-## Repository layout
+Publicly sourced records of corruption-related proceedings involving Pakistani officials, institutions, procurement, and state entities — built for **research, transparency, and education**.
 
+</div>
+
+---
+
+> **⚠️ Disclaimer**  
+> Aggregates publicly available information from reputable and official sources.  
+> **Inclusion does not imply guilt.** Always consult cited primary sources and court records.
+
+---
+
+## ✨ What you get
+
+| | |
+|:---|:---|
+| 🗺️ **Case atlas** | Filterable records with status, province, category, and citations |
+| ⏱️ **Timeline** | Chronological view of documented proceedings |
+| 📊 **Analytics** | Trends, amounts, and relationship views |
+| 📤 **Export** | JSON & CSV for researchers |
+| 🔍 **Search** | Full-text search across titles, summaries, and institutions |
+
+---
+
+## 🏗️ Stack
+
+```text
+┌─────────────┐     ┌─────────────┐     ┌─────────────┐
+│   Next.js   │────▶│   FastAPI   │────▶│    Neon     │
+│  (Vercel)   │     │  (Vercel)   │     │  Postgres   │
+└─────────────┘     └─────────────┘     └─────────────┘
 ```
-api/                 FastAPI application
-frontend/            Next.js dashboard
-scrapers/            OSINT pipeline (fetch → parse → clean → verify → stage)
-database/schema.sql  Canonical PostgreSQL schema
-data/sample/         Seed dataset with citations
-docs/                Architecture & ethics docs
-docker-compose.yml   Postgres + Meilisearch + API
-```
 
-## Quick start (local demo)
+| Layer | Tech |
+|:------|:-----|
+| **Frontend** | Next.js · React · TypeScript · Tailwind · Framer Motion · ECharts |
+| **API** | FastAPI · SQLAlchemy (async) · Pydantic |
+| **Data** | Neon Postgres · SQLite for local demos |
+| **Ingest** | Modular scrapers (fetch → parse → clean → verify) |
 
-### 1. API
+---
+
+## 🚀 Quick start
+
+<details open>
+<summary><b>① API</b> · port <code>7860</code></summary>
 
 ```bash
 cd api
 python -m venv .venv
 # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
-# optional scrapers: pip install -r ../scrapers/requirements.txt
-copy .env.example .env
+cp .env.example .env          # Windows: copy .env.example .env
 uvicorn app.main:app --reload --port 7860
 ```
 
-API docs: http://localhost:7860/docs
+📖 Docs → [http://localhost:7860/docs](http://localhost:7860/docs)
 
-### 2. Frontend
+</details>
+
+<details open>
+<summary><b>② Frontend</b> · port <code>3000</code></summary>
 
 ```bash
 cd frontend
 pnpm install
-copy .env.local.example .env.local
+cp .env.local.example .env.local   # Windows: copy .env.local.example .env.local
 pnpm dev
 ```
 
-Dashboard: http://localhost:3000
+🖥️ App → [http://localhost:3000](http://localhost:3000)
 
-### 3. Docker (Postgres + API)
+</details>
+
+<details>
+<summary><b>③ Docker</b> · Postgres + API</summary>
 
 ```bash
 docker compose up --build
 ```
 
-API on http://localhost:7860 (set `USE_SQLITE=false` via compose).
+</details>
 
-## Legal status labels
+---
 
-Every record distinguishes procedural stages — never treated as interchangeable:
+## 📁 Layout
 
-Alleged · Under Investigation · Charged · On Trial · Convicted · Acquitted · Case Dismissed · Pending · Official Inquiry · Investigative Journalism Report
+```text
+PPCA/
+├── api/            FastAPI app (Vercel root: api)
+├── frontend/       Next.js dashboard (Vercel root: frontend)
+├── scrapers/       OSINT ingest pipeline
+├── database/       schema.sql · roles
+├── data/sample/    Seed dataset + citations
+└── docs/           Deploy · security · ethics · architecture
+```
 
-## Verification rules
+---
 
-- Minimum **two independent** reputable sources
-- Prefer official documents (court, AGP, NAB, Gazette, PPRA)
-- Citation for claims; confidence score High / Medium / Low
-- Allowlisted domains only; robots.txt + rate limits in scrapers
-- No social media rumors, blogs, anonymous forums
+## 🏷️ Status labels
 
-## Scraping pipeline
+Procedural stages are **never** treated as interchangeable:
+
+| Status | Meaning |
+|:-------|:--------|
+| Alleged | Public allegation / press report |
+| Under Investigation | Agency examining the matter |
+| Charged | Formal charges reported |
+| On Trial | Court proceedings underway |
+| Convicted / Acquitted | Court outcome |
+| Official Inquiry | Inquiry / commission findings |
+| Investigative Journalism | Originating journalism (not a verdict) |
+
+Also: Case Dismissed · Pending · Civil Settlement · Closed · and more.
+
+---
+
+## ✅ Verification rules
+
+- **Two independent** reputable sources minimum  
+- Prefer official docs (court, AGP, NAB, Gazette, PPRA)  
+- Confidence: **High** / **Medium** / **Low**  
+- Allowlisted domains · robots.txt · rate limits  
+- No rumors, blogs, or anonymous forums  
+
+---
+
+## 🔌 API snippets
+
+```http
+GET /health
+GET /api/v1/scandals
+GET /api/v1/scandals/{public_id}
+GET /api/v1/export/json
+GET /api/v1/export/csv
+```
 
 ```bash
-# from repo root
+# Scrapers (from repo root)
 python scrapers/pipeline.py --seeds --out data/staging/candidates.jsonl
 python scrapers/pipeline.py --url https://www.agp.gov.pk/ --rpm 4
+
+# Tests
+cd api && pytest -q
 ```
 
-Modules: `scrapers/` (fetch/rate-limit/robots), `parser/`, `cleaner/`, `verifier/`, `database/` (JSONL staging).
+---
 
-## Export
+## ☁️ Deploy
 
-- JSON: `GET /api/v1/export/json`
-- CSV: `GET /api/v1/export/csv`
+Full walkthrough → **[docs/DEPLOY.md](docs/DEPLOY.md)**
 
-## Tests
+| Project | Root | Key env |
+|:--------|:-----|:--------|
+| **API** | `api` | `DATABASE_URL` · `USE_SQLITE=false` · `CORS_ORIGINS` |
+| **Frontend** | `frontend` | `NEXT_PUBLIC_API_URL` → API origin (no trailing slash) |
+| **DB** | Neon | Apply [`database/schema.sql`](database/schema.sql) |
 
-```bash
-cd api
-pytest -q
-```
+Security checklist → [docs/SECURITY.md](docs/SECURITY.md)
 
-## Deployment notes
+---
 
-Full guide: **[docs/DEPLOY.md](docs/DEPLOY.md)** (Vercel API + Vercel frontend + Neon).
+## 📚 Docs
 
-- **API (Vercel):** Root Directory `api`. Env: `USE_SQLITE=false`, `DATABASE_URL` (Neon `postgresql+asyncpg://...`), `SEED_ON_STARTUP=false`, `TRUSTED_HOSTS=["*"]`, `CORS_ORIGINS` = frontend URL.
-- **Frontend (Vercel):** Root Directory `frontend`. Env: `NEXT_PUBLIC_API_URL` = API project URL.
-- **Database (Neon):** [`database/schema.sql`](database/schema.sql); seed once if empty.
-- **Security:** [docs/SECURITY.md](docs/SECURITY.md).
+| Doc | |
+|:----|:--|
+| [Architecture](docs/ARCHITECTURE.md) | System design |
+| [Ethics](docs/ETHICS.md) | Research & sourcing principles |
+| [Security](docs/SECURITY.md) | Hardening for public-read OSS |
+| [Deploy](docs/DEPLOY.md) | Vercel + Neon step-by-step |
 
-## Ethics
+---
 
-See [docs/ETHICS.md](docs/ETHICS.md), [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md), and [docs/SECURITY.md](docs/SECURITY.md).
+<div align="center">
 
-Avoid political branding. This is a journalism / transparency research tool.
+**Not affiliated with any political party or government body.**
+
+Research & education only · Cite primary sources
+
+<br/>
+
+[🌐 Open the atlas](https://pakistan-corruption-atlas.vercel.app) · [📂 Browse cases](https://pakistan-corruption-atlas.vercel.app/cases)
+
+</div>

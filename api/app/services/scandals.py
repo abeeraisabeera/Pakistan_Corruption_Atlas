@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import math
+import uuid
 from typing import Optional
 
 from sqlalchemy import String, and_, cast, func, or_, select
@@ -193,6 +194,19 @@ async def list_scandals(session: AsyncSession, filters: ScandalFilters) -> Pagin
     )
 
 
+def _scandal_id_clause(public_or_uuid: str):
+    """Match public_id always; only compare UUID column when the value is a UUID.
+
+    Comparing a non-UUID string to Scandal.id makes Postgres raise DBAPIError
+    (invalid input syntax for type uuid), which the frontend surfaces as a 404.
+    """
+    try:
+        uuid.UUID(public_or_uuid)
+    except ValueError:
+        return Scandal.public_id == public_or_uuid
+    return or_(Scandal.public_id == public_or_uuid, Scandal.id == public_or_uuid)
+
+
 async def get_scandal(session: AsyncSession, public_or_uuid: str) -> Optional[ScandalDetail]:
     result = await session.execute(
         select(Scandal)
@@ -204,7 +218,7 @@ async def get_scandal(session: AsyncSession, public_or_uuid: str) -> Optional[Sc
             selectinload(Scandal.institutions_rel).selectinload(ScandalInstitution.institution),
         )
         .where(
-            or_(Scandal.public_id == public_or_uuid, Scandal.id == public_or_uuid),
+            _scandal_id_clause(public_or_uuid),
             Scandal.is_published.is_(True),
             Scandal.deleted_at.is_(None),
         )
