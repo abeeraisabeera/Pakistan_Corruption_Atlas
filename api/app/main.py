@@ -37,7 +37,16 @@ if settings.sentry_dsn:
 
 @asynccontextmanager
 async def lifespan(_app: FastAPI):
-    await init_db()
+    # Do not crash the whole serverless function if DB init fails (bad URL, cold Neon, etc.)
+    try:
+        await init_db()
+    except Exception as exc:  # noqa: BLE001 — surface via /health/ready instead
+        log_security_event(
+            "startup_init_failed",
+            status=500,
+            error_type=type(exc).__name__,
+            detail=str(exc)[:300],
+        )
     yield
 
 

@@ -1,4 +1,5 @@
 from functools import lru_cache
+import os
 from typing import Literal
 
 from pydantic import Field, field_validator, model_validator
@@ -31,6 +32,7 @@ class Settings(BaseSettings):
             "testserver",
             "*.hf.space",
             "*.huggingface.co",
+            "*.vercel.app",
         ]
     )
 
@@ -82,14 +84,19 @@ class Settings(BaseSettings):
 
     @model_validator(mode="after")
     def enforce_environment_guards(self) -> "Settings":
+        # Vercel serverless: read-only FS except /tmp; never seed; allow all hosts
+        if os.getenv("VERCEL"):
+            self.seed_on_startup = False
+            self.replace_seed_on_startup = False
+            self.trusted_hosts = ["*"]
+            if self.use_sqlite:
+                self.sqlite_url = "sqlite+aiosqlite:////tmp/ppca.db"
+
         if self.environment == "production":
             self.seed_on_startup = False
             self.replace_seed_on_startup = False
-            if self.use_sqlite:
+            if self.use_sqlite and not os.getenv("VERCEL"):
                 raise ValueError("USE_SQLITE must be false when ENVIRONMENT=production")
-            if "sslmode" not in self.database_url and "localhost" not in self.database_url:
-                # Prefer explicit SSL for remote Neon URLs; localhost compose stays flexible.
-                pass
             if self.disable_docs is None:
                 self.disable_docs = True
         elif self.disable_docs is None:

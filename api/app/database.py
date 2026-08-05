@@ -66,6 +66,14 @@ async def get_db() -> AsyncGenerator[AsyncSession, None]:
 async def init_db() -> None:
     from app import models  # noqa: F401
     from app.services.seed import seed_if_empty
+    from sqlalchemy import text
+
+    # On Vercel + Neon the schema already exists — only probe connectivity.
+    # Avoid create_all (can fail on existing Postgres enums / cold start).
+    if os.getenv("VERCEL") and not settings.use_sqlite:
+        async with engine.connect() as conn:
+            await conn.execute(text("SELECT 1"))
+        return
 
     async with engine.begin() as conn:
         # SQLite demos: recreate schema when doing a full seed replace so new columns apply
